@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# .env file in config folder
+config/.env
+
 # C extensions
 *.so
 
