@@ -68,9 +68,6 @@ def add_file_to_vector_store(rag_input_path, client, vector_store):
         files=file_streams
     )
 
-    print(file_batch.status)
-    print(file_batch.file_counts)
-
     return vector_store
 
 def create_vector_store(client, vector_store_name, rag_input_path):
@@ -84,8 +81,6 @@ def create_vector_store(client, vector_store_name, rag_input_path):
 
     add_file_to_vector_store(rag_input_path, client, vector_store)
 
-    print(vector_store)
-
     return vector_store
 
 
@@ -97,10 +92,10 @@ def main():
     assistant_name = 'sem-tab'
     assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
     llm_model = 'gpt-4-turbo'
-    rag_input_path = '.rag_files'
+    rag_input_path = '../rag_files'
     vector_store_name = 'sem-tab-rag'
     api_key = os.getenv('API_KEY')
-    temperature = os.get('TEMPERATURE')
+    temperature = float(os.getenv('TEMPERATURE'))
 
     client = llm_client(api_key)
     assistant = create_assistant(client, assistant_name, assistant_instruction, llm_model, temperature)
