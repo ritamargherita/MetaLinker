@@ -135,6 +135,7 @@ def get_response(query, client, updated_assistant, thread):
 
     # get messages
     messages = list(client.beta.threads.messages.list(thread_id=thread.id, run_id=run.id))
+    print(messages)
     message_content = messages[0].content[0].text
     
     # print(f'message_content: {message_content}')
@@ -149,7 +150,7 @@ def get_response(query, client, updated_assistant, thread):
     # print(message_content.value)
     # print("\n".join(citations))
 
-    return message_content.value, citations
+    return message_content.value, citations, run
 
 
 def main():
@@ -195,14 +196,16 @@ def main():
         with open(metadata_input_path, 'r') as input_metadata:
             for metadata in input_metadata:
                 query = str(metadata)
-                message_content_value, citations = get_response(query, client, updated_assistant, thread)
+                message_content_value, citations, run = get_response(query, client, updated_assistant, thread)
                 output_file.write(message_content_value + "\n")
+                #time.sleep(2)
 
     end_time = time.time()
 
     with open(output_stats, 'w') as stats_file:
         elapsed_time = end_time - start_time
         stats_file.write(f"Elapsed time: {elapsed_time:.2f} seconds\n")
+        stats_file.write(f"Usage: {run.usage}\n")
 
     return
 

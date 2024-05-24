@@ -1,1 +1,2 @@
-Elapsed time: 59.64 seconds
+Elapsed time: 58.97 seconds
+Usage: Usage(completion_tokens=50, prompt_tokens=4346, total_tokens=4396)
