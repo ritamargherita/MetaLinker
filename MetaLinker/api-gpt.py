@@ -1,10 +1,11 @@
 import os
+import time
 
 from dotenv import load_dotenv
 from openai import OpenAI
 
 
-def llm_client(api_key):
+def gpt_client(api_key):
 
     """
     llm_client
@@ -16,7 +17,7 @@ def llm_client(api_key):
     return client
 
 
-def create_assistant(client, assistant_name, assistant_instruction, llm_model, temperature):
+def create_assistant(client, assistant_name, assistant_instruction, gpt_model, temperature):
 
     """
     create_assistant
@@ -27,7 +28,7 @@ def create_assistant(client, assistant_name, assistant_instruction, llm_model, t
         name = assistant_name,
         instructions=assistant_instruction,
         tools=[{"type": "file_search"}],
-        model=llm_model,
+        model=gpt_model,
         temperature=temperature,
     )
 
@@ -157,24 +158,51 @@ def main():
 
     assistant_name = 'sem-tab'
     assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
-    llm_model = 'gpt-4-turbo'
-    rag_input_path = '../rag_files'
+    gpt_model = os.getenv('GPT_MODEL')
+    metadata_input_path = os.getenv('METADATA_FILE')
+    rag_input_path = os.getenv('RAG_FILE')
     vector_store_name = 'sem-tab-rag'
     api_key = os.getenv('API_KEY')
     temperature = float(os.getenv('TEMPERATURE'))
+    output_folder = os.getenv('OUTPUT_FOLDER')
+    output_metadata = os.path.join(output_folder, 'output-metadata.txt')
+    output_stats = os.path.join(output_folder, 'output-stats.txt')
 
-    query = '{"id": "84548468_0_5955155464119382182_Year", "label": "Year", "table_id": "84548468_0_5955155464119382182", "table_name": "Film", "table_columns": ["Fans\' Rank", "Title", "Year", "Director(s)", "Overall Rank"]}'
-
-    client = llm_client(api_key)
-    assistant = create_assistant(client, assistant_name, assistant_instruction, llm_model, temperature)
+    client = gpt_client(api_key)
+    assistant = create_assistant(client, assistant_name, assistant_instruction, gpt_model, temperature)
     vector_store = create_vector_store(client, vector_store_name, rag_input_path)
     updated_assistant = update_assistant(assistant, client, vector_store)
     thread = create_thread(client)
 
-    message_content_value, citations = get_response(query, client, updated_assistant, thread)
+    os.makedirs(output_folder, exist_ok=True)
 
-    print(message_content_value)
-    print(citations)
+    if os.path.exists(output_metadata):
+        os.remove(output_metadata)
+
+    with open(output_metadata, 'w') as output_file:
+        pass
+
+    if os.path.exists(output_stats):
+        os.remove(output_stats)
+
+    with open(output_stats, 'w') as stats_file:
+        pass
+
+    start_time = time.time()
+
+    with open(output_metadata, 'a') as output_file:
+
+        with open(metadata_input_path, 'r') as input_metadata:
+            for metadata in input_metadata:
+                query = str(metadata)
+                message_content_value, citations = get_response(query, client, updated_assistant, thread)
+                output_file.write(message_content_value + "\n")
+
+    end_time = time.time()
+
+    with open(output_stats, 'w') as stats_file:
+        elapsed_time = end_time - start_time
+        stats_file.write(f"Elapsed time: {elapsed_time:.2f} seconds\n")
 
     return
 
