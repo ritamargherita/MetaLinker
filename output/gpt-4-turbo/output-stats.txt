@@ -1,2 +1,4 @@
-Elapsed time: 58.97 seconds
-Usage: Usage(completion_tokens=50, prompt_tokens=4346, total_tokens=4396)
+Elapsed time: 118.16 seconds
+Usage: Usage(completion_tokens=10, prompt_tokens=5498, total_tokens=5508)
+Items not matched: 
+ {'{"id": "48944826_0_2321751364268052533_System", "label": "System", "table_id": "48944826_0_2321751364268052533", "table_name": "VideoGame", "table_columns": ["Cover", "Status", "Name", "Genre", "FSK", "Kommentar", "Verliehen?", "System"]}\n': 1}

@@ -1,4 +1,5 @@
 import os
+import re
 import time
 
 from dotenv import load_dotenv
@@ -135,10 +136,18 @@ def get_response(query, client, updated_assistant, thread):
 
     # get messages
     messages = list(client.beta.threads.messages.list(thread_id=thread.id, run_id=run.id))
-    print(messages)
-    message_content = messages[0].content[0].text
+
+    return messages, run
     
-    # print(f'message_content: {message_content}')
+
+def get_response_value(messages, client, run):
+
+    """
+    get_response_value
+    
+    """
+
+    message_content = messages[0].content[0].text
     annotations = message_content.annotations
     citations = []
     for index, annotation in enumerate(annotations):
@@ -146,9 +155,6 @@ def get_response(query, client, updated_assistant, thread):
         if file_citation := getattr(annotation, "file_citation", None):
             cited_file = client.files.retrieve(file_citation.file_id)
             citations.append(f"[{index}] {cited_file.filename}")
-
-    # print(message_content.value)
-    # print("\n".join(citations))
 
     return message_content.value, citations, run
 
@@ -191,21 +197,81 @@ def main():
 
     start_time = time.time()
 
-    with open(output_metadata, 'a') as output_file:
+    with open(output_stats, 'a') as output_stat_file:
+        with open(output_metadata, 'a') as output_file:
 
-        with open(metadata_input_path, 'r') as input_metadata:
-            for metadata in input_metadata:
-                query = str(metadata)
-                message_content_value, citations, run = get_response(query, client, updated_assistant, thread)
-                output_file.write(message_content_value + "\n")
-                #time.sleep(2)
+            metadata_not_matched = {}
+            metadata_not_matched_stats = {}
 
-    end_time = time.time()
+            column_id_pattern = r'"id": "([^"]+)"'
+            dbpedia_property_pattern = r'http://dbpedia\.org/ontology/\w+'
 
-    with open(output_stats, 'w') as stats_file:
+            with open(metadata_input_path, 'r') as input_metadata:
+                for metadata in input_metadata:
+                    query = f"""Based on the instruction given to you, find the most relevant DBpedia property from 
+                                the file provided to you, for the following column: 
+                                {metadata}.
+                                Only choose from the DBpedia properties provided to you.
+                                Only respond with the DBpedia ID, e.g. http://dbpedia.org/ontology/PROPERTY_ID.
+                                Do not respond with any other information or text, just the ID."""
+                    
+                    messages, run = get_response(query, client, updated_assistant, thread)
+
+                    if messages:
+                        message_content_value, citations, run = get_response_value(messages, client, run)
+
+                        column_id = re.findall(column_id_pattern, metadata)
+                        property_id = re.findall(dbpedia_property_pattern, message_content_value)
+                        
+                        if property_id:
+                            output_file.write(f'{{"colID": "{column_id[0]}", "propID": "{property_id[0]}"}}\n')
+
+                        if not property_id:
+                            metadata_not_matched[str(metadata)] = 0
+
+                        output_stat_file.write(f"Usage {column_id[0]}: {run.usage}\n")
+
+                    if not messages:
+                        metadata_not_matched[str(metadata)] = 0
+
+            while metadata_not_matched:
+                metadata_matched = []
+                for key,value in metadata_not_matched.items():
+                    query = f"""Based on the instruction given to you, find the most relevant DBpedia property from 
+                                the file provided to you, for the following column: 
+                                {key}.
+                                ONLY choose from the DBpedia properties provided to you.
+                                ONLY respond with the DBpedia ID, and DO NOT ADD any
+                                other information or text."""
+                    messages, run = get_response(query, client, updated_assistant, thread)
+
+                    if messages:
+                        metadata_matched.append(key)
+
+                        message_content_value, citations, run = get_response_value(messages, client, run)
+                        column_id = re.findall(column_id_pattern, key)
+                        property_id = re.findall(dbpedia_property_pattern, message_content_value)
+
+                        metadata_not_matched_stats[column_id[0]] = value + 1
+
+                        if property_id:
+                            output_file.write(f'{{"colID": "{column_id[0]}", "propID": "{property_id[0]}"}}\n')
+
+                        if not property_id:
+                            metadata_not_matched[str(metadata)] = 0
+
+                        output_stat_file.write(f"Usage {column_id[0]}: {run.usage}\n")
+
+                    else:
+                        metadata_not_matched[key] += 1
+
+                for item in metadata_matched:
+                    del metadata_not_matched[item]
+
+        end_time = time.time()
         elapsed_time = end_time - start_time
-        stats_file.write(f"Elapsed time: {elapsed_time:.2f} seconds\n")
-        stats_file.write(f"Usage: {run.usage}\n")
+        output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
+        output_stat_file.write(f"Items not matched: \n {metadata_not_matched_stats}")
 
     return
 
