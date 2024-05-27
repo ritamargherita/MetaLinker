@@ -8,10 +8,27 @@ Requirments
 !pip install llama-index-readers-json
 !pip install python-dotenv
 
+
+.env setting
+LLM_NAME = 'llama3-70b-8192'
+GPT_MODEL = 'gpt-3.5-turbo'
+API_KEY = 'your gpt api key'
+GROQ_API_KEY = 'your groq api key'
+TEMPERATURE = '1'
+RAG_FILE = 'glossary/'
+METADATA_FILE = 'metadata/r2_sample_metadata.jsonl'
+OUTPUT_FOLDER = 'xueli-test/output/'
+ASSISTANT_INSTRUCTION = 'You will be provided with table metadata only (i.e. column ID, column label, table ID, table name and the labels of the other columns within that table), and your task is to match it to a knowledge graph. The knowledge graph, provided as txt file, contains entries of DBpedia properties. The matching is supposed to be done based on the semantic similarities between the table metadata and what the column express within such table, and a specific property within the DBpedia property knowledge graph.
+Provide your answer in Json format, with the column ID and the DBpedia property ID, such as {“columnID”: “ENTER HERE THE COLUMN ID”, “propertyID”: “ENTER HERE THE DBPEDIA PROPERTY ID”}
+Choose ONLY from the DBpedia properties provided to you.
+Return ONLY the Json result, no other text.'
+
 """
 import warnings
 warnings.filterwarnings('ignore')
 
+
+import time
 from llama_index.llms.groq import Groq
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.vector_stores.chroma import ChromaVectorStore
@@ -66,16 +83,52 @@ def main():
     temperature = os.getenv('TEMPERATURE')
     model = 'llama3-70b-8192'
     embed_model = "BAAI/bge-small-en"
-    rag_files = 'rag_files/'
+    metadata_input_path = os.getenv('METADATA_FILE')
+    rag_input_path = os.getenv('RAG_FILE')
     collection_name = 'sem-tab'
     api_key = os.getenv('GROQ_API_KEY')
+    output_folder = os.getenv('OUTPUT_FOLDER')
+    output_metadata = os.path.join(output_folder, 'output-metadata.txt')
+    output_stats = os.path.join(output_folder, 'output-stats.txt')
 
-    query = '{"id": "84548468_0_5955155464119382182_Year", "label": "Year", "table_id": "84548468_0_5955155464119382182", "table_name": "Film", "table_columns": ["Fans\' Rank", "Title", "Year", "Director(s)", "Overall Rank"]}'
-    user_query = f'{assistant_instruction}\ntable metadata:{query}'
+    os.makedirs(output_folder, exist_ok=True)
 
-    response = get_response_from_llm(model,api_key, temperature,embed_model, rag_files, collection_name, user_query)
-    print(response)
-    return response
+    if os.path.exists(output_metadata):
+        os.remove(output_metadata)
+
+    with open(output_metadata, 'w') as output_file:
+        pass
+
+    if os.path.exists(output_stats):
+        os.remove(output_stats)
+
+    with open(output_stats, 'w') as stats_file:
+        pass
+
+    start_time = time.time()
+
+    with open(output_metadata, 'a') as output_file:
+
+        with open(metadata_input_path, 'r') as input_metadata:
+            for metadata in input_metadata:
+                query = str(metadata)
+                print(f"QUERY: {query}")
+                user_query = f'{assistant_instruction}\ntable metadata:{query}'
+                response = get_response_from_llm(model,api_key, temperature,embed_model, rag_input_path, collection_name, user_query)
+                print(f"RESPONSE: {response}")
+                output_file.write(f'{response}\n')
+                print(f"******************************\n")
+                #time.sleep(2)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"ELASPSED TIME: {elapsed_time}")
+
+    with open(output_stats, 'w') as stats_file:
+        elapsed_time = end_time - start_time
+        stats_file.write(f"Elapsed time: {elapsed_time:.2f} seconds\n")
+
+    return
 
 
 if __name__ == "__main__":
