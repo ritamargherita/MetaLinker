@@ -18,9 +18,9 @@ TEMPERATURE = '1'
 RAG_FILE = 'glossary/'
 METADATA_FILE = 'metadata/r2_sample_metadata.jsonl'
 OUTPUT_FOLDER = 'xueli-test/output/'
-ASSISTANT_INSTRUCTION = 'You will be provided with table metadata only (i.e. column ID, column label, table ID, table name and the labels of the other columns within that table), and your task is to match it to a knowledge graph. The knowledge graph, provided as txt file, contains entries of DBpedia properties. The matching is supposed to be done based on the semantic similarities between the table metadata and what the column express within such table, and a specific property within the DBpedia property knowledge graph.
-Provide your answer in Json format, with the column ID and the DBpedia property ID, such as {“columnID”: “ENTER HERE THE COLUMN ID”, “propertyID”: “ENTER HERE THE DBPEDIA PROPERTY ID”}
-Choose ONLY from the DBpedia properties provided to you.
+ASSISTANT_INSTRUCTION = 'You will be provided with table metadata only (i.e. column ID, column label, table ID, table name and the labels of the other columns within that table), and your task is to match it to a knowledge graph. The knowledge graph, provided as .jsonl file, contains entries of label such as {"id": "id name", "label": "label name", "desc": "Description of the label"}. The matching is supposed to be done based on the semantic similarities between the table metadata and what the column express within such table, and a specific Description of the label within the knowledge graph.
+Provide your answer in Json format, with the column ID and the DBpedia label ID, such as {“columnID”: “ENTER HERE THE COLUMN ID”, “labelID”: “ENTER HERE THE LABEL ID”}
+Choose ONLY from the properties provided to you.
 Return ONLY the Json result, no other text.'
 
 """
