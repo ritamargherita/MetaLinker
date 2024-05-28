@@ -1,6 +1,7 @@
 import os
 import re
 import time
+import json
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -140,7 +141,7 @@ def get_response(query, client, updated_assistant, thread):
     return messages, run
     
 
-def get_response_value(messages, client, run):
+def get_response_value(messages, run):
 
     """
     get_response_value
@@ -149,31 +150,42 @@ def get_response_value(messages, client, run):
 
     message_content = messages[0].content[0].text
     annotations = message_content.annotations
-    citations = []
     for index, annotation in enumerate(annotations):
         message_content.value = message_content.value.replace(annotation.text, f"[{index}]")
-        if file_citation := getattr(annotation, "file_citation", None):
-            cited_file = client.files.retrieve(file_citation.file_id)
-            citations.append(f"[{index}] {cited_file.filename}")
 
-    return message_content.value, citations, run
+    return message_content.value, run
+
+def make_output_folder(output_folder):
+    
+    """
+    make_output_folder
+
+    """
+
+    os.makedirs(output_folder, exist_ok=True)
+
+    return 
 
 
-def main():
+def remove_output_files_if_exist(output_metadata, output_stats):
 
-    load_dotenv()
+    """
+    make_output_files
+    
+    """
 
-    assistant_name = 'sem-tab'
-    assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
-    gpt_model = os.getenv('GPT_MODEL')
-    metadata_input_path = os.getenv('METADATA_FILE')
-    rag_input_path = os.getenv('RAG_FILE')
-    vector_store_name = 'sem-tab-rag'
-    api_key = os.getenv('API_KEY')
-    temperature = float(os.getenv('TEMPERATURE'))
-    output_folder = os.getenv('OUTPUT_FOLDER')
-    output_metadata = os.path.join(output_folder, 'output-metadata.txt')
-    output_stats = os.path.join(output_folder, 'output-stats.txt')
+    if os.path.exists(output_metadata):
+        os.remove(output_metadata)
+
+    if os.path.exists(output_stats):
+        os.remove(output_stats)
+
+    return 
+
+
+def main(query_template, assistant_name, assistant_instruction, gpt_model,
+         metadata_input_path, rag_input_path, vector_store_name,
+         api_key, temperature, output_folder, output_metadata, output_stats):
 
     client = gpt_client(api_key)
     assistant = create_assistant(client, assistant_name, assistant_instruction, gpt_model, temperature)
@@ -181,19 +193,8 @@ def main():
     updated_assistant = update_assistant(assistant, client, vector_store)
     thread = create_thread(client)
 
-    os.makedirs(output_folder, exist_ok=True)
-
-    if os.path.exists(output_metadata):
-        os.remove(output_metadata)
-
-    with open(output_metadata, 'w') as output_file:
-        pass
-
-    if os.path.exists(output_stats):
-        os.remove(output_stats)
-
-    with open(output_stats, 'w') as stats_file:
-        pass
+    make_output_folder(output_folder)
+    remove_output_files_if_exist(output_metadata, output_stats)
 
     start_time = time.time()
 
@@ -208,25 +209,23 @@ def main():
 
             with open(metadata_input_path, 'r') as input_metadata:
                 for metadata in input_metadata:
-                    query = f"""Based on the instruction given to you, find the most relevant DBpedia property from 
-                                the file provided to you, for the following column: 
-                                {metadata}.
-                                Only choose from the DBpedia properties provided to you.
-                                Only respond with the DBpedia ID, e.g. http://dbpedia.org/ontology/PROPERTY_ID.
-                                Do not respond with any other information or text, just the ID."""
+                    query = query_template.format(query_column=metadata)
                     
                     messages, run = get_response(query, client, updated_assistant, thread)
 
                     if messages:
-                        message_content_value, citations, run = get_response_value(messages, client, run)
+                        message_content_value, run = get_response_value(messages, run)
 
                         column_id = re.findall(column_id_pattern, metadata)
-                        property_id = re.findall(dbpedia_property_pattern, message_content_value)
+                        property_ids = re.findall(dbpedia_property_pattern, message_content_value)
                         
-                        if property_id:
-                            output_file.write(f'{{"colID": "{column_id[0]}", "propID": "{property_id[0]}"}}\n')
+                        if property_ids:
+                            mappings = [{"id": pid, "score": ""} for pid in property_ids]
+                            output_dict = {"id": column_id[0], "mappings": mappings}
+                            json_output = json.dumps(output_dict)
+                            output_file.write(json_output+ "\n")
 
-                        if not property_id:
+                        if not property_ids:
                             metadata_not_matched[str(metadata)] = 0
 
                         output_stat_file.write(f"Usage {column_id[0]}: {run.usage}\n")
@@ -237,27 +236,26 @@ def main():
             while metadata_not_matched:
                 metadata_matched = []
                 for key,value in metadata_not_matched.items():
-                    query = f"""Based on the instruction given to you, find the most relevant DBpedia property from 
-                                the file provided to you, for the following column: 
-                                {key}.
-                                ONLY choose from the DBpedia properties provided to you.
-                                ONLY respond with the DBpedia ID, and DO NOT ADD any
-                                other information or text."""
+                    query = query_template.format(query_column=key)
+
                     messages, run = get_response(query, client, updated_assistant, thread)
 
                     if messages:
                         metadata_matched.append(key)
 
-                        message_content_value, citations, run = get_response_value(messages, client, run)
+                        message_content_value, run = get_response_value(messages, run)
                         column_id = re.findall(column_id_pattern, key)
-                        property_id = re.findall(dbpedia_property_pattern, message_content_value)
+                        property_ids = re.findall(dbpedia_property_pattern, message_content_value)
 
                         metadata_not_matched_stats[column_id[0]] = value + 1
 
-                        if property_id:
-                            output_file.write(f'{{"colID": "{column_id[0]}", "propID": "{property_id[0]}"}}\n')
+                        if property_ids:
+                            mappings = [{"id": pid, "score": ""} for pid in property_ids]
+                            output_dict = {"id": column_id[0], "mappings": mappings}
+                            json_output = json.dumps(output_dict)
+                            output_file.write(json_output+ "\n")
 
-                        if not property_id:
+                        if not property_ids:
                             metadata_not_matched[str(metadata)] = 0
 
                         output_stat_file.write(f"Usage {column_id[0]}: {run.usage}\n")
@@ -278,4 +276,21 @@ def main():
 
 if __name__ == "__main__":
 
-    main()
+    load_dotenv()
+
+    assistant_name = 'sem-tab'
+    assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
+    gpt_model = os.getenv('GPT_MODEL')
+    metadata_input_path = os.getenv('METADATA_FILE')
+    rag_input_path = os.getenv('RAG_FILE')
+    vector_store_name = 'sem-tab-rag'
+    api_key = os.getenv('API_KEY')
+    temperature = float(os.getenv('TEMPERATURE'))
+    output_folder = os.getenv('OUTPUT_FOLDER')
+    output_metadata = os.path.join(output_folder, 'output-metadata.json')
+    output_stats = os.path.join(output_folder, 'output-stats.json')
+    query_template = os.getenv("QUERY_HIT1")
+
+    main(query_template, assistant_name, assistant_instruction, gpt_model, 
+         metadata_input_path, rag_input_path, vector_store_name, 
+         api_key, temperature, output_folder, output_metadata, output_stats)

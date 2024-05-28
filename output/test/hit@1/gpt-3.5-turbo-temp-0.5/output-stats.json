@@ -1,0 +1,13 @@
+Usage 84548468_0_5955155464119382182_Year: Usage(completion_tokens=60, prompt_tokens=6051, total_tokens=6111)
+Usage 64499281_8_7181683886563136802_Stadt: Usage(completion_tokens=64, prompt_tokens=6553, total_tokens=6617)
+Usage 58891288_0_1117541047012405958_Director(s): Usage(completion_tokens=62, prompt_tokens=7044, total_tokens=7106)
+Usage 69381058_0_984708047398578866_Asia: Usage(completion_tokens=59, prompt_tokens=7430, total_tokens=7489)
+Usage 21362676_0_6854186738074119688_Director(s): Usage(completion_tokens=62, prompt_tokens=7989, total_tokens=8051)
+Usage 84675086_0_6386416780680710863_Genus: Usage(completion_tokens=62, prompt_tokens=8207, total_tokens=8269)
+Usage 21585935_0_294037497010176843_State: Usage(completion_tokens=59, prompt_tokens=8942, total_tokens=9001)
+Usage 29414811_12_251152470253168163_Developer(s): Usage(completion_tokens=64, prompt_tokens=9234, total_tokens=9298)
+Usage 52208141_2_5171684379987586712_Stadt: Usage(completion_tokens=64, prompt_tokens=9902, total_tokens=9966)
+
+Elapsed time: 55.96 seconds
+Items not matched: 
+ {}

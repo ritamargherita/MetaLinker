@@ -1,6 +1,0 @@
-{"id": "http://dbpedia.org/ontology/releaseDate", "label": "release date", "desc": "Release date of a Work or another product (eg Aircraft or other MeansOfTransportation"}
-{"id": "http://dbpedia.org/ontology/location", "label": "location", "desc": "The location of the thing."}
-{"id": "http://dbpedia.org/ontology/director", "label": "film director", "desc": "A film director is a person who directs the making of a film."}
-{"id": "http://dbpedia.org/ontology/continent", "label": "continent", "desc": "links a country to the continent it belongs"}
-{"id": "http://dbpedia.org/ontology/genus", "label": "genus", "desc": "A rank in the classification of organisms, below family and above species; a taxon at that rank"}
-{"id": "http://dbpedia.org/ontology/developer", "label": "developer", "desc": "Developer of a Work (Artwork, Book, Software) or Building (Hotel, Skyscraper)"}
