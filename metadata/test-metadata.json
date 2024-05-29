@@ -1,9 +1,0 @@
-{"id": "84548468_0_5955155464119382182_Year", "label": "Year", "table_id": "84548468_0_5955155464119382182", "table_name": "Film", "table_columns": ["Fans' Rank", "Title", "Year", "Director(s)", "Overall Rank"]}
-{"id": "64499281_8_7181683886563136802_Stadt", "label": "Stadt", "table_id": "64499281_8_7181683886563136802", "table_name": "Museum", "table_columns": ["RANG", "Museum", "Stadt", "Facebook-Fans"]}
-{"id": "58891288_0_1117541047012405958_Director(s)", "label": "Director(s)", "table_id": "58891288_0_1117541047012405958", "table_name": "Film", "table_columns": ["Rank", "Title", "Year", "Director(s)", "Overall Rank"]}
-{"id": "69381058_0_984708047398578866_Asia", "label": "Asia", "table_id": "69381058_0_984708047398578866", "table_name": "Mountain", "table_columns": ["Everest", "8.848", "Nepal/Tibet", "Asia"]}
-{"id": "21362676_0_6854186738074119688_Director(s)", "label": "Director(s)", "table_id": "21362676_0_6854186738074119688", "table_name": "Film", "table_columns": ["Fans' Rank", "Title", "Year", "Director(s)", "Overall Rank"]}
-{"id": "84675086_0_6386416780680710863_Genus", "label": "Genus", "table_id": "84675086_0_6386416780680710863", "table_name": "Bird", "table_columns": ["Common Name", "Genus", "Species", "IUCN"]}
-{"id": "21585935_0_294037497010176843_State", "label": "State", "table_id": "21585935_0_294037497010176843", "table_name": "Airport", "table_columns": ["Code", "Airport Name", "City", "State"]}
-{"id": "29414811_12_251152470253168163_Developer(s)", "label": "Developer(s)", "table_id": "29414811_12_251152470253168163", "table_name": "VideoGame", "table_columns": ["Year", "Game", "Genre", "Platform(s)", "Developer(s)"]}
-{"id": "52208141_2_5171684379987586712_Stadt", "label": "Stadt", "table_id": "52208141_2_5171684379987586712", "table_name": "Museum", "table_columns": ["RANG", "Museum", "Stadt", "Facebook-Fans"]}
