@@ -289,7 +289,7 @@ if __name__ == "__main__":
     output_folder = os.getenv('OUTPUT_FOLDER')
     output_metadata = os.path.join(output_folder, 'output-metadata.json')
     output_stats = os.path.join(output_folder, 'output-stats.json')
-    query_template = os.getenv("QUERY_HIT1")
+    query_template = os.getenv("QUERY_HIT5")
 
     main(query_template, assistant_name, assistant_instruction, gpt_model, 
          metadata_input_path, rag_input_path, vector_store_name, 
