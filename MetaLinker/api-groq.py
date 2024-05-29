@@ -1,29 +1,3 @@
-""" 
-Requirments
-!pip install llama-index-llms-groq
-%pip install llama-index-readers-file pymupdf
-%pip install llama-index-embeddings-huggingface
-%pip install llama-index-vector-stores-chroma
-!pip install llama-index
-!pip install llama-index-readers-json
-!pip install python-dotenv
-
-
-.env setting
-LLM_NAME = 'llama3-70b-8192'
-GPT_MODEL = 'gpt-3.5-turbo'
-API_KEY = 'your gpt api key'
-GROQ_API_KEY = 'your groq api key'
-TEMPERATURE = '1'
-RAG_FILE = 'glossary/'
-METADATA_FILE = 'metadata/r2_sample_metadata.jsonl'
-OUTPUT_FOLDER = 'xueli-test/output/'
-ASSISTANT_INSTRUCTION = 'You will be provided with table metadata only (i.e. column ID, column label, table ID, table name and the labels of the other columns within that table), and your task is to match it to a knowledge graph. The knowledge graph, provided as .jsonl file, contains entries of label such as {"id": "id name", "label": "label name", "desc": "Description of the label"}. The matching is supposed to be done based on the semantic similarities between the table metadata and what the column express within such table, and a specific Description of the label within the knowledge graph.
-Provide your answer in Json format, with the column ID and the label ID, such as {“columnID”: “ENTER HERE THE COLUMN ID”, “labelID”: “ENTER HERE THE LABEL ID”}
-Choose ONLY from the properties provided to you.
-Return ONLY the Json result, no other text.'
-
-"""
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -36,6 +10,8 @@ from llama_index.core import StorageContext, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import chromadb
 import os
+import re
+import json
 from dotenv import load_dotenv
 
 
@@ -75,11 +51,121 @@ def get_response_from_llm(model, api_key, temperature,embed_model, rag_files, co
     # display(Markdown(f"{response}"))
     return response
 
-def main():
-    # parameter setting
-    load_dotenv('config/.env')
 
-    assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
+def make_output_folder(output_folder):
+    
+    """
+    make_output_folder
+
+    """
+
+    os.makedirs(output_folder, exist_ok=True)
+
+    return 
+
+
+def remove_output_files_if_exist(output_metadata, output_stats):
+
+    """
+    make_output_files
+    
+    """
+
+    if os.path.exists(output_metadata):
+        os.remove(output_metadata)
+
+    if os.path.exists(output_stats):
+        os.remove(output_stats)
+
+    return 
+
+
+
+def main(query_template, model, metadata_input_path, rag_input_path,
+         api_key, temperature, output_folder, output_metadata, 
+         output_stats, collection_name, embed_model):
+
+    make_output_folder(output_folder)
+    remove_output_files_if_exist(output_metadata, output_stats)
+
+    start_time = time.time()
+
+    with open(output_stats, 'a') as output_stat_file:
+        with open(output_metadata, 'a') as output_file:
+
+            metadata_not_matched = {}
+            metadata_not_matched_stats = {}
+
+            column_id_pattern = r'"id": "([^"]+)"'
+            dbpedia_property_pattern = r'http://dbpedia\.org/ontology/\w+'
+
+            with open(metadata_input_path, 'r') as input_metadata:
+                for metadata in input_metadata:
+                    query = query_template.format(query_column=metadata)
+
+                    response = str(get_response_from_llm(model,api_key, temperature, embed_model, 
+                                                         rag_input_path, collection_name, query))
+
+                    if response:
+                        column_id = re.findall(column_id_pattern, metadata)
+                        property_ids = re.findall(dbpedia_property_pattern, response)
+
+                        if property_ids:
+                            mappings = [{"id": pid, "score": ""} for pid in property_ids]
+                            output_dict = {"id": column_id[0], "mappings": mappings}
+                            json_output = json.dumps(output_dict)
+                            output_file.write(json_output+ "\n")
+
+                        if not property_ids:
+                            metadata_not_matched[str(metadata)] = 0
+
+                    if not response:
+                        metadata_not_matched[str(metadata)] = 0
+
+            while metadata_not_matched:
+                metadata_matched = []
+                for key,value in metadata_not_matched.items():
+                    query = query_template.format(query_column=key)  
+
+                    response = str(get_response_from_llm(model,api_key, temperature, embed_model, 
+                                                         rag_input_path, collection_name, query))
+
+                    if response:
+                        metadata_matched.append(key)
+
+                        column_id = re.findall(column_id_pattern, key)
+                        property_ids = re.findall(dbpedia_property_pattern, response)    
+
+                        metadata_not_matched_stats[column_id[0]] = value + 1   
+
+                        if property_ids:
+                            mappings = [{"id": pid, "score": ""} for pid in property_ids]
+                            output_dict = {"id": column_id[0], "mappings": mappings}
+                            json_output = json.dumps(output_dict)
+                            output_file.write(json_output+ "\n")         
+
+                        if not property_ids:
+                            metadata_not_matched[str(metadata)] = 0  
+
+                    else:
+                        metadata_not_matched[key] += 1  
+
+                for item in metadata_matched:
+                    del metadata_not_matched[item]                       
+
+
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
+        output_stat_file.write(f"Items not matched: \n {metadata_not_matched_stats}")
+
+    return
+
+
+if __name__ == "__main__":
+
+    load_dotenv()
+
     temperature = os.getenv('TEMPERATURE')
     model = os.getenv('LLAMA_MODEL')
     embed_model = "BAAI/bge-small-en"
@@ -88,49 +174,10 @@ def main():
     collection_name = 'sem-tab'
     api_key = os.getenv('GROQ_API_KEY')
     output_folder = os.getenv('OUTPUT_FOLDER')
-    output_metadata = os.path.join(output_folder, 'output-metadata.txt')
-    output_stats = os.path.join(output_folder, 'output-stats.txt')
+    output_metadata = os.path.join(output_folder, 'output-metadata.json')
+    output_stats = os.path.join(output_folder, 'output-stats.json')
+    query_template = os.getenv("QUERY_GROQ")
 
-    os.makedirs(output_folder, exist_ok=True)
-
-    if os.path.exists(output_metadata):
-        os.remove(output_metadata)
-
-    with open(output_metadata, 'w') as output_file:
-        pass
-
-    if os.path.exists(output_stats):
-        os.remove(output_stats)
-
-    with open(output_stats, 'w') as stats_file:
-        pass
-
-    start_time = time.time()
-
-    with open(output_metadata, 'a') as output_file:
-
-        with open(metadata_input_path, 'r') as input_metadata:
-            for metadata in input_metadata:
-                query = str(metadata)
-                print(f"QUERY: {query}")
-                user_query = f'{assistant_instruction}\ntable metadata:{query}'
-                response = get_response_from_llm(model,api_key, temperature,embed_model, rag_input_path, collection_name, user_query)
-                print(f"RESPONSE: {response}")
-                output_file.write(f'{response}\n')
-                print(f"******************************\n")
-                #time.sleep(2)
-
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"ELASPSED TIME: {elapsed_time}")
-
-    with open(output_stats, 'w') as stats_file:
-        elapsed_time = end_time - start_time
-        stats_file.write(f"Elapsed time: {elapsed_time:.2f} seconds\n")
-
-    return
-
-
-if __name__ == "__main__":
-
-    main()
+    main(query_template, model, metadata_input_path, rag_input_path,
+         api_key, temperature, output_folder, output_metadata, 
+         output_stats, collection_name, embed_model)
