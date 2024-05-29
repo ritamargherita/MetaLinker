@@ -1,18 +1,19 @@
 import warnings
 warnings.filterwarnings('ignore')
 
-
+import os
+import re
 import time
+import json
+import chromadb
+
+from dotenv import load_dotenv
+
 from llama_index.llms.groq import Groq
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.core import StorageContext, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-import chromadb
-import os
-import re
-import json
-from dotenv import load_dotenv
 
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -176,7 +177,7 @@ if __name__ == "__main__":
     output_folder = os.getenv('OUTPUT_FOLDER')
     output_metadata = os.path.join(output_folder, 'output-metadata.json')
     output_stats = os.path.join(output_folder, 'output-stats.json')
-    query_template = os.getenv("QUERY_GROQ")
+    query_template = os.getenv("QUERY_GROQ_HIT1")
 
     main(query_template, model, metadata_input_path, rag_input_path,
          api_key, temperature, output_folder, output_metadata, 

@@ -1,13 +1,13 @@
-Usage 84548468_0_5955155464119382182_Year: Usage(completion_tokens=25, prompt_tokens=18058, total_tokens=18083)
-Usage 64499281_8_7181683886563136802_Stadt: Usage(completion_tokens=11, prompt_tokens=1217, total_tokens=1228)
-Usage 58891288_0_1117541047012405958_Director(s): Usage(completion_tokens=11, prompt_tokens=1443, total_tokens=1454)
-Usage 69381058_0_984708047398578866_Asia: Usage(completion_tokens=11, prompt_tokens=1668, total_tokens=1679)
-Usage 21362676_0_6854186738074119688_Director(s): Usage(completion_tokens=11, prompt_tokens=1896, total_tokens=1907)
-Usage 84675086_0_6386416780680710863_Genus: Usage(completion_tokens=11, prompt_tokens=2120, total_tokens=2131)
-Usage 21585935_0_294037497010176843_State: Usage(completion_tokens=10, prompt_tokens=2337, total_tokens=2347)
-Usage 29414811_12_251152470253168163_Developer(s): Usage(completion_tokens=11, prompt_tokens=2562, total_tokens=2573)
-Usage 52208141_2_5171684379987586712_Stadt: Usage(completion_tokens=11, prompt_tokens=2788, total_tokens=2799)
+Usage 84548468_0_5955155464119382182_Year: Usage(completion_tokens=41, prompt_tokens=18196, total_tokens=18237)
+Usage 64499281_8_7181683886563136802_Stadt: Usage(completion_tokens=37, prompt_tokens=18575, total_tokens=18612)
+Usage 58891288_0_1117541047012405958_Director(s): Usage(completion_tokens=40, prompt_tokens=18552, total_tokens=18592)
+Usage 69381058_0_984708047398578866_Asia: Usage(completion_tokens=43, prompt_tokens=19130, total_tokens=19173)
+Usage 21362676_0_6854186738074119688_Director(s): Usage(completion_tokens=42, prompt_tokens=19663, total_tokens=19705)
+Usage 84675086_0_6386416780680710863_Genus: Usage(completion_tokens=39, prompt_tokens=20342, total_tokens=20381)
+Usage 21585935_0_294037497010176843_State: Usage(completion_tokens=35, prompt_tokens=21222, total_tokens=21257)
+Usage 29414811_12_251152470253168163_Developer(s): Usage(completion_tokens=42, prompt_tokens=21819, total_tokens=21861)
+Usage 52208141_2_5171684379987586712_Stadt: Usage(completion_tokens=37, prompt_tokens=22357, total_tokens=22394)
 
-Elapsed time: 38.81 seconds
+Elapsed time: 76.16 seconds
 Items not matched: 
  {}

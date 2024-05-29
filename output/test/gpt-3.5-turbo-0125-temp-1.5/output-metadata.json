@@ -1,9 +1,0 @@
-{"id": "84548468_0_5955155464119382182_Year", "mappings": [{"id": "http://dbpedia.org/ontology/filmReleaseDate", "score": ""}, {"id": "http://dbpedia.org/ontology/filmDistributionDate", "score": ""}, {"id": "http://dbpedia.org/ontology/filmInitialsPublication", "score": ""}, {"id": "http://dbpedia.org/ontology/filmKeyDate", "score": ""}, {"id": "http://dbpedia.org/ontology/filmLaunchDate", "score": ""}]}
-{"id": "64499281_8_7181683886563136802_Stadt", "mappings": [{"id": "http://dbpedia.org/ontology/locationName", "score": ""}, {"id": "http://dbpedia.org/ontology/leadingJudge", "score": ""}, {"id": "http://dbpedia.org/ontology/champion", "score": ""}, {"id": "http://dbpedia.org/ontology/m", "score": ""}]}
-{"id": "69381058_0_984708047398578866_Asia", "mappings": [{"id": "http://dbpedia.org/ontology/space", "score": ""}, {"id": "http://dbpedia.org/ontology/michael", "score": ""}]}
-{"id": "84675086_0_6386416780680710863_Genus", "mappings": [{"id": "http://dbpedia.org/ontology/genus", "score": ""}]}
-{"id": "21585935_0_294037497010176843_State", "mappings": [{"id": "http://dbpedia.org/ontology/stateName", "score": ""}]}
-{"id": "29414811_12_251152470253168163_Developer(s)", "mappings": [{"id": "http://dbpedia.org/ontology/developer", "score": ""}]}
-{"id": "52208141_2_5171684379987586712_Stadt", "mappings": [{"id": "http://dbpedia.org/ontology/museum", "score": ""}]}
-{"id": "58891288_0_1117541047012405958_Director(s)", "mappings": [{"id": "http://dbpedia.org/ontology/director", "score": ""}]}
-{"id": "21362676_0_6854186738074119688_Director(s)", "mappings": [{"id": "http://dbpedia.org/ontology/director", "score": ""}]}

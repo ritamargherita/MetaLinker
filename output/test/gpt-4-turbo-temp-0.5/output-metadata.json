@@ -1,4 +1,4 @@
-{"id": "84548468_0_5955155464119382182_Year", "mappings": [{"id": "http://dbpedia.org/ontology/releaseDate", "score": ""}]}
+{"id": "84548468_0_5955155464119382182_Year", "mappings": [{"id": "http://dbpedia.org/ontology/year", "score": ""}]}
 {"id": "64499281_8_7181683886563136802_Stadt", "mappings": [{"id": "http://dbpedia.org/ontology/city", "score": ""}]}
 {"id": "58891288_0_1117541047012405958_Director(s)", "mappings": [{"id": "http://dbpedia.org/ontology/director", "score": ""}]}
 {"id": "69381058_0_984708047398578866_Asia", "mappings": [{"id": "http://dbpedia.org/ontology/continent", "score": ""}]}
