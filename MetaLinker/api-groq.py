@@ -81,7 +81,7 @@ def main():
 
     assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
     temperature = os.getenv('TEMPERATURE')
-    model = 'llama3-70b-8192'
+    model = os.getenv('LLAMA_MODEL')
     embed_model = "BAAI/bge-small-en"
     metadata_input_path = os.getenv('METADATA_FILE')
     rag_input_path = os.getenv('RAG_FILE')

@@ -284,7 +284,7 @@ if __name__ == "__main__":
     metadata_input_path = os.getenv('METADATA_FILE')
     rag_input_path = os.getenv('RAG_FILE')
     vector_store_name = 'sem-tab-rag'
-    api_key = os.getenv('API_KEY')
+    api_key = os.getenv('GPT_API_KEY')
     temperature = float(os.getenv('TEMPERATURE'))
     output_folder = os.getenv('OUTPUT_FOLDER')
     output_metadata = os.path.join(output_folder, 'output-metadata.json')
