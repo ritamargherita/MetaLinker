@@ -1,10 +1,21 @@
 import os
 import re
+import sys
 import time
 import json
+import numpy as np
 
 from dotenv import load_dotenv
 from openai import OpenAI
+
+from queries_instructions import (
+    assistant_instruction_hit1,
+    query_template_hit1,
+    assistant_instruction_hit5,
+    query_template_hit5
+)
+#sys.path.append('./queries_and_instructions')
+#from gpt_hit1 import assistant_instruction, query_template
 
 
 def gpt_client(api_key):
@@ -31,7 +42,7 @@ def create_assistant(client, assistant_name, assistant_instruction, gpt_model, t
         instructions=assistant_instruction,
         tools=[{"type": "file_search"}],
         model=gpt_model,
-        temperature=temperature,
+        temperature=temperature
     )
 
     return assistant
@@ -155,6 +166,7 @@ def get_response_value(messages, run):
 
     return message_content.value, run
 
+
 def make_output_folder(output_folder):
     
     """
@@ -183,10 +195,85 @@ def remove_output_files_if_exist(output_metadata, output_stats):
     return 
 
 
-def main(query_template, assistant_name, assistant_instruction, gpt_model,
-         metadata_input_path, rag_input_path, vector_store_name,
-         api_key, temperature, output_folder, output_metadata, output_stats):
+def make_input_metadata(split):
 
+    """
+    make_input_metadata
+    
+    """
+
+    input_metadata = '\n'.join([
+        '{' + "'id': '{}', 'label': '{}', 'table_id': '{}', 'table_name': '{}', 'table_columns': {}".format(
+        item['id'], item['label'], item['table_id'], item['table_name'], item['table_columns']
+        ) + '}' for item in split])
+    
+    return input_metadata
+
+
+def extract_property_ids(raw_prop_ids):
+
+    """
+    extract_property_ids
+    
+    """
+    prop_ids = re.findall(r"'([^']+)'", raw_prop_ids)
+
+    return [prop_id.strip() for prop_id in prop_ids]
+
+
+def append_metadata_output(matches, output_file, data):
+
+    """
+    append_metadata_output
+
+    """
+
+    matched_metadata = []
+
+    for match in matches:
+        col_id, raw_prop_ids = match
+
+        for entry in data:
+            if col_id in entry['id']:
+                prop_id_list = extract_property_ids(raw_prop_ids)
+                result = {"id": col_id, "mappings": [{"id": prop_id, "score": ""} for prop_id in prop_id_list]}
+                output_file.write(json.dumps(result)+ "\n")
+
+                matched_metadata.append(entry)
+
+    return matched_metadata
+
+
+def append_usage_stats_output(output_stat_file, run):
+
+    """
+    append_stats_output
+    
+    """
+
+    output_stat_file.write(f"Usage: {run.usage}\n")
+
+    return
+
+
+def extract_unmatched_data(matched_metadata_list, data):
+
+    """
+    extract_unmatched_data
+    
+    """
+
+    matched_ids = {item['id'] for sublist in matched_metadata_list for item in sublist}
+    
+    return [entry for entry in data if entry['id'] not in matched_ids]
+
+
+def main(query_template, assistant_name, assistant_instruction, gpt_model,
+         rag_input_path, vector_store_name, metadata_file, split_size, secondary_split_size,
+         api_key, temperature, output_folder, output_metadata, output_stats):
+    
+    start_time = time.time()
+    
     client = gpt_client(api_key)
     assistant = create_assistant(client, assistant_name, assistant_instruction, gpt_model, temperature)
     vector_store = create_vector_store(client, vector_store_name, rag_input_path)
@@ -196,80 +283,52 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
     make_output_folder(output_folder)
     remove_output_files_if_exist(output_metadata, output_stats)
 
-    start_time = time.time()
+    pattern_1 = re.compile(r'''['"](?:colID)['"]: ['"]([^']+?)['"],\s*['"]propID['"]: \[(.*?)\]''', re.DOTALL)
+    pattern_2 = re.compile(r"'([^']+)'\s*:\s*\[([^\]]+)\]")
 
-    with open(output_stats, 'a') as output_stat_file:
-        with open(output_metadata, 'a') as output_file:
+    with open(output_stats, 'a') as output_stat_file, open(output_metadata, 'a') as output_file:
+        with open(metadata_file, "r") as file:
+            data = [json.loads(line) for line in file]
+            print(len(data))
 
-            metadata_not_matched = {}
-            metadata_not_matched_stats = {}
+            matched_metadata_list = []
 
-            column_id_pattern = r'"id": "([^"]+)"'
-            dbpedia_property_pattern = r'http://dbpedia\.org/ontology/\w+'
+            unmatched_data = data
 
-            with open(metadata_input_path, 'r') as input_metadata:
-                for metadata in input_metadata:
-                    query = query_template.format(query_column=metadata)
-                    
+            while unmatched_data:
+                print(len(unmatched_data))
+                for i in range(0, len(unmatched_data), split_size):
+                    print(i)
+                    split = unmatched_data[i:i + split_size]
+                    input_metadata = make_input_metadata(split)
+
+                    query = query_template.format(input_metadata=input_metadata)
                     messages, run = get_response(query, client, updated_assistant, thread)
 
                     if messages:
                         message_content_value, run = get_response_value(messages, run)
+                        print(message_content_value)
+                        matches_1 = pattern_1.findall(message_content_value)
+                        if matches_1:
+                            print(matches_1)
+                            matched_metadata = append_metadata_output(matches_1, output_file, unmatched_data)
+                            matched_metadata_list.append(matched_metadata)
+                            append_usage_stats_output(output_stat_file, run)
+                        else:
+                            matches_2 = pattern_2.findall(message_content_value)
+                            if matches_2:
+                                print(matches_2)
+                                matched_metadata = append_metadata_output(matches_2, output_file, unmatched_data)
+                                matched_metadata_list.append(matched_metadata)
+                                append_usage_stats_output(output_stat_file, run)
 
-                        column_id = re.findall(column_id_pattern, metadata)
-                        property_ids = re.findall(dbpedia_property_pattern, message_content_value)
-                        
-                        if property_ids:
-                            mappings = [{"id": pid, "score": ""} for pid in property_ids]
-                            output_dict = {"id": column_id[0], "mappings": mappings}
-                            json_output = json.dumps(output_dict)
-                            output_file.write(json_output+ "\n")
+                unmatched_data = extract_unmatched_data(matched_metadata_list, unmatched_data)
+                print("Unmatched data", "\n", unmatched_data)
+                matched_metadata_list = []      
 
-                        if not property_ids:
-                            metadata_not_matched[str(metadata)] = 0
-
-                        output_stat_file.write(f"Usage {column_id[0]}: {run.usage}\n")
-
-                    if not messages:
-                        metadata_not_matched[str(metadata)] = 0
-
-            while metadata_not_matched:
-                metadata_matched = []
-                for key,value in metadata_not_matched.items():
-                    query = query_template.format(query_column=key)
-
-                    messages, run = get_response(query, client, updated_assistant, thread)
-
-                    if messages:
-                        metadata_matched.append(key)
-
-                        message_content_value, run = get_response_value(messages, run)
-                        column_id = re.findall(column_id_pattern, key)
-                        property_ids = re.findall(dbpedia_property_pattern, message_content_value)
-
-                        metadata_not_matched_stats[column_id[0]] = value + 1
-
-                        if property_ids:
-                            mappings = [{"id": pid, "score": ""} for pid in property_ids]
-                            output_dict = {"id": column_id[0], "mappings": mappings}
-                            json_output = json.dumps(output_dict)
-                            output_file.write(json_output+ "\n")
-
-                        if not property_ids:
-                            metadata_not_matched[str(metadata)] = 0
-
-                        output_stat_file.write(f"Usage {column_id[0]}: {run.usage}\n")
-
-                    else:
-                        metadata_not_matched[key] += 1
-
-                for item in metadata_matched:
-                    del metadata_not_matched[item]
-
-        end_time = time.time()
-        elapsed_time = end_time - start_time
-        output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
-        output_stat_file.write(f"Items not matched: \n {metadata_not_matched_stats}")
+            end_time = time.time()
+            elapsed_time = end_time - start_time
+            output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
 
     return
 
@@ -278,19 +337,30 @@ if __name__ == "__main__":
 
     load_dotenv()
 
-    assistant_name = 'sem-tab'
-    assistant_instruction = os.getenv('ASSISTANT_INSTRUCTION')
+    # IMPORT ENV
     gpt_model = os.getenv('GPT_MODEL')
-    metadata_input_path = os.getenv('METADATA_FILE')
-    rag_input_path = os.getenv('RAG_FILE')
-    vector_store_name = 'sem-tab-rag'
     api_key = os.getenv('GPT_API_KEY')
     temperature = float(os.getenv('TEMPERATURE'))
+    rag_input_path = os.getenv('RAG_FILE')
+    metadata_file = os.getenv('METADATA_FILE')
     output_folder = os.getenv('OUTPUT_FOLDER')
+
+    # SET ASSISTANT AND QUERY
+    query_template = query_template_hit5
+    assistant_instruction = assistant_instruction_hit5
+
+    # SET NAMES
+    assistant_name = 'sem-tab'
+    vector_store_name = 'sem-tab-rag'
+
+    # SET FOLDERS
     output_metadata = os.path.join(output_folder, 'output-metadata.json')
     output_stats = os.path.join(output_folder, 'output-stats.json')
-    query_template = os.getenv("QUERY_HIT5")
+
+    # SET SPLIT SIZE
+    split_size = 25
+    secondary_split_size = 10
 
     main(query_template, assistant_name, assistant_instruction, gpt_model, 
-         metadata_input_path, rag_input_path, vector_store_name, 
+         rag_input_path, vector_store_name, metadata_file, split_size, secondary_split_size,
          api_key, temperature, output_folder, output_metadata, output_stats)

@@ -1,7 +1,7 @@
-{"id": "84548468_0_5955155464119382182_Year", "mappings": [{"id": "http://dbpedia.org/ontology/statisticYear", "score": ""}]}
+{"id": "84548468_0_5955155464119382182_Year", "mappings": [{"id": "http://dbpedia.org/ontology/year", "score": ""}]}
 {"id": "64499281_8_7181683886563136802_Stadt", "mappings": [{"id": "http://dbpedia.org/ontology/city", "score": ""}]}
 {"id": "58891288_0_1117541047012405958_Director(s)", "mappings": [{"id": "http://dbpedia.org/ontology/director", "score": ""}]}
-{"id": "69381058_0_984708047398578866_Asia", "mappings": [{"id": "http://dbpedia.org/ontology/continent", "score": ""}]}
+{"id": "69381058_0_984708047398578866_Asia", "mappings": [{"id": "http://dbpedia.org/ontology/Place", "score": ""}]}
 {"id": "21362676_0_6854186738074119688_Director(s)", "mappings": [{"id": "http://dbpedia.org/ontology/director", "score": ""}]}
 {"id": "84675086_0_6386416780680710863_Genus", "mappings": [{"id": "http://dbpedia.org/ontology/genus", "score": ""}]}
 {"id": "21585935_0_294037497010176843_State", "mappings": [{"id": "http://dbpedia.org/ontology/state", "score": ""}]}
