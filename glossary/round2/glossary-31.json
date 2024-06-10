@@ -1,0 +1,14 @@
+{"id": "483", "label": "Danceability", "desc": "Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable."}
+{"id": "484", "label": "Energy", "desc": "Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy."}
+{"id": "485", "label": "Key", "desc": "The key the track is in. Integers map to pitches using standard Pitch Class notation . E.g. 0 = C, 1 = C\u266f/D\u266d, 2 = D, and so on."}
+{"id": "486", "label": "Loudness", "desc": "The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db."}
+{"id": "487", "label": "Mode", "desc": "Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0."}
+{"id": "488", "label": "Speechiness", "desc": "Speechiness detects the presence of spoken words in a track."}
+{"id": "489", "label": "Acousticness", "desc": "A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic."}
+{"id": "490", "label": "Instrumentalness", "desc": "Predicts whether a track contains no vocals. \u201cOoh\u201d and \u201caah\u201d sounds are treated as instrumental in this context."}
+{"id": "491", "label": "Liveness", "desc": "Detects the presence of an audience in the recording."}
+{"id": "492", "label": "Valence", "desc": "A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track."}
+{"id": "493", "label": "Tempo", "desc": "The overall estimated tempo of a track in beats per minute (BPM)"}
+{"id": "494", "label": "Duration", "desc": "The duration of the track in milliseconds."}
+{"id": "495", "label": "Time Signature", "desc": "An estimated overall time signature of a track."}
+{"id": "496", "label": "Liked", "desc": "1 for liked songs , 0 for disliked songs"}

@@ -1,0 +1,14 @@
+{"id": "405", "label": "Generation Date", "desc": "Date and Time when data was generated (e.g. \u201c12/19/2014 09:45:21\u201d)"}
+{"id": "406", "label": "Quarter", "desc": "Date Indicating to which calendar quarter the data pertains (e.g. 9/1/2016, 1/1/2017)"}
+{"id": "407", "label": "Indicator Set", "desc": "The Indicator Set Name (i.e. Polypharmacy)"}
+{"id": "408", "label": "Indicator Name", "desc": "Self-descriptive name of Indicator - 'Antipsychotic polypharmacy of two or more agents [2AP]\u2019 and 'Antipsychotic polypharmacy of three or more agents [3AP]'"}
+{"id": "409", "label": "Age Group", "desc": "Population Age Group (i.e. 0-17 or 18+)"}
+{"id": "410", "label": "Data Level", "desc": "Level of reported data (i.e. Provider, Plan, County, Region, or Statewide)"}
+{"id": "411", "label": "County", "desc": "OMH County Name (contains the county name for count level of detail; contains \u2018Region\u2019 for regional data and \u2018Statewide\u2019 for statewide datasets)"}
+{"id": "412", "label": "Region", "desc": "Region Name (contains Central NY, Hudson River, Long Island, New York City, Western, and Statewide values)"}
+{"id": "413", "label": "Provider", "desc": "Contains the Provider name for Provider-specific data; contains \u2018Region\u2019 for regional data and \u2018Statewide\u2019 for statewide datasets)"}
+{"id": "414", "label": "Eligible Population", "desc": "Number of Medicaid enrollees who are currently in the given population. Please refer to the supporting document for details on any Inclusion or Exclusion criteria."}
+{"id": "415", "label": "Polypharmacy Count", "desc": "Number of Medicaid enrollees who meet the threshold for each of the given Polypharmacy indicators. Please refer to the supporting document for details on any Inclusion or Exclusion criteria."}
+{"id": "416", "label": "Polypharmacy Percent", "desc": "Percentage of Medicaid enrollees meeting the threshold requirement for the given indicator divided by the Eligible Population."}
+{"id": "417", "label": "Above Statewide Avg", "desc": "For Provider-specific datasets, if the \u2018% of Population\u2019 value is greater than the Statewide percentage, then \u2018Yes\u2019 else \u2018No\u2019. N/A is used if the entry is an aggregated value or if the ELIGIBLE POPULATION value is less than 20."}
+{"id": "418", "label": "Regional Flag", "desc": "Regional percentage flagged for the given indicator"}

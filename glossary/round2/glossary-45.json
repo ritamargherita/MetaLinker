@@ -1,0 +1,13 @@
+{"id": "704", "label": "Date", "desc": "date from September 17, 2014 to November 17, 2021"}
+{"id": "705", "label": "Open", "desc": "the price at the beginning of the trading day"}
+{"id": "706", "label": "High", "desc": "the highest price reached that day"}
+{"id": "707", "label": "Low", "desc": "the lowest price reached that day"}
+{"id": "708", "label": "Close", "desc": "the price at the closing of the trading day"}
+{"id": "709", "label": "Volume", "desc": "how many Bitcoin were traded that day"}
+{"id": "710", "label": "Date", "desc": "date from September, 2014 to November, 2021"}
+{"id": "711", "label": "CPI", "desc": "he inflation index for the US for that month (cpi = consumer price index)"}
+{"id": "712", "label": "Open", "desc": "the index level at the beginning of the trading day"}
+{"id": "713", "label": "High", "desc": "the highest level reached that day"}
+{"id": "714", "label": "Low", "desc": "the lowest level reached that day"}
+{"id": "715", "label": "Close", "desc": "the level at the closing of the trading day"}
+{"id": "716", "label": "Volume", "desc": "how many shares in the companies that make up the index were traded that day"}

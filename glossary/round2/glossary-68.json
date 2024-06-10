@@ -1,0 +1,12 @@
+{"id": "1083", "label": "Spell Name", "desc": "Name of the spell"}
+{"id": "1084", "label": "Classes", "desc": "Which classes can learn this spell"}
+{"id": "1085", "label": "Spell Level", "desc": "The level of the spell (this is separate from the player's level), 0 is a cantrip"}
+{"id": "1086", "label": "Magic Type", "desc": "What type of magic the spell is"}
+{"id": "1087", "label": "Casting Time", "desc": "How long it takes the character to cast this spell"}
+{"id": "1088", "label": "Range", "desc": "How far the character can be from the target of the spell"}
+{"id": "1089", "label": "Duration", "desc": "How long the spell lasts"}
+{"id": "1090", "label": "Verbal", "desc": "Boolean - spell requires a verbal incantation"}
+{"id": "1091", "label": "Somatic", "desc": "Boolean - spell requires a precise hand motion"}
+{"id": "1092", "label": "Material", "desc": "Boolean - spell requires a physical object which is consumed"}
+{"id": "1093", "label": "Consumed", "desc": "What type of material is consumed when casting the spell"}
+{"id": "1094", "label": "Effect", "desc": "The effect casting spell creates"}

@@ -1,0 +1,12 @@
+{"id": "717", "label": "Date", "desc": "date of observations"}
+{"id": "718", "label": "Observed Weight", "desc": "Stone, pounds, ounces: observed weight"}
+{"id": "719", "label": "Total Ounces", "desc": "Total weight in ounces"}
+{"id": "720", "label": "Calories", "desc": "approximate calories consumed on that date. Calorie counts were taken for each food based on nutritional information and rounded up to the nearest 50 to facilitate easy record keeping. Where nutritional information was not available, calorie counts were estimated from previous experience and best guesses of ingredients and comparison to meals with available nutritional information."}
+{"id": "721", "label": "Cal/oz", "desc": "calories per ounce - calories for that day divided by weight in ounces"}
+{"id": "722", "label": "Donut Day", "desc": "day where main meal was bag of five jam donuts, 1 = TRUE, 0 = FALSE"}
+{"id": "723", "label": "Brisk Walk", "desc": "day included at least one brisk walk of over 20 minutes, 1 = TRUE, 0 = FALSE"}
+{"id": "724", "label": "Short Run", "desc": "day included at one short run of 2.5 miles, 1 = TRUE, 0 = FALSE"}
+{"id": "725", "label": "Wine Night", "desc": "day finished with at least one large glass of wine when not accompanied by other fluids, 1 = TRUE, 0 = FALSE"}
+{"id": "726", "label": "High Protein", "desc": "day involved what would be considered a high protein diet, 1 = TRUE, 0 = FALSE"}
+{"id": "727", "label": "Exercise Period", "desc": "signifies day during period of weight-based exercise; includes rest days as part of period, 1 = TRUE, 0 = FALSE"}
+{"id": "728", "label": "Weight Change", "desc": "change: resulting change in weight in oz, calculated from following day's observed weight"}

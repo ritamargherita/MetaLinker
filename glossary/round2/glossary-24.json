@@ -1,0 +1,19 @@
+{"id": "386", "label": "Active Cases India", "desc": "This column contains the total number of active cases in India on a particular day."}
+{"id": "387", "label": "Active Cases Change India", "desc": "This column contains the change in number of active cases in India on a particular day. (Can be positive/negative depending on whether the caseload increased or decreased)"}
+{"id": "388", "label": "Recovered India", "desc": "This column contains a cumulative total of people who have recovered (tested negative) from COVID-19 infection in India."}
+{"id": "389", "label": "Daily Recovered India", "desc": "This column contains the daily total number of people who have recovered (tested negative) from COVID-19 infection in India on a particular day."}
+{"id": "390", "label": "Deaths India", "desc": "This column contains a cumulative total of people who have died from COVID-19 infection in India."}
+{"id": "391", "label": "Daily Deaths India", "desc": "This column contains the daily total number of people who died from COVID-19 infection in India on a particular day."}
+{"id": "392", "label": "Tests Taken India", "desc": "This column contains total number of COVID-19 tests taken on the previous day in India."}
+{"id": "393", "label": "Total Infected India", "desc": "This column contains a cumulative total of people who have been infected with the COVID-19 virus in India."}
+{"id": "394", "label": "Source URL", "desc": "This column gives the source URL from where the API collects information, i.e., https://www.mohfw.gov.in/"}
+{"id": "395", "label": "Last Updated", "desc": "This column gives the data and time when the data was updated last."}
+{"id": "396", "label": "Misc Info", "desc": "Some misc information about the API, source, etc."}
+{"id": "397", "label": "State", "desc": "This column contains names of the states of India."}
+{"id": "398", "label": "Active Cases State", "desc": "This column contains total number of people who are currently infected with COVID-19 on a particular day in a particular state."}
+{"id": "399", "label": "Active Cases Change State", "desc": "This column contains the change in number of active cases in a particular state on a particular day."}
+{"id": "400", "label": "Recovered State", "desc": "This column contains a cumulative total of people who have recovered (tested negative) from COVID-19 infection in a particular state."}
+{"id": "401", "label": "Daily Recovered State", "desc": "This column contains the daily total number of people who have recovered (tested negative) from COVID-19 infection in a particular state on a particular day."}
+{"id": "402", "label": "Deaths State", "desc": "This column contains a cumulative total of people who have died from COVID-19 infection in a particular state."}
+{"id": "403", "label": "Daily Deaths State", "desc": "This column contains the daily total number of people who died from COVID-19 infection in a particular state on a particular day. h. regionData.totalInfected: This column contains a cumulative total of people who have been infected with the COVID-19 virus in a particular state."}
+{"id": "404", "label": "Total Infected State", "desc": "This column contains a cumulative total of people who have been infected with the COVID-19 virus in a particular state."}

@@ -1,0 +1,11 @@
+{"id": "451", "label": "Bond Girl", "desc": "\"Bond girl\" actor name (string)"}
+{"id": "452", "label": "Age", "desc": "\"Bond girl\" actor age (int)"}
+{"id": "453", "label": "Movie", "desc": "Movie title featuring \"Bond girl\" (string)"}
+{"id": "454", "label": "Year", "desc": "Movie year featuring \"Bond girl\" (int)"}
+{"id": "455", "label": "Bond Actor", "desc": "Actor portraying James Bond in movie featuring \"Bond girl\" (string)"}
+{"id": "456", "label": "Bond Actor Age", "desc": "Age of actor portraying James Bond in movie featuring \"Bond girl\" (int)"}
+{"id": "457", "label": "Director", "desc": "Director of movie featuring \"Bond girl\" (string)"}
+{"id": "458", "label": "Box Office", "desc": "Box office earning in U.S. dollars (float)"}
+{"id": "459", "label": "Adjusted Box Office", "desc": "2005 adjusted box office earning in U.S. dollars (float)"}
+{"id": "460", "label": "Budget", "desc": "Film budget in U.S. dollars (string)"}
+{"id": "461", "label": "Adjusted Budget", "desc": "2005 adjusted film budget in U.S. dollars (string)"}

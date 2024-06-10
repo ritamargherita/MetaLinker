@@ -1,0 +1,14 @@
+{"id": "497", "label": "Serial No", "desc": "Serial Number"}
+{"id": "498", "label": "Gender", "desc": "Gender- Male='M',Female='F'"}
+{"id": "499", "label": "10th %", "desc": "Secondary Education percentage- 10th Grade"}
+{"id": "500", "label": "Board", "desc": "Board of Education- Central/ Others"}
+{"id": "501", "label": "12th %", "desc": "Higher Secondary Education percentage- 12th Grade"}
+{"id": "502", "label": "HSE Spec", "desc": "Specialization in Higher Secondary Education"}
+{"id": "503", "label": "Degree %", "desc": "Degree Percentage"}
+{"id": "504", "label": "Degree Type", "desc": "Under Graduation(Degree type)- Field of degree education"}
+{"id": "505", "label": "Work Exp", "desc": "Work Experience"}
+{"id": "506", "label": "Employability %", "desc": "Employability test percentage ( conducted by college)"}
+{"id": "507", "label": "MBA Spec", "desc": "Post Graduation(MBA)- Specialization"}
+{"id": "508", "label": "MBA %", "desc": "MBA percentage"}
+{"id": "509", "label": "Placement", "desc": "Status of placement- Placed/Not placed"}
+{"id": "510", "label": "Salary Offered", "desc": "Salary offered by corporate to candidates"}

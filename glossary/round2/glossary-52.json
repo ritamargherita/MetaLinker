@@ -1,0 +1,11 @@
+{"id": "804", "label": "Book Cover", "desc": "URLs of book covers. Use this cover to download images yourselves if you need."}
+{"id": "805", "label": "Title", "desc": "Title of a book."}
+{"id": "806", "label": "Author", "desc": "Author of a book."}
+{"id": "807", "label": "Format", "desc": "Physical format of a book (i.e. paperback)"}
+{"id": "808", "label": "Rating", "desc": "Book's rating found on the bookdepository.com(NOTE: Due to difference between scraping and download time of the dataset, this information might be different from one on the website)"}
+{"id": "809", "label": "Price", "desc": "Book's current price found on the bookdepository.com (NOTE: Due to difference between scraping and download time of the dataset, this information might be different from one on the website)"}
+{"id": "810", "label": "Currency", "desc": "Currency of prices found in the dataset."}
+{"id": "811", "label": "Old Price", "desc": "Book's old price (if exists) found on the bookdepository.com (NOTE: Due to difference between scraping and download time of the dataset, this information might be different from one on the website)"}
+{"id": "812", "label": "ISBN", "desc": "ISBN number of a book."}
+{"id": "813", "label": "Category", "desc": "Category of a book found on the bookdepository.com"}
+{"id": "814", "label": "Cover Path", "desc": "Book's cover local path (after scraping)."}

@@ -1,0 +1,18 @@
+{"id": "1106", "label": "Date", "desc": "Date of observation of the row's data in YYYY-MM-DD format"}
+{"id": "1107", "label": "Country", "desc": "Country in which the the row's data was observed"}
+{"id": "1108", "label": "Cumulative Cases", "desc": "Cumulative number of confirmed cases as of the row's date, for the row's country"}
+{"id": "1109", "label": "Daily Cases", "desc": "Daily new number of confirmed cases on the row's date, for the row's country"}
+{"id": "1110", "label": "Active Cases", "desc": "Number of active cases (i.e., confirmed cases that still didn't recover nor die) on the row's date, for the row's country"}
+{"id": "1111", "label": "Cumulative Deaths", "desc": "Cumulative number of confirmed deaths as of the row's date, for the row's country"}
+{"id": "1112", "label": "Daily Deaths", "desc": "Daily new number of confirmed deaths on the row's date, for the row's country"}
+{"id": "1113", "label": "Continent", "desc": "Continent of the observed country"}
+{"id": "1114", "label": "Total Cases", "desc": "Total number of confirmed cases in the observed country"}
+{"id": "1115", "label": "Total Deaths", "desc": "Total number of confirmed deaths in the observed country"}
+{"id": "1116", "label": "Total Recoveries", "desc": "Total number of confirmed recoveries in the observed country"}
+{"id": "1117", "label": "Active Cases", "desc": "Number of active cases in the observed country"}
+{"id": "1118", "label": "Serious Cases", "desc": "Estimated number of cases in serious or critical conditions in the observed country"}
+{"id": "1119", "label": "Cases per M", "desc": "Number of total cases per 1 million population in the observed country"}
+{"id": "1120", "label": "Deaths per M", "desc": "Number of total deaths per 1 million population in the observed country"}
+{"id": "1121", "label": "Total Tests", "desc": "Number of total tests done in the observed country"}
+{"id": "1122", "label": "Tests per M", "desc": "Number of total test done per 1 million population in the observed country"}
+{"id": "1123", "label": "Population", "desc": "Population count in the observed country"}

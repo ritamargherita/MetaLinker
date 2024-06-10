@@ -1,0 +1,23 @@
+{"id": "131", "label": "Age Group", "desc": "Subject Age Group (10 year increments) as reported by the officer."}
+{"id": "132", "label": "Subject Key", "desc": "Key, generated daily, identifying unique subjects in the dataset using a character to character match of first name and last name. \"Null\" values indicate an \"anonymous\" or \"unidentified\" subject. Subjects of a Terry Stop are not required to present identification."}
+{"id": "133", "label": "Offense Number", "desc": "General Offense or Street Check number, relating the Terry Stop to the parent report. This field may have a one to many relationship in the data."}
+{"id": "134", "label": "Terry Stop Key", "desc": "Key identifying unique Terry Stop reports."}
+{"id": "135", "label": "Stop Resolution", "desc": "Resolution of the stop as reported by the officer."}
+{"id": "136", "label": "Weapon Type", "desc": "Type of weapon, if any, identified during a search or frisk of the subject. Indicates \"None\" if no weapons was found."}
+{"id": "137", "label": "Officer Key", "desc": "Key identifying unique officers in the dataset."}
+{"id": "138", "label": "Officer Birth Year", "desc": "Year of birth, as reported by the officer."}
+{"id": "139", "label": "Officer Gender", "desc": "Gender of the officer, as reported by the officer."}
+{"id": "140", "label": "Officer Race", "desc": "Race of the officer, as reported by the officer."}
+{"id": "141", "label": "Subject Race", "desc": "Perceived race of the subject, as reported by the officer."}
+{"id": "142", "label": "Subject Gender", "desc": "Perceived gender of the subject, as reported by the officer."}
+{"id": "143", "label": "Report Date", "desc": "Date the report was filed in the Records Management System (RMS). Not necessarily the date the stop occurred but generally within 1 day."}
+{"id": "144", "label": "Report Time", "desc": "Time the stop was reported in the Records Management System (RMS). Not the time the stop occurred but generally within 10 hours."}
+{"id": "145", "label": "Initial Call Type", "desc": "Initial classification of the call as assigned by 911."}
+{"id": "146", "label": "Final Call Type", "desc": "Final classification of the call as assigned by the primary officer closing the event."}
+{"id": "147", "label": "Call Receipt", "desc": "How the call was received by the communication center."}
+{"id": "148", "label": "Squad Assignment", "desc": "Functional squad assignment (not budget) of the officer as reported by the Data Analytics Platform (DAP)."}
+{"id": "149", "label": "Arrest Made", "desc": "Indicator of whether a \"physical arrest\" was made, of the subject, during the Terry Stop. Does not necessarily reflect a report of an arrest in the Records Management System (RMS)."}
+{"id": "150", "label": "Frisk Conducted", "desc": "Indicator of whether a \"frisk\" was conducted, by the officer, of the subject, during the Terry Stop."}
+{"id": "151", "label": "Precinct", "desc": "Precinct of the address associated with the underlying Computer Aided Dispatch (CAD) event. Not necessarily where the Terry Stop occurred."}
+{"id": "152", "label": "Sector", "desc": "Sector of the address associated with the underlying Computer Aided Dispatch (CAD) event. Not necessarily where the Terry Stop occurred."}
+{"id": "153", "label": "Beat", "desc": "Beat of the address associated with the underlying Computer Aided Dispatch (CAD) event. Not necessarily where the Terry Stop occurred."}

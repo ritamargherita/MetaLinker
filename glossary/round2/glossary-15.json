@@ -1,0 +1,10 @@
+{"id": "220", "label": "Movie", "desc": "Name of Movie"}
+{"id": "221", "label": "Year", "desc": "Year Movie was released"}
+{"id": "222", "label": "Duration", "desc": "Time duration of Movie in minutes"}
+{"id": "223", "label": "Genre", "desc": "Different Genre of Movies"}
+{"id": "224", "label": "Rating", "desc": "Rating given to Movie"}
+{"id": "225", "label": "Votes", "desc": "Votes given to Movie"}
+{"id": "226", "label": "Director", "desc": "Director of the Movie"}
+{"id": "227", "label": "Actor 1", "desc": "Main Actor of Movie"}
+{"id": "228", "label": "Actor 2", "desc": "Second Main Actor of Movie"}
+{"id": "229", "label": "Actor 3", "desc": "Third Main Actor of Movie"}

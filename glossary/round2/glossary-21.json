@@ -1,0 +1,20 @@
+{"id": "317", "label": "Pokemon", "desc": "Name of the Pokemon"}
+{"id": "318", "label": "Dex #", "desc": "The Pokemon's Pokedex Number"}
+{"id": "319", "label": "Norm. Dam.", "desc": "Damage Multiplier for Normal Types (attacks against the Pokemon)"}
+{"id": "320", "label": "Fire Dam.", "desc": "Damage Multiplier for Fire Types"}
+{"id": "321", "label": "Water Dam.", "desc": "Damage Multiplier for Water Types"}
+{"id": "322", "label": "Elec. Dam.", "desc": "Damage Multiplier for Electric Types"}
+{"id": "323", "label": "Grass Dam.", "desc": "Damage Multiplier for Grass Types"}
+{"id": "324", "label": "Ice Dam.", "desc": "Damage Multiplier for Ice Types"}
+{"id": "325", "label": "Fight Dam.", "desc": "Damage Multiplier for Fighting Types"}
+{"id": "326", "label": "Poison Dam.", "desc": "Damage Multiplier for Poison Types"}
+{"id": "327", "label": "Ground Dam.", "desc": "Damage Multiplier for Ground Types"}
+{"id": "328", "label": "Fly. Dam.", "desc": "Damage Multiplier for Flying Types"}
+{"id": "329", "label": "Psychic Dam.", "desc": "Damage Multiplier for Psychic Types"}
+{"id": "330", "label": "Bug Dam.", "desc": "Damage Multiplier for Bug Types"}
+{"id": "331", "label": "Rock Dam.", "desc": "Damage Multiplier for Rock Types"}
+{"id": "332", "label": "Ghost Dam.", "desc": "Damage Multiplier for Ghost Types"}
+{"id": "333", "label": "Dragon Dam.", "desc": "Damage Multiplier for Dragon Types"}
+{"id": "334", "label": "Dark Dam.", "desc": "Damage Multiplier for Dark Types"}
+{"id": "335", "label": "Steel Dam.", "desc": "Damage Multiplier for Steel Types"}
+{"id": "336", "label": "Fairy Dam.", "desc": "Damage Multiplier for Fairy Types"}

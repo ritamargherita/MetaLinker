@@ -1,0 +1,19 @@
+{"id": "38", "label": "Tracking Number", "desc": "The tracking number used to refer to this application or permit record in various DPD tracking systems."}
+{"id": "39", "label": "Land Use Type", "desc": "Type of Land Use components covered by the application (SEPA, Platting action, etc.)."}
+{"id": "40", "label": "Address", "desc": "Street address of the work site."}
+{"id": "41", "label": "Approval Description", "desc": "Brief description of the approval that is sought with this application. This is subject to change prior to issuance of the permit, but generally more stable if an issue date exists. Very long descriptions have been truncated."}
+{"id": "42", "label": "Building Use", "desc": "The broad category of use or occupancy for the building where work is proposed. Valid choices are Commercial, Industrial, Institutional, Multifamily, and Single Family/Duplex. Mixed use structures are generally represented as Commercial."}
+{"id": "43", "label": "Master Use Permit Type", "desc": "The Type of Master Use Permit (which generally indicates an increasing degree of public comment involved in the process)"}
+{"id": "44", "label": "Design Review", "desc": "Indicates if Design Review is part of the application process for this permit."}
+{"id": "45", "label": "Work Value", "desc": "The value of the work being reviewed (generally an estimate for the value of the future work) For example, the future construction cost of the building subject to Environmental review. Value is not collected for all permit types."}
+{"id": "46", "label": "Primary Applicant", "desc": "The name of the person or company listed on the application as the \u201cprimary applicant\u201d. This may be the property owner, contractor, design professional, or other type of agent."}
+{"id": "47", "label": "Application Date", "desc": "The date the application was accepted as a complete application. If no Application Date exists this generally means the application is in a very early stage."}
+{"id": "48", "label": "Decision Date", "desc": "The date the Decision was published. If an Application Date exists but no Decision Date exists, this generally means the application is still under review."}
+{"id": "49", "label": "Appeal Received", "desc": "Indicates whether an appeal to the published decision has been received."}
+{"id": "50", "label": "Issue Date", "desc": "The date the application was issued as a valid Master Use Permit."}
+{"id": "51", "label": "Status", "desc": "The current status in the application/review/publication lifecycle. Indicates the last process step that was fully completed."}
+{"id": "52", "label": "Contractors", "desc": "Contractor(s) who are associated with this permit."}
+{"id": "53", "label": "Permit Link", "desc": "Link to view full details and current status information about this permit at DPD\u2019s website"}
+{"id": "54", "label": "Latitude", "desc": "Latitude of the worksite where permit activity occurs"}
+{"id": "55", "label": "Longitude", "desc": "Longitude of the worksite where permit activity occurs"}
+{"id": "56", "label": "Mapping Coordinates", "desc": "Mapping coordinates for the permit address."}

@@ -1,0 +1,14 @@
+{"id": "105", "label": "Rank", "desc": "Official ranking, \"C\" denotes champion"}
+{"id": "106", "label": "Fighter", "desc": "Fighter name"}
+{"id": "107", "label": "Age", "desc": "Fighter age"}
+{"id": "108", "label": "Weight", "desc": "Fighter weight (in pounds)"}
+{"id": "109", "label": "Gender", "desc": "Fighter gender"}
+{"id": "110", "label": "Height", "desc": "Fighter height (in inches)"}
+{"id": "111", "label": "UFC Wins", "desc": "Wins in UFC organization"}
+{"id": "112", "label": "UFC Losses", "desc": "Loses in UFC organization"}
+{"id": "113", "label": "UFC Draws", "desc": "Draws in UFC organization. Blank if 0."}
+{"id": "114", "label": "UFC NC", "desc": "No contests in UFC organization. Blank if 0."}
+{"id": "115", "label": "Pro Wins", "desc": "Wins in any professional MMA organization."}
+{"id": "116", "label": "Pro Losses", "desc": "Loses in any professional MMA organization."}
+{"id": "117", "label": "Pro Draws", "desc": "Draws in any professional MMA organization. Blank if 0."}
+{"id": "118", "label": "Pro NC", "desc": "No contests in any professional MMA organization. Blank if 0."}

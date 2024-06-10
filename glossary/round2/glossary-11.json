@@ -1,0 +1,13 @@
+{"id": "154", "label": "Ticker", "desc": "An arrangement of characters, often related to the company name representing publicly-traded securities on an exchange."}
+{"id": "155", "label": "Trade Category", "desc": "Categories for a stock under which trading can be done. EQ stands for equity and only permits intra-day transactions and equity delivery."}
+{"id": "156", "label": "Announcement Date", "desc": "The date on which a company announces important details about a decision that has a high impact on business, or the company's share holders."}
+{"id": "157", "label": "Announcement Details", "desc": "Important details about a decision that has a high impact on business, or the company's share holders announced by the company."}
+{"id": "158", "label": "Open Price", "desc": "The price of a security at the beginning of the trading day."}
+{"id": "159", "label": "High Price", "desc": "The maximum price of a security in a given time period."}
+{"id": "160", "label": "Low Price", "desc": "The minimum price of a security in a given time period."}
+{"id": "161", "label": "Last Trade Price", "desc": "The last price that a trade occurred in a futures contract."}
+{"id": "162", "label": "Previous Close", "desc": "A security's closing price on the preceding time period of the one being referenced."}
+{"id": "163", "label": "Price Change", "desc": "The absolute percentage price change of the security's price since the previous day's close."}
+{"id": "164", "label": "Volume Traded", "desc": "The total number of shares or contracts transacted for a specified security during a specified time period."}
+{"id": "165", "label": "Market Activity", "desc": "How much trading activity took place on a given business day in the market as a whole or individual stock, in lakhs."}
+{"id": "166", "label": "Retrieval Time", "desc": "Time of retrieval in DD-MM-YYYY HH:MM:SS."}

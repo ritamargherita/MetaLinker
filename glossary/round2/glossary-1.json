@@ -1,0 +1,25 @@
+{"id": "0", "label": "Visitor ID", "desc": "A unique identifier for the visitor"}
+{"id": "1", "label": "Basket Click", "desc": "Did the visitor click on the shopping basket icon?"}
+{"id": "2", "label": "List Add", "desc": "Did the visitor add a product to their shopping cart on the 'list' page?"}
+{"id": "3", "label": "Detail Add", "desc": "Did the visitor add a product to their shopping cart on the 'detail' page?"}
+{"id": "4", "label": "Sort Products", "desc": "Did the visitor sort products on a page?"}
+{"id": "5", "label": "Image Picker", "desc": "Did the visitor use the image picker?"}
+{"id": "6", "label": "Account Page", "desc": "Did the visitor visit their account page?"}
+{"id": "7", "label": "Promo Banner", "desc": "Did the visitor click on a promo banner?"}
+{"id": "8", "label": "Wishlist Add", "desc": "Did the visitor add a product to their wishlist from the 'detail' page?"}
+{"id": "9", "label": "Product Dropdown", "desc": "Did the visitor interact with a product dropdown?"}
+{"id": "10", "label": "Mini Basket Close", "desc": "Did the visitor close their mini shopping basket?"}
+{"id": "11", "label": "Delivery FAQ", "desc": "Did the visitor view the delivery FAQ area on a product page?"}
+{"id": "12", "label": "Returns FAQ", "desc": "Did the visitor check the returns FAQ area on a product page?"}
+{"id": "13", "label": "Sign In", "desc": "Did the visitor sign in to the website?"}
+{"id": "14", "label": "Checkout View", "desc": "Did the visitor view the checkout?"}
+{"id": "15", "label": "Size Chart", "desc": "Did the visitor view a product size chart?"}
+{"id": "16", "label": "Delivery FAQ Page", "desc": "Did the visitor view the delivery FAQ page?"}
+{"id": "17", "label": "Account Upgrade", "desc": "Did the visitor view the account upgrade page?"}
+{"id": "18", "label": "Homepage View", "desc": "Did the visitor view the website homepage?"}
+{"id": "19", "label": "Mobile Device", "desc": "Was the visitor on a mobile device?"}
+{"id": "20", "label": "Desktop Device", "desc": "Was the visitor on a desktop device?"}
+{"id": "21", "label": "Tablet Device", "desc": "Was the visitor on a table device?"}
+{"id": "22", "label": "New/Returning", "desc": "Was the visitor new or returning?"}
+{"id": "23", "label": "UK Location", "desc": "Was the visitor located in the UK, based on their IP address?"}
+{"id": "24", "label": "Order Placed", "desc": "Did the customer place an order?"}

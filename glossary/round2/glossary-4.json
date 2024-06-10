@@ -1,0 +1,13 @@
+{"id": "57", "label": "Clinical Trial ID", "desc": "clinical trial ID in clinicaltrials.gov"}
+{"id": "58", "label": "Segment", "desc": "segment of the original description of the entity in the clinical trial eligibility criteria source text"}
+{"id": "59", "label": "Concept ID", "desc": "mapped concept ID in the standard vocabulary of the entity"}
+{"id": "60", "label": "Concept Name", "desc": "mapped concept name in the standard vocabulary of the entity"}
+{"id": "61", "label": "Domain", "desc": "domain ('Drug','Condition','Procedure','Device','Measurement') of the concept"}
+{"id": "62", "label": "Start Position", "desc": "the position in the criteria source text where the entity starts"}
+{"id": "63", "label": "End Position", "desc": "the position in the criteria source text where the entity ends"}
+{"id": "64", "label": "Temporal Attribute", "desc": "segment of the corresponded temporal attribute of the entity in original criteria text"}
+{"id": "65", "label": "Normalized Temporal Attribute", "desc": "normalized temporal attribute as the number of days"}
+{"id": "66", "label": "Numerical Attribute", "desc": "segment of the corresponded numerical attribute of the entity in original criteria text"}
+{"id": "67", "label": "Lower Bound", "desc": "lower bound of the normalized numerical attribute"}
+{"id": "68", "label": "Upper Bound", "desc": "upper bound of the normalized numerical attribute"}
+{"id": "69", "label": "Criteria Type", "desc": "1' for exclusion criteria and '0' for inclusion criteria"}

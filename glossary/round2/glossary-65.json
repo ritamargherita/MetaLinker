@@ -1,0 +1,12 @@
+{"id": "1042", "label": "Book ID", "desc": "A unique Identification number for each book."}
+{"id": "1043", "label": "Book Title", "desc": "The name under which the book was published."}
+{"id": "1044", "label": "Authors", "desc": "Names of the authors of the book. Multiple authors are delimited with -."}
+{"id": "1045", "label": "Average Rating", "desc": "The average rating of the book received in total."}
+{"id": "1046", "label": "ISBN", "desc": "Another unique number to identify the book, the International Standard Book Number."}
+{"id": "1047", "label": "EAN", "desc": "A 13-digit ISBN to identify the book, instead of the standard 11-digit ISBN."}
+{"id": "1048", "label": "Language", "desc": "Helps understand what is the primary language of the book. For instance, eng is standard for English."}
+{"id": "1049", "label": "Pages", "desc": "Number of pages the book contains."}
+{"id": "1050", "label": "Ratings", "desc": "Total number of ratings the book received."}
+{"id": "1051", "label": "Reviews", "desc": "Total number of written text reviews the book received."}
+{"id": "1052", "label": "Publication Date", "desc": "Date when the book was first published."}
+{"id": "1053", "label": "Publisher", "desc": "The name of the publisher."}

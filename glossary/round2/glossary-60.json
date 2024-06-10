@@ -1,0 +1,22 @@
+{"id": "940", "label": "Year", "desc": "Year in which the crime took place"}
+{"id": "941", "label": "Region", "desc": "Geographical administrative region names of Bangladesh Police (DMP = Dhaka Metropolitan Police, CMP = Chittagong Metropolitan Police, RMP = Rajshahi Metropolitan Police, RPMP - Rangpur Metropolitan Police, etc.)"}
+{"id": "942", "label": "Armed Robbery", "desc": "Violent robbery committed by an armed gang in a geographical unit during the year"}
+{"id": "943", "label": "Robbery", "desc": "Taking or attempting to take anything of value by force, threat of force, or by putting the victim in fear"}
+{"id": "944", "label": "Murder", "desc": "Intentional killing. Unlawful, as in not legally justified. Committed with malice aforethought,"}
+{"id": "945", "label": "Sensational Cases", "desc": "Speedy disposal of sensational and notorious cases like murder, rape, etc."}
+{"id": "946", "label": "Riot", "desc": "violent public disorder; specifically : a tumultuous disturbance of the public peace by three or more persons assembled together"}
+{"id": "947", "label": "Heinous Crimes", "desc": "Number of heinous crimes such as rape, dowry, grievous injury. domestic violence, etc."}
+{"id": "948", "label": "Kidnapping", "desc": "Unlawful taking and carrying away of a person by force or fraud or the unlawful seizure and detention of a person against his will."}
+{"id": "949", "label": "Police Attacks", "desc": "Number of attacks on Police in a geographical unit during the year"}
+{"id": "950", "label": "Burglary", "desc": "Breaking and entering and sometimes housebreaking. Illegal entry of a building with intent to commit a crime"}
+{"id": "951", "label": "Theft", "desc": "Taking of another person's property or services without that person's permission or consent with the intent to deprive the rightful owner of it."}
+{"id": "952", "label": "Other Crimes", "desc": "Number of other type of crimes in a geographical unit during the year"}
+{"id": "953", "label": "Arms Recovery", "desc": "Recovery cases under Arms Act in a geographical unit during the year"}
+{"id": "954", "label": "Explosive Recovery", "desc": "Explosive Recovery cases in a geographical unit during the year"}
+{"id": "955", "label": "Narcotics Recovery", "desc": "Narcotics Recovery cases in a geographical unit during the year"}
+{"id": "956", "label": "Smuggling Recovery", "desc": "Recovery cases of Smuggling in a geographical unit during the year"}
+{"id": "957", "label": "Total Recovery", "desc": "Total Recovery cases in a geographical unit during the year"}
+{"id": "958", "label": "Total Crimes", "desc": "Total crime cases in a geographical unit during the year"}
+{"id": "959", "label": "Statistics Year", "desc": "Year of statistics"}
+{"id": "960", "label": "Crime Rate", "desc": "Crime rate per 100,000 people of the country"}
+{"id": "961", "label": "Crime Rate Change", "desc": "% Change in crime rate compared to last year"}

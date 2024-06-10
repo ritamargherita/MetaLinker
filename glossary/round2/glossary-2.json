@@ -1,0 +1,13 @@
+{"id": "25", "label": "Username", "desc": "The name of the user, as they\u2019ve defined it."}
+{"id": "26", "label": "Location", "desc": "The user-defined location for this account\u2019s profile."}
+{"id": "27", "label": "Bio", "desc": "The user-defined UTF-8 string describing their account."}
+{"id": "28", "label": "Creation Date", "desc": "Time and date, when the account was created."}
+{"id": "29", "label": "Followers", "desc": "The number of followers an account currently has."}
+{"id": "30", "label": "Friends", "desc": "The number of friends an account currently has."}
+{"id": "31", "label": "Favourites", "desc": "The number of favourites an account currently has."}
+{"id": "32", "label": "Verified", "desc": "When true, indicates that the user has a verified account"}
+{"id": "33", "label": "Tweet Date", "desc": "UTC time and date when the Tweet was created"}
+{"id": "34", "label": "Tweet Text", "desc": "The actual UTF-8 text of the Tweet"}
+{"id": "35", "label": "Hashtags", "desc": "All the other hashtags posted in the tweet along with #covidvaccine"}
+{"id": "36", "label": "Source", "desc": "Utility used to post the Tweet, Tweets from the Twitter website have a source value - web"}
+{"id": "37", "label": "Retweeted", "desc": "Indicates whether this Tweet has been Retweeted by the authenticating user."}

@@ -1,0 +1,11 @@
+{"id": "1095", "label": "ID", "desc": "Unique identifier of news items"}
+{"id": "1096", "label": "Official Title", "desc": "Title of the news item according to the official media sources"}
+{"id": "1097", "label": "Official Headline", "desc": "Headline of the news item according to the official media sources"}
+{"id": "1098", "label": "News Outlet", "desc": "Original news outlet that published the news item"}
+{"id": "1099", "label": "Query Topic", "desc": "Query topic used to obtain the items in the official media sources"}
+{"id": "1100", "label": "Publication Date", "desc": "Date and time of the news items' publication"}
+{"id": "1101", "label": "Facebook Popularity", "desc": "Final value of the news items' popularity according to the social media source Facebook"}
+{"id": "1102", "label": "Google+ Popularity", "desc": "Final value of the news items' popularity according to the social media source Google+"}
+{"id": "1103", "label": "LinkedIn Popularity", "desc": "Final value of the news items' popularity according to the social media source LinkedIn"}
+{"id": "1104", "label": "Title Sentiment", "desc": "Sentiment score of the title, Higher the score, better is the impact or +ve sentiment and vice-versa. (Target Variable 1)"}
+{"id": "1105", "label": "Headline Sentiment", "desc": "Sentiment score of the text in the news items' headline. Higher the score, better is the impact or +ve sentiment. (Target Variable 2)"}

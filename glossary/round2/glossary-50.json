@@ -1,0 +1,15 @@
+{"id": "767", "label": "Bearing ID", "desc": "Unique identifier for the bearing"}
+{"id": "768", "label": "Target Class", "desc": "Target class, 1 for good and 0 for defective bearings"}
+{"id": "769", "label": "Experiment ID", "desc": "Unique identifier of the experiment"}
+{"id": "770", "label": "First Bearing ID", "desc": "Unique identifier of the bearing on the first position"}
+{"id": "771", "label": "Second Bearing ID", "desc": "Unique identifier of the bearing on the second position"}
+{"id": "772", "label": "Time (s)", "desc": "Time, measured in seconds"}
+{"id": "773", "label": "X-Accel 1", "desc": "Acceleration along the X-axis for the first bearing. Measured in m/s^2"}
+{"id": "774", "label": "Y-Accel 1", "desc": "Acceleration along the Y-axis for the first bearing. Measured in m/s^2"}
+{"id": "775", "label": "Z-Accel 1", "desc": "Acceleration along the Z-axis for the first bearing. Measured in m/s^2"}
+{"id": "776", "label": "X-Accel 2", "desc": "Acceleration along the X-axis for the second bearing. Measured in m/s^2"}
+{"id": "777", "label": "Y-Accel 2", "desc": "Acceleration along the Y-axis for the second bearing. Measured in m/s^2"}
+{"id": "778", "label": "Z-Accel 2", "desc": "Acceleration along the Z-axis for the second bearing. Measured in m/s^2"}
+{"id": "779", "label": "RPM", "desc": "Rotation speed. Revolutions per minute"}
+{"id": "780", "label": "Speed (Hz)", "desc": "Rotation speed. Speed in Hertz"}
+{"id": "781", "label": "Motor Power (W)", "desc": "The power of the motor at a time. Measured in Watts"}

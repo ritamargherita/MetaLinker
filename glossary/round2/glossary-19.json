@@ -1,0 +1,28 @@
+{"id": "278", "label": "Anime ID", "desc": "Anime Planet ID of the anime. (e.g. 1)."}
+{"id": "279", "label": "Anime Name", "desc": "full name of the anime. (e.g. FLCL)"}
+{"id": "280", "label": "Alternate Name", "desc": "another way to call the anime. (e.g. Furi Kuri)"}
+{"id": "281", "label": "Average Score", "desc": "average score of the anime given from all users in Anime Planet database. (e.g. 8.78)"}
+{"id": "282", "label": "Score Count", "desc": "number of users who give a score to the anime. (e.g. 1241)"}
+{"id": "283", "label": "Tags", "desc": "comma separated list of tags for this anime. (e.g. Comedy, Mecha, Sci Fi, Outer Space, Original Work)"}
+{"id": "284", "label": "Content Warnings", "desc": "comma separated list of content warning tags. (e.g. Explicit Violence, Mature Themes, Nudity)"}
+{"id": "285", "label": "Type", "desc": "TV, movie, OVA, etc. (e.g. TV)."}
+{"id": "286", "label": "Chapter Count", "desc": "number of chapters. (e.g. 26)"}
+{"id": "287", "label": "Finished", "desc": "True if the anime finished when I did the data scraping. False is the anime is on going in that moment."}
+{"id": "288", "label": "Duration", "desc": "duration of the anime in minutes (e.g 60)"}
+{"id": "289", "label": "Start Year", "desc": "year when the anime start the transmission. (e.g. 2016)"}
+{"id": "290", "label": "End Year", "desc": "year when the anime finish the transmission. (e.g. 2017)"}
+{"id": "291", "label": "Release Season", "desc": "season and year of release (e.g. Fall 2000)"}
+{"id": "292", "label": "Studios", "desc": "comma separated list of studios (e.g. Sunrise)"}
+{"id": "293", "label": "Synopsis", "desc": "synopsis of the anime"}
+{"id": "294", "label": "Anime URL", "desc": "url to the main page of anime in Anime Planet (e.g. https://www.anime-planet.com/anime/vandread)"}
+{"id": "295", "label": "Recommended Anime ID", "desc": "Anime Planet ID of the recommended anime. (e.g. 1)."}
+{"id": "296", "label": "Recommendation Agreement", "desc": "number of users that was agreed with the recommendation."}
+{"id": "297", "label": "User ID", "desc": "non identifiable randomly generated user id."}
+{"id": "298", "label": "Anime ID", "desc": "Anime-planet ID of the anime."}
+{"id": "299", "label": "User Score", "desc": "score between 1 to 5 given by the user in scale of 0.5. 0 if the user didn't assign a score."}
+{"id": "300", "label": "State ID", "desc": "state ID from this anime in the anime list of this user."}
+{"id": "301", "label": "Episodes Watched", "desc": "numbers of episodes watched by the user."}
+{"id": "302", "label": "Rated Anime ID", "desc": "Anime-planet ID of the anime that this user has rated."}
+{"id": "303", "label": "User Rating", "desc": "rating that this user has assigned."}
+{"id": "304", "label": "Status ID", "desc": "ID of the status"}
+{"id": "305", "label": "Status Description", "desc": "description of the status"}

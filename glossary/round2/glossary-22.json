@@ -1,0 +1,34 @@
+{"id": "337", "label": "Map Name", "desc": "Names of the maps"}
+{"id": "338", "label": "Total Bans", "desc": "Total number of bans on a map"}
+{"id": "339", "label": "Day 1 Bans", "desc": "Bans on the map on day 1 of the tournament"}
+{"id": "340", "label": "Day 2 Bans", "desc": "Bans on the map on day 2 of the tournament"}
+{"id": "341", "label": "Day 3 Bans", "desc": "Bans on the map on day 3 of the tournament"}
+{"id": "342", "label": "Day 4 Bans", "desc": "Bans on the map on day 4 of the tournament"}
+{"id": "343", "label": "Day 5 Bans", "desc": "Bans on the map on day 5 of the tournament"}
+{"id": "344", "label": "Day 6 Bans", "desc": "Bans on the map on day 6 of the tournament"}
+{"id": "345", "label": "Day 7 Bans", "desc": "Bans on the map on day 7 of the tournament"}
+{"id": "346", "label": "Total Picks", "desc": "Total number of times a map was chosen"}
+{"id": "347", "label": "Day 1 Picks", "desc": "Number of times a map was picked on day 1"}
+{"id": "348", "label": "Day 2 Picks", "desc": "Number of times a map was picked on day 2"}
+{"id": "349", "label": "Day 3 Picks", "desc": "Number of times a map was picked on day 3"}
+{"id": "350", "label": "Day 4 Picks", "desc": "Number of times a map was picked on day 4"}
+{"id": "351", "label": "Day 5 Picks", "desc": "Number of times a map was picked on day 5"}
+{"id": "352", "label": "Day 6 Picks", "desc": "Number of times a map was picked on day 6"}
+{"id": "353", "label": "Day 7 Picks", "desc": "Number of times a map was picked on day 7"}
+{"id": "354", "label": "Player", "desc": "Name of the player."}
+{"id": "355", "label": "Country", "desc": "The country where the player belongs to."}
+{"id": "356", "label": "Team", "desc": "The team which the player represents."}
+{"id": "357", "label": "Agents Used", "desc": "All the agents used by each player in the tournament."}
+{"id": "358", "label": "Maps Played", "desc": "Number of times the maps were played (with repetition)."}
+{"id": "359", "label": "Kills", "desc": "Number of kills."}
+{"id": "360", "label": "Deaths", "desc": "Number of deaths."}
+{"id": "361", "label": "Assists", "desc": "Number of assists."}
+{"id": "362", "label": "K/D Ratio", "desc": "Kill/Death ratio"}
+{"id": "363", "label": "KD+A Ratio", "desc": "(Kills+(Assists/2))/Deaths ratio"}
+{"id": "364", "label": "ACS/Map", "desc": "Average Combat Score/Map ratio."}
+{"id": "365", "label": "Kills/Map", "desc": "Kills/Map ratio."}
+{"id": "366", "label": "Deaths/Map", "desc": "Deaths/Map ratio."}
+{"id": "367", "label": "Assists/Map", "desc": "Assists/Map ratio."}
+{"id": "368", "label": "Map Name", "desc": "Names of the maps."}
+{"id": "369", "label": "Attacking Wins", "desc": "Number of rounds won in the Attacking phase"}
+{"id": "370", "label": "Defending Wins", "desc": "Number of rounds won in the Defending phase"}

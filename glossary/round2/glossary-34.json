@@ -1,0 +1,12 @@
+{"id": "521", "label": "Season", "desc": "Football season year"}
+{"id": "522", "label": "Position", "desc": "Final position of the team for that season"}
+{"id": "523", "label": "Team", "desc": "Name of the team"}
+{"id": "524", "label": "Games", "desc": "Number of games played"}
+{"id": "525", "label": "Wins", "desc": "Number of wins"}
+{"id": "526", "label": "Draws", "desc": "Number of draws"}
+{"id": "527", "label": "Losses", "desc": "Number of losses"}
+{"id": "528", "label": "Goals Scored", "desc": "Number of goals scored"}
+{"id": "529", "label": "Goals Conceded", "desc": "Number of goals conceded"}
+{"id": "530", "label": "GD", "desc": "Goal Difference"}
+{"id": "531", "label": "Points", "desc": "Number of points in that season"}
+{"id": "532", "label": "Qualification", "desc": "Qualified for European cup or relegated to a lower tier league"}

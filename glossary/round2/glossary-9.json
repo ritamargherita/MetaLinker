@@ -1,0 +1,12 @@
+{"id": "119", "label": "Shoe ID", "desc": "Shoe identifier"}
+{"id": "120", "label": "Cards Remaining", "desc": "Number of cards remaining in the shoe at the start of this round"}
+{"id": "121", "label": "Dealer Up", "desc": "Dealer's Up (visible) card"}
+{"id": "122", "label": "Player Cards", "desc": "Player's initial 2 cards before making any decisions"}
+{"id": "123", "label": "Dealer End", "desc": "Dealer's cards at the end of the round"}
+{"id": "124", "label": "Dealer Value", "desc": "Value of the Dealer's hand value at the end of the round"}
+{"id": "125", "label": "Player End", "desc": "Player's cards at the end of the round"}
+{"id": "126", "label": "Player Value", "desc": "Player's hand(s) value(s) at the end of the round"}
+{"id": "127", "label": "Player Actions", "desc": "Sequence of actions taken by the player"}
+{"id": "128", "label": "Hi-Lo Run", "desc": "Hi-Lo run count at the start of the round"}
+{"id": "129", "label": "Hi-Lo True", "desc": "Hi-Lo true count at the start of the round"}
+{"id": "130", "label": "Round Result", "desc": "Amount won/lost this round"}

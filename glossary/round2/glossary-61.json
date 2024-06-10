@@ -1,0 +1,10 @@
+{"id": "962", "label": "Date", "desc": "the date in which the coin had that price and volume"}
+{"id": "963", "label": "Low", "desc": "the lowwst price of that day in USD dollars"}
+{"id": "964", "label": "High", "desc": "the highest price of that day in USD dollars"}
+{"id": "965", "label": "Open", "desc": "the price when that day started in the markets in USD dollars"}
+{"id": "966", "label": "Close", "desc": "the price when that day closed in the markets in USD dollars"}
+{"id": "967", "label": "Volume", "desc": "the quantity of that coin that was traded in that day"}
+{"id": "968", "label": "Volume USD", "desc": "the quantity of that coin that was traded in that day in USD dollars"}
+{"id": "969", "label": "Symbol", "desc": "the symbol of the cryptocurrency"}
+{"id": "970", "label": "Logo", "desc": "the image url containing the cryptocurrency logo"}
+{"id": "971", "label": "Name", "desc": "the full name of the cryptocurrency"}

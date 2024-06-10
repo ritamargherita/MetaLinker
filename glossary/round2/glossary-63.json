@@ -1,0 +1,21 @@
+{"id": "1008", "label": "Company Resource", "desc": "DBpedia resource of the company"}
+{"id": "1009", "label": "Company Type", "desc": "Public or Private Company"}
+{"id": "1010", "label": "Founded", "desc": "Date or Year of foundation"}
+{"id": "1011", "label": "Location", "desc": "Location of the company"}
+{"id": "1012", "label": "Products/Services", "desc": "Products and services provided by the company"}
+{"id": "1013", "label": "Industry", "desc": "Sector or Industry the company works in"}
+{"id": "1014", "label": "Employees", "desc": "Number of employees in the company"}
+{"id": "1015", "label": "Assets", "desc": "Asset holdings of the company"}
+{"id": "1016", "label": "Equity", "desc": "Equity of the company"}
+{"id": "1017", "label": "Revenue", "desc": "Revenue of the company"}
+{"id": "1018", "label": "Profit", "desc": "Profit of the company"}
+{"id": "1019", "label": "Resource Link", "desc": "DBpedia resource lin"}
+{"id": "1020", "label": "Registered Name", "desc": "Registered Name"}
+{"id": "1021", "label": "Company Type", "desc": "Public or Private"}
+{"id": "1022", "label": "Founded Date", "desc": "Year or Month of Foundation"}
+{"id": "1023", "label": "Location", "desc": "Location of the Company"}
+{"id": "1024", "label": "Products/Services", "desc": "List of Products and Services"}
+{"id": "1025", "label": "Industry", "desc": "Industry the company works in"}
+{"id": "1026", "label": "Employees", "desc": "Number of Employees"}
+{"id": "1027", "label": "Assets", "desc": "Assets holdings"}
+{"id": "1028", "label": "Profit", "desc": "Profits made by the company"}

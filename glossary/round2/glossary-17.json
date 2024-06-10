@@ -1,0 +1,12 @@
+{"id": "247", "label": "Age", "desc": "Patient's Age in years (Numeric)"}
+{"id": "248", "label": "Gender", "desc": "Patient's Gender Male as 1 Female as 0 (Nominal)"}
+{"id": "249", "label": "Chest Pain", "desc": "Type of chest pain categorized into 1 typical, 2 typical angina, 3 non-anginal pain, 4 asymptomatic (Categorical)"}
+{"id": "250", "label": "Resting BP", "desc": "Level of blood pressure at resting mode in mm/HG (Numerical)"}
+{"id": "251", "label": "Cholesterol", "desc": "Serum cholestrol in mg/dl (Numeric)"}
+{"id": "252", "label": "Fasting BS", "desc": "Blood sugar levels on fasting > 120 mg/dl represents as 1 in case of true and 0 as false"}
+{"id": "253", "label": "ECG", "desc": "result of electrocardiogram while at rest are represented in 3 distinct values 0 : Normal 1: Abnormality in ST-T wave 2: Left ventricular hypertrophy"}
+{"id": "254", "label": "Max HR", "desc": "Maximum heart rate achieved (Numeric)"}
+{"id": "255", "label": "Angina", "desc": "Angina induced by exercise 0 depicting NO 1 depicting Yes (Nominal)"}
+{"id": "256", "label": "ST Depression", "desc": "Exercise induced ST-depression in comparison with the state of rest (Numeric)"}
+{"id": "257", "label": "ST Slope", "desc": "ST segment measured in terms of slope during peak exercise 0: Normal 1: Upsloping 2: Flat 3: Downsloping"}
+{"id": "258", "label": "Heart Risk", "desc": "Heart Risk 1 means heart disease 0 means normal"}

@@ -1,0 +1,17 @@
+{"id": "230", "label": "County/LDSS", "desc": "Applicable county or Local District for Social Services (LDSS) in New York State. St. Regis Mohawk is a considered a LDSS and is reported as a separate county for this purpose."}
+{"id": "231", "label": "Reporting Year", "desc": "Reporting year for foster care activity."}
+{"id": "232", "label": "Adoptive Home Days", "desc": "This is the total number of care days provided for children in an adoptive home. Adoptive homes include adoptive and/or adoption subsidized homes."}
+{"id": "233", "label": "Agency Boarding Home Days", "desc": "This is the total number of care days provided for children in foster care residing in an Agency Operated Boarding Home."}
+{"id": "234", "label": "Relative Foster Home Days", "desc": "This is the total number of care days provided for children in foster care residing with a relative. The relative has been approved as a foster parent."}
+{"id": "235", "label": "Non-Relative Foster Home Days", "desc": "This is the total number of care days provided for children in foster care residing in a regular non-relative foster home."}
+{"id": "236", "label": "Congregate Care Home Days", "desc": "This is the total number of care days provided for children in foster care residing in a Congregate Care home."}
+{"id": "237", "label": "Group Residence Days", "desc": "This is the total number of care days provided for children in foster care residing in a group residence. These are also considered congregate care for youth."}
+{"id": "238", "label": "Institution Days", "desc": "This is the total number of care days provided for children in foster care residing in an Institution. This facility type is a larger facility for congregate care."}
+{"id": "239", "label": "Independent Living Days", "desc": "This is the total number of care days provided for children in foster care, but living on their own. These young adults have been approved by OCFS to live on their own."}
+{"id": "240", "label": "Residential Treatment Days", "desc": "This is the total number of care days provided for children in foster care residing in residential treatment facilities, skilled nursing facilities, specialized schools, etc."}
+{"id": "241", "label": "Total Facility Days", "desc": "This is the total number of care days provided for children in foster care residing in all facility types."}
+{"id": "242", "label": "Admissions", "desc": "Total children admitted to foster care in the calendar year."}
+{"id": "243", "label": "Discharges", "desc": "Total number of children discharged from care during the calendar year."}
+{"id": "244", "label": "Point in Time", "desc": "Total number of children in Foster Care on December 31 of the calendar year. This is point in time data."}
+{"id": "245", "label": "Children Served", "desc": "Total number of children served during the year. This includes children that were admitted in previous years as well as those admitted during the given year. As a result, this is usually higher than both admissions and point in time in care."}
+{"id": "246", "label": "CPS Reports Indicated", "desc": "This is the total number of Child Protective Services (CPS) reports that are indicated for abuse/maltreatment during a calendar year."}
