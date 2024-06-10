@@ -1,0 +1,10 @@
+{"id": "473", "label": "pH", "desc": "pH of water"}
+{"id": "474", "label": "Soap Precipitation", "desc": "Capacity of water to precipitate soap in mg/L"}
+{"id": "475", "label": "TDS", "desc": "Total dissolved solids in ppm"}
+{"id": "476", "label": "Chloramines", "desc": "Amount of Chloramines in ppm"}
+{"id": "477", "label": "Sulfates", "desc": "Amount of Sulfates dissolved in mg/L"}
+{"id": "478", "label": "Conductivity", "desc": "Electrical conductivity of water in \u03bcS/cm"}
+{"id": "479", "label": "Organic Carbon", "desc": "Amount of organic carbon in ppm"}
+{"id": "480", "label": "THMs", "desc": "Amount of Trihalomethanes in \u03bcg/L"}
+{"id": "481", "label": "Turbidity", "desc": "Measure of light emiting property of water in NTU (Nephelometric Turbidity Units)"}
+{"id": "482", "label": "Safe for Consumption", "desc": "Indicates if water is safe for human consumption"}

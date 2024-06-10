@@ -1,0 +1,14 @@
+{"id": "865", "label": "L-Ankle Accel X", "desc": "acceleration from the left-ankle sensor (X axis)"}
+{"id": "866", "label": "L-Ankle Accel Y", "desc": "acceleration from the left-ankle sensor (Y axis)"}
+{"id": "867", "label": "L-Ankle Accel Z", "desc": "acceleration from the left-ankle sensor (Z axis)"}
+{"id": "868", "label": "L-Ankle Gyro X", "desc": "gyro from the left-ankle sensor (X axis)"}
+{"id": "869", "label": "L-Ankle Gyro Y", "desc": "gyro from the left-ankle sensor (Y axis)"}
+{"id": "870", "label": "L-Ankle Gyro Z", "desc": "gyro from the left-ankle sensor (Z axis)"}
+{"id": "871", "label": "R-Lower Arm Accel X", "desc": "acceleration from the right-lower-arm sensor (X axis)"}
+{"id": "872", "label": "R-Lower Arm Accel Y", "desc": "acceleration from the right-lower-arm sensor (Y axis)"}
+{"id": "873", "label": "R-Lower Arm Accel Z", "desc": "acceleration from the right-lower-arm sensor (Z axis)"}
+{"id": "874", "label": "R-Lower Arm Gyro X", "desc": "gyro from the right-lower-arm sensor (X axis)"}
+{"id": "875", "label": "R-Lower Arm Gyro Y", "desc": "gyro from the right-lower-arm sensor (Y axis)"}
+{"id": "876", "label": "R-Lower Arm Gyro Z", "desc": "gyro from the right-lower-arm sensor (Z axis)"}
+{"id": "877", "label": "Activity", "desc": "corresponding activity"}
+{"id": "878", "label": "Volunteer", "desc": "volunteer number"}

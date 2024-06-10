@@ -1,0 +1,16 @@
+{"id": "879", "label": "ID", "desc": "non identifiable randomly generated character id."}
+{"id": "880", "label": "Full Name", "desc": "full name of this character."}
+{"id": "881", "label": "Alias", "desc": "another way to call the character."}
+{"id": "882", "label": "Gender", "desc": "gender of the this character."}
+{"id": "883", "label": "Hair Color", "desc": "hair color of this character."}
+{"id": "884", "label": "Love Rank", "desc": "love rank based in users preference."}
+{"id": "885", "label": "Hate Rank", "desc": "hate rank based in users preference."}
+{"id": "886", "label": "Eye Color", "desc": "eye color of the character."}
+{"id": "887", "label": "Birthday", "desc": "date of his birthday."}
+{"id": "888", "label": "Blood Type", "desc": "blood type of the character."}
+{"id": "889", "label": "Tags", "desc": "comma separated list of tags for this character."}
+{"id": "890", "label": "Loves", "desc": "how many users love this character."}
+{"id": "891", "label": "Hates", "desc": "how many users hate this character."}
+{"id": "892", "label": "Description", "desc": "short text with description if this character."}
+{"id": "893", "label": "Anime Planet URL", "desc": "url to the main page of character in Anime Planet."}
+{"id": "894", "label": "User Preference", "desc": "True if the user loves the character, False if he hates it."}

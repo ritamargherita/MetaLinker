@@ -1,0 +1,11 @@
+{"id": "209", "label": "Activity Type", "desc": "Type of activity investigated by the case (Housing/Zoning case, Unfit Buildings, etc.)"}
+{"id": "210", "label": "Address", "desc": "Street address of the case investigation."}
+{"id": "211", "label": "Scope", "desc": "A brief description of the proposed scope for the case."}
+{"id": "212", "label": "Case Sub-Type", "desc": "The sub-type of the Case. For example, a \u201cHOUSING\u201d type of CITATION, etc."}
+{"id": "213", "label": "Open Date", "desc": "The date that the case was opened. (This date may have been preceded by inspections on an allegation, with the case opened only after determining that a violation exists)."}
+{"id": "214", "label": "Last Inspection Date", "desc": "The date of the last Compliance inspection so far."}
+{"id": "215", "label": "Last Inspection Result", "desc": "The result of the last Compliance inspection so far. Note that a \u201cFailed\u201d inspection may result when even a single item is not yet in compliance"}
+{"id": "216", "label": "Compliance Status", "desc": "Indicates the type of compliance achieved, or the final outcome of the case. \u201cOpen\u201d indicates that work is still in progress to achieve compliance."}
+{"id": "217", "label": "Latitude", "desc": "Latitude of the address where the case is being investigated."}
+{"id": "218", "label": "Longitude", "desc": "Longitude of the address where the case is being investigated."}
+{"id": "219", "label": "Coordinates", "desc": "Mapping coordinates of the address where the case is being investigated."}

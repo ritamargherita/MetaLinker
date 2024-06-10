@@ -1,0 +1,12 @@
+{"id": "70", "label": "Activity Type", "desc": "Type of activity covered by the permit."}
+{"id": "71", "label": "Work Description", "desc": "Brief description of the work that will be done under this permit. This is subject to change prior to issuance of the permit, but generally more stable if an issue date exists. Very long descriptions have been truncated."}
+{"id": "72", "label": "Work Subclass", "desc": "Subclassification for type of work being proposed. Valid choices will vary depending on the permit type."}
+{"id": "73", "label": "Project Complexity", "desc": "An indicator of the complexity of the project proposed. Easier projects can be issued without plan review; more complex projects generally require plan submittal and review."}
+{"id": "74", "label": "Work Value", "desc": "The value of the work being proposed. The value displayed (if any) represents the best available information to date, and is subject to change as more information becomes available. Value is not collected for all permit types."}
+{"id": "75", "label": "Application Date", "desc": "The date the application was accepted as a complete submittal. If no Application Date exists this generally means the application is in a very early stage."}
+{"id": "76", "label": "Issue Date", "desc": "The date the application was issued as a valid permit. If an Application Date exists but no Issue Date exists, this generally means the application is still under review."}
+{"id": "77", "label": "Final Date", "desc": "The date the permit had all its inspections completed. If an Issue Date exists but no Final Date exists, this generally means the permit is still under inspection."}
+{"id": "78", "label": "Expiration Date", "desc": "The date the application is due to expire. Generally, this is the date by which work is supposed to be completed (baring renewals or further extensions). If no Expiration Date exists, this generally means the application is has not been issued yet."}
+{"id": "79", "label": "Status", "desc": "The current status in the application/review/inspection lifecycle. Indicates the last process step that was fully completed."}
+{"id": "80", "label": "Latitude", "desc": "Latitude of the worksite where permit activity occurs. May be missing for a small number of permits considered \"Unaddressable\""}
+{"id": "81", "label": "Longitude", "desc": "Longitude of the worksite where permit activity occurs. May be missing for a small number of permits considered \"Unaddressable\""}

@@ -1,0 +1,12 @@
+{"id": "655", "label": "Symbol", "desc": "The symbol or the reference number of the company"}
+{"id": "656", "label": "Company", "desc": "Name of the company"}
+{"id": "657", "label": "Trading Name", "desc": "The trading name of the company"}
+{"id": "658", "label": "Sector", "desc": "The sector in which the company operates"}
+{"id": "659", "label": "Date", "desc": "The date of the stock price"}
+{"id": "660", "label": "High", "desc": "The highest price of the stock at that day"}
+{"id": "661", "label": "Low", "desc": "The lowest price of the stock at that day"}
+{"id": "662", "label": "Change", "desc": "The change in price from the last day"}
+{"id": "663", "label": "Change %", "desc": "The percentage of the change"}
+{"id": "664", "label": "Volume", "desc": "The volume of the trades for the day"}
+{"id": "665", "label": "Value", "desc": "The value of the trades for the day"}
+{"id": "666", "label": "Trades", "desc": "The number of trades for the day"}

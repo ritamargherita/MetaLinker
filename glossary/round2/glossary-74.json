@@ -1,0 +1,16 @@
+{"id": "1163", "label": "Job", "desc": "job : type of job (categorical: \"admin.\",\"unknown\",\"unemployed\",\"management\",\"housemaid\",\"entrepreneur\", \"student\",\"blue-collar\",\"self-employed\",\"retired\",\"technician\",\"services\")"}
+{"id": "1164", "label": "Marital", "desc": "marital : marital status (categorical: \"married\",\"divorced\",\"single\"; note: \"divorced\" means divorced or widowed)"}
+{"id": "1165", "label": "Education", "desc": "education (categorical: \"unknown\",\"secondary\",\"primary\",\"tertiary\")"}
+{"id": "1166", "label": "Default", "desc": "default: has credit in default? (binary: \"yes\",\"no\")"}
+{"id": "1167", "label": "Balance", "desc": "balance: average yearly balance, in euros (numeric)"}
+{"id": "1168", "label": "Housing", "desc": "housing: has housing loan? (binary: \"yes\",\"no\""}
+{"id": "1169", "label": "Loan", "desc": "loan: has personal loan? (binary: \"yes\",\"no\")"}
+{"id": "1170", "label": "Contact", "desc": "contact: contact communication type (categorical: \"unknown\",\"telephone\",\"cellular\")"}
+{"id": "1171", "label": "Day", "desc": "day: last contact day of the month (numeric)"}
+{"id": "1172", "label": "Month", "desc": "month: last contact month of year (categorical: \"jan\", \"feb\", \"mar\", ..., \"nov\", \"dec\")"}
+{"id": "1173", "label": "Duration", "desc": "duration: last contact duration, in seconds (numeric)"}
+{"id": "1174", "label": "Campaign", "desc": "campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)"}
+{"id": "1175", "label": "Pdays", "desc": "pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)"}
+{"id": "1176", "label": "Previous", "desc": "revious: number of contacts performed before this campaign and for this client (numeric)"}
+{"id": "1177", "label": "Poutcome", "desc": "poutcome: outcome of the previous marketing campaign (categorical: \"unknown\",\"other\",\"failure\",\"success\")"}
+{"id": "1178", "label": "Subscription", "desc": "y - has the client subscribed a term deposit? (binary: \"yes\",\"no\")"}

@@ -1,0 +1,20 @@
+{"id": "431", "label": "Vehicle Type", "desc": "The type of vehicle. BOAT = Boat; SNOW = Snowmobile; TRL = Trailer; VEH = All other vehicles"}
+{"id": "432", "label": "VIN", "desc": "The Vehicles Identification Number as assigned by the vehicle manufacturer or by NYS DMV if the original VIN was compromised."}
+{"id": "433", "label": "Registration Class", "desc": "An alpha code that is used to classify the registration. (see complete list of registration classes at the end of the data dictionary)"}
+{"id": "434", "label": "Mailing City", "desc": "A city name for mailing purposes; appears in the last line of an address on a mail piece."}
+{"id": "435", "label": "Mailing State", "desc": "The official USPS abbreviation for the name of a mailing state, U.S. territory, Canadian Province, Commonwealth or armed forces ZIP Code designation. If APO/FPO/DPO, then the state abbreviation will be \u201cAA,\u201d \u201cAE,\u201d or \u201cAP.\u201d"}
+{"id": "436", "label": "ZIP Code", "desc": "A code that identifies a specific geographic mail delivery area. ZIP Codes can represent an area within a foreign country, a state, or a single building or company that has a very high mail volume. The zip code appears in the last line of the address on a mail piece. Example: 12345"}
+{"id": "437", "label": "County", "desc": "The New York State county name that is the county of residence or use."}
+{"id": "438", "label": "Model Year", "desc": "The manufacturer model year of vehicle."}
+{"id": "439", "label": "Make", "desc": "The DMV code for the make of a vehicle that appears on the registration. The DMV make code is the first 5 letters of the vehicle\u2019s make name. If the vehicle make is more than one word, the make code is the first 2 letters of the first two words with a slash in between. (Examples, CHEVR, HA/DA)"}
+{"id": "440", "label": "Body Type", "desc": "The body type of a vehicle. (see the complete list of body types at the end of the data dictionary)"}
+{"id": "441", "label": "Fuel Type", "desc": "The fuel type of a vehicle."}
+{"id": "442", "label": "Unloaded Weight", "desc": "The weight of a passenger vehicle without any load."}
+{"id": "443", "label": "Gross Weight", "desc": "The maximum weight that a commercial vehicle is permitted to carry."}
+{"id": "444", "label": "Passenger Capacity", "desc": "The number of passengers that a for-hire vehicle can transport, excluding the driver."}
+{"id": "445", "label": "Registration Date", "desc": "The date DMV issued the most recent registration document."}
+{"id": "446", "label": "Expiration Date", "desc": "The date when the registration expires."}
+{"id": "447", "label": "Vehicle Color", "desc": "The color of the vehicle. This is the DMV code not the NCIC code. (see the color codes at the end of the data dictionary)"}
+{"id": "448", "label": "Scofflaw Stop", "desc": "Indicates if a parking or red light scofflaw stop is in effect. (Y/N)."}
+{"id": "449", "label": "Suspension", "desc": "Indicates if a suspension is in effect. (Y/N)."}
+{"id": "450", "label": "Revocation", "desc": "Indicates if a revocation is in effect. (Y/N)."}

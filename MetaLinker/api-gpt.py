@@ -8,14 +8,24 @@ import numpy as np
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from queries_instructions import (
+
+sys.path.append('../')
+
+"""
+from MetaLinker.queries_instructions_r1 import (
     assistant_instruction_hit1,
     query_template_hit1,
     assistant_instruction_hit5,
     query_template_hit5
 )
-#sys.path.append('./queries_and_instructions')
-#from gpt_hit1 import assistant_instruction, query_template
+"""
+
+from MetaLinker.queries_instructions_r2 import (
+    assistant_instruction_hit1,
+    query_template_hit1,
+    assistant_instruction_hit5,
+    query_template_hit5
+)
 
 
 def gpt_client(api_key):
@@ -289,16 +299,13 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
     with open(output_stats, 'a') as output_stat_file, open(output_metadata, 'a') as output_file:
         with open(metadata_file, "r") as file:
             data = [json.loads(line) for line in file]
-            print(len(data))
 
             matched_metadata_list = []
 
             unmatched_data = data
 
             while unmatched_data:
-                print(len(unmatched_data))
                 for i in range(0, len(unmatched_data), split_size):
-                    print(i)
                     split = unmatched_data[i:i + split_size]
                     input_metadata = make_input_metadata(split)
 
@@ -307,23 +314,19 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
 
                     if messages:
                         message_content_value, run = get_response_value(messages, run)
-                        print(message_content_value)
                         matches_1 = pattern_1.findall(message_content_value)
                         if matches_1:
-                            print(matches_1)
                             matched_metadata = append_metadata_output(matches_1, output_file, unmatched_data)
                             matched_metadata_list.append(matched_metadata)
                             append_usage_stats_output(output_stat_file, run)
                         else:
                             matches_2 = pattern_2.findall(message_content_value)
                             if matches_2:
-                                print(matches_2)
                                 matched_metadata = append_metadata_output(matches_2, output_file, unmatched_data)
                                 matched_metadata_list.append(matched_metadata)
                                 append_usage_stats_output(output_stat_file, run)
 
                 unmatched_data = extract_unmatched_data(matched_metadata_list, unmatched_data)
-                print("Unmatched data", "\n", unmatched_data)
                 matched_metadata_list = []      
 
             end_time = time.time()

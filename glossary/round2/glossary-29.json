@@ -1,0 +1,11 @@
+{"id": "462", "label": "Trip ID", "desc": "a unique identifier for each trip"}
+{"id": "463", "label": "Provider Code", "desc": "a code indicating the provider associated with the trip record"}
+{"id": "464", "label": "Meter Engaged", "desc": "date and time when the meter was engaged"}
+{"id": "465", "label": "Meter Disengaged", "desc": "date and time when the meter was disengaged"}
+{"id": "466", "label": "Passengers", "desc": "the number of passengers in the vehicle (driver entered value)"}
+{"id": "467", "label": "Engage Lon", "desc": "the longitude where the meter was engaged"}
+{"id": "468", "label": "Engage Lat", "desc": "the latitude where the meter was engaged"}
+{"id": "469", "label": "Disengage Lon", "desc": "the longitude where the meter was disengaged"}
+{"id": "470", "label": "Disengage Lat", "desc": "the latitude where the meter was disengaged"}
+{"id": "471", "label": "Store & Forward", "desc": "This flag indicates whether the trip record was held in the vehicle memory before sending to the vendor because the vehicle did not have a connection to the server - Y=store and forward; N=not a store and forward trip"}
+{"id": "472", "label": "Trip Duration", "desc": "duration of the trip in seconds"}

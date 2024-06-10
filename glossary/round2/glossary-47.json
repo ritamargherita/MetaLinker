@@ -1,0 +1,14 @@
+{"id": "729", "label": "Location", "desc": "Location where the crime was reported."}
+{"id": "730", "label": "Department", "desc": "Police Department that reported the crime."}
+{"id": "731", "label": "Months Reported", "desc": "Number of months an individual agency reported for the year."}
+{"id": "732", "label": "Total Crime", "desc": "Includes sum of Murder, Rape, Robbery, Aggravated Assault, Burglary, Larceny and Motor Vehicle Theft."}
+{"id": "733", "label": "Violent Crime", "desc": "Subtotal includes Murder, Rape, Robbery and Aggravated Assault."}
+{"id": "734", "label": "Murder", "desc": "One count per victim. The willful killing of one human being by another. Excludes deaths caused by negligence, suicide, or justifiable homicides, and attempts to murder, which are classified as assault."}
+{"id": "735", "label": "Rape", "desc": "One count per victim. Penetration, no matter how slight, of the vagina or anus with any body part or object, or oral penetration by a sex organ of another person, without the consent of the victim."}
+{"id": "736", "label": "Robbery", "desc": "One count per victim. The taking or attempting to take anything of value from the care, custody, or control of a person or persons by force or threat of force or violence and/or by putting the victim in fear."}
+{"id": "737", "label": "Aggravated Assault", "desc": "One count per victim. The unlawful attack by one person upon another for the purpose of inflicting severe or aggravated bodily injury. This type of assault is usually accompanied by the use of a weapon or by means likely to produce death or great bodily harm, and also includes attempts to commit murder."}
+{"id": "738", "label": "Property Crime", "desc": "Subtotal includes Burglary, Larceny and Motor Vehicle Theft."}
+{"id": "739", "label": "Burglary", "desc": "One count per victim. The unlawful entry of a structure to commit a felony or theft. The use of force to gain entry is not required to classify an offense as Burglary."}
+{"id": "740", "label": "Larceny", "desc": "One count per victim. The unlawful taking, carrying, leading, or riding away of property from the possession or constructive possession of another. It includes crimes such as shoplifting, purse snatching, bicycle thefts, etc., in which no use of force, violence, or fraud occurs. This offense category does not include offenses such as embezzlement, forgery, or bad checks."}
+{"id": "741", "label": "Motor Vehicle Theft", "desc": "One count per victim. The theft or attempted theft of a motor vehicle, including automobiles, trucks, buses, motorcycles, and snowmobiles."}
+{"id": "742", "label": "Region", "desc": "Region where the crime was reported. Regions include New York City (Bronx, Kings, New York, Queens, and Richmond counties) and Non-New York City (all other counties)."}

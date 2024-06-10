@@ -1,0 +1,12 @@
+{"id": "419", "label": "Date", "desc": "Date in a standard format"}
+{"id": "420", "label": "Open", "desc": "Price at time of market opening"}
+{"id": "421", "label": "High", "desc": "Highest price within interval 1 Day"}
+{"id": "422", "label": "Low", "desc": "Lowest price within interval 1 Day"}
+{"id": "423", "label": "Close", "desc": "Price at time of market closing"}
+{"id": "424", "label": "Adj Close", "desc": "Adj. Price at time of market closing"}
+{"id": "425", "label": "Volume", "desc": "Total traded volume within interval 1 Day"}
+{"id": "426", "label": "Open 15m", "desc": "Price at beginning of interval (15 Min)"}
+{"id": "427", "label": "High 15m", "desc": "Highest price at beginning of interval (15 Min)"}
+{"id": "428", "label": "Low 15m", "desc": "Lowest price at beginning of interval (15 Min)"}
+{"id": "429", "label": "Close 15m", "desc": "Price at end of interval (15 Min)"}
+{"id": "430", "label": "Volume 15m", "desc": "Total traded volume at the within interval (15 Min)"}

@@ -1,0 +1,17 @@
+{"id": "613", "label": "Player", "desc": "Player name"}
+{"id": "614", "label": "GP", "desc": "Games played"}
+{"id": "615", "label": "MPG", "desc": "Mean number of minutes played"}
+{"id": "616", "label": "PTS", "desc": "Mean number of points scored"}
+{"id": "617", "label": "FGM", "desc": "Mean number of field goals scored"}
+{"id": "618", "label": "FGA", "desc": "Mean number of field goals attempted"}
+{"id": "619", "label": "3PM", "desc": "Mean number of 3-point shots made"}
+{"id": "620", "label": "3PA", "desc": "Mean number of 3-point shots attempted"}
+{"id": "621", "label": "FTM", "desc": "Mean number of free throws made"}
+{"id": "622", "label": "FTA", "desc": "Mean number of free throws attempted"}
+{"id": "623", "label": "OREB", "desc": "Mean number of offensive rebounds"}
+{"id": "624", "label": "DREB", "desc": "Mean number of defensive rebounds"}
+{"id": "625", "label": "AST", "desc": "Mean number of assists"}
+{"id": "626", "label": "STL", "desc": "Mean number of steals"}
+{"id": "627", "label": "BLK", "desc": "Mean number of blocks"}
+{"id": "628", "label": "TOV", "desc": "Mean number of turnovers"}
+{"id": "629", "label": "Active", "desc": "0: not playing after 5 years, 1: playing after 5 years"}

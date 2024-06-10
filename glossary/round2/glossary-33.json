@@ -1,0 +1,10 @@
+{"id": "511", "label": "Country Code", "desc": "ISO 3166 county code (alpha 2)"}
+{"id": "512", "label": "State Code", "desc": "ISO 3166 state code (alpha 2)"}
+{"id": "513", "label": "Region", "desc": "County/Region name"}
+{"id": "514", "label": "Bed Type", "desc": "Type of beds: [TOTAL, ICU, ACUTE, PSYCHIATRIC, OTHER]"}
+{"id": "515", "label": "Measure Type", "desc": "Type of measure: 1000HAB - per 1000 inhabitants"}
+{"id": "516", "label": "Beds per 1000", "desc": "Number of beds per 1000 inhabitants"}
+{"id": "517", "label": "Population", "desc": "Population of location"}
+{"id": "518", "label": "Source Year", "desc": "source year for beds and population"}
+{"id": "519", "label": "Data Source", "desc": "source of data"}
+{"id": "520", "label": "Source URL", "desc": "URL of the original source"}

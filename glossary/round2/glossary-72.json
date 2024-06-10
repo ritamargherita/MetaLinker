@@ -1,0 +1,10 @@
+{"id": "1137", "label": "Id", "desc": "Row Id"}
+{"id": "1138", "label": "Product Id", "desc": "Unique identifier for the product"}
+{"id": "1139", "label": "User Id", "desc": "Unqiue identifier for the user"}
+{"id": "1140", "label": "Profile", "desc": "Profile name of the user"}
+{"id": "1141", "label": "Helpful", "desc": "Number of users who found the review helpful"}
+{"id": "1142", "label": "Votes", "desc": "Number of users who indicated whether they found the review helpful or not"}
+{"id": "1143", "label": "Rating", "desc": "Rating between 1 and 5"}
+{"id": "1144", "label": "Timestamp", "desc": "Timestamp for the review"}
+{"id": "1145", "label": "Summary", "desc": "Brief summary of the review"}
+{"id": "1146", "label": "Review", "desc": "Text of the review"}

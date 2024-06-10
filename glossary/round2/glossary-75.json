@@ -1,0 +1,13 @@
+{"id": "1179", "label": "X Axis", "desc": "x-axis spatial coordinate within the Montesinho park map: 1 to 9"}
+{"id": "1180", "label": "Y Axis", "desc": "y-axis spatial coordinate within the Montesinho park map: 2 to 9"}
+{"id": "1181", "label": "Month", "desc": "month of the year: \"jan\" to \"dec\""}
+{"id": "1182", "label": "Day", "desc": "day of the week: \"mon\" to \"sun\""}
+{"id": "1183", "label": "FFMC", "desc": "FFMC index from the FWI system: 18.7 to 96.20"}
+{"id": "1184", "label": "DMC", "desc": "DMC index from the FWI system: 1.1 to 291.3"}
+{"id": "1185", "label": "DC", "desc": "DC index from the FWI system: 7.9 to 860.6"}
+{"id": "1186", "label": "ISI", "desc": "ISI index from the FWI system: 0.0 to 56.10"}
+{"id": "1187", "label": "Temp (C)", "desc": "temperature in Celsius degrees: 2.2 to 33.30"}
+{"id": "1188", "label": "Humidity (%)", "desc": "relative humidity in %: 15.0 to 100"}
+{"id": "1189", "label": "Wind Speed (km/h)", "desc": "wind speed in km/h: 0.40 to 9.40"}
+{"id": "1190", "label": "Rain (mm/m2)", "desc": "outside rain in mm/m2 : 0.0 to 6.4"}
+{"id": "1191", "label": "Burned Area (ha)", "desc": "the burned area of the forest (in ha): 0.00 to 1090.84"}

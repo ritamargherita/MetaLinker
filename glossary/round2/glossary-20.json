@@ -1,0 +1,11 @@
+{"id": "306", "label": "Location", "desc": "Location where crime was reported."}
+{"id": "307", "label": "Year", "desc": "Year the crime incident was reported."}
+{"id": "308", "label": "County Population", "desc": "County population estimates provided by the FBI."}
+{"id": "309", "label": "Total Crimes", "desc": "Sum of the reported crimes: Murder, Rape, Robbery, Aggravated Assault, Burglary, Larceny and Motor Vehicle Theft"}
+{"id": "310", "label": "Crime Rate", "desc": "Index Crimes reported per 100,000 population."}
+{"id": "311", "label": "Violent Crimes", "desc": "Sum of the reported crimes: Murder, Rape, Robbery and Aggravated Assault."}
+{"id": "312", "label": "Violent Crime Rate", "desc": "Violent Crimes reported per 100,000 population."}
+{"id": "313", "label": "Property Crimes", "desc": "Sum of the reported crimes: Burglary, Larceny and Motor Vehicle Theft."}
+{"id": "314", "label": "Property Crime Rate", "desc": "Property crimes reported per 100,000 population."}
+{"id": "315", "label": "Firearm Crimes", "desc": "Count of violent crimes committed with a firearm."}
+{"id": "316", "label": "Firearm Crime Rate", "desc": "Firearm crimes reported per 100,000 population."}

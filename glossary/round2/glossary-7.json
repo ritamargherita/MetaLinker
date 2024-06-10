@@ -1,0 +1,10 @@
+{"id": "95", "label": "Index", "desc": "unique index"}
+{"id": "96", "label": "File Path", "desc": "relative path to the file"}
+{"id": "97", "label": "Has Bee", "desc": "1 if the photo contains a bee"}
+{"id": "98", "label": "Has Wasp", "desc": "1 if the photo contains a wasp"}
+{"id": "99", "label": "Has Insect", "desc": "1 if the photo contains other insect"}
+{"id": "100", "label": "No Insect", "desc": "1 if the photo does not contain bee, wasp or insect"}
+{"id": "101", "label": "High Confidence", "desc": "1 for images considered to be high confidence, 0 otherwise"}
+{"id": "102", "label": "Validation", "desc": "use these observations as validation"}
+{"id": "103", "label": "Final Validation", "desc": "use these observations for final validation"}
+{"id": "104", "label": "Class Name", "desc": "text name of the class - bee, wasp, insect, other"}

@@ -1,0 +1,19 @@
+{"id": "259", "label": "Date", "desc": "Date of observation"}
+{"id": "260", "label": "Country Code", "desc": "Three-character ISO 3166-1 country code"}
+{"id": "261", "label": "Currency Code", "desc": "Three-character ISO 4217 currency code"}
+{"id": "262", "label": "Country", "desc": "Country name"}
+{"id": "263", "label": "Local Price", "desc": "Price of a Big Mac in the local currency"}
+{"id": "264", "label": "Currency per USD", "desc": "Local currency units per dollar"}
+{"id": "265", "label": "USD Price", "desc": "Price of a Big Mac in dollars"}
+{"id": "266", "label": "Raw Index USD", "desc": "Raw index, relative to the US dollar"}
+{"id": "267", "label": "Raw Index EUR", "desc": "Raw index, relative to the Euro"}
+{"id": "268", "label": "Raw Index GBP", "desc": "Raw index, relative to the British pound"}
+{"id": "269", "label": "Raw Index JPY", "desc": "Raw index, relative to the Japanese yen"}
+{"id": "270", "label": "Raw Index CNY", "desc": "Raw index, relative to the Chinese yuan"}
+{"id": "271", "label": "GDP per Person", "desc": "GDP per person, in dollars"}
+{"id": "272", "label": "GDP-Adj Price", "desc": "GDP-adjusted price of a Big Mac, in dollars"}
+{"id": "273", "label": "Adj Index USD", "desc": "Adjusted index, relative to the US dollar"}
+{"id": "274", "label": "Adj Index EUR", "desc": "Adjusted index, relative to the Euro"}
+{"id": "275", "label": "Adj Index GBP", "desc": "Adjusted index, relative to the British pound"}
+{"id": "276", "label": "Adj Index JPY", "desc": "Adjusted index, relative to the Japanese yen"}
+{"id": "277", "label": "Adj Index CNY", "desc": "Adjusted index, relative to the Chinese yuan"}
