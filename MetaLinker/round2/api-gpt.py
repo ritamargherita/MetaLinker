@@ -217,9 +217,9 @@ def extract_property_ids(raw_prop_ids):
     extract_property_ids
     
     """
-    prop_ids = re.findall(r"'([^']+)'", raw_prop_ids)
+    prop_id_list = re.findall(r"\d+", raw_prop_ids)
 
-    return [prop_id.strip() for prop_id in prop_ids]
+    return prop_id_list
 
 
 def append_metadata_output(matches, output_file):
@@ -231,11 +231,7 @@ def append_metadata_output(matches, output_file):
 
     for match in matches:
         col_id, raw_prop_ids = match
-        print(raw_prop_ids)
-        for prop_id in raw_prop_ids:
-            print(prop_id)
         prop_id_list = extract_property_ids(raw_prop_ids)
-        print(prop_id_list)
         result = {"id": col_id, "mappings": [{"id": prop_id, "score": ""} for prop_id in prop_id_list]}
         output_file.write(json.dumps(result)+ "\n")
 
@@ -302,16 +298,11 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
                 messages, run = get_response(query, client, updated_assistant, thread)
                 if messages:
                     message_content_value, run = get_response_value(messages, run)
+                    print(message_content_value)
                     matches_1 = pattern_1.findall(message_content_value)
 
                     if matches_1:
-                        print(matches_1, "\n")
-                        matched_metadata = append_metadata_output(matches_1, output_file)
-
-                        #col_id = match[0]
-                        #mappings = [{"id": str(mapping['id']), "score": 1.0} for mapping in eval(match[1])]
-                        #output = {"id": col_id, "mappings": mappings}
-                        #output_file.write(json.dumps(output) + '\n')
+                        append_metadata_output(matches_1, output_file)
 
                     append_usage_stats_output(output_stat_file, run)
             
