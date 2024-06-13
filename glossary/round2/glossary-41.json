@@ -1,14 +1,11 @@
-{"id": "641", "label": "Record Number", "desc": "corresponds to the record (row) number and has no effect on the output."}
-{"id": "642", "label": "Random Values", "desc": "contains random values and has no effect on customer leaving the bank."}
-{"id": "643", "label": "Surname", "desc": "the surname of a customer has no impact on their decision to leave the bank."}
-{"id": "644", "label": "Credit Score", "desc": "can have an effect on customer churn, since a customer with a higher credit score is less likely to leave the bank."}
-{"id": "645", "label": "Location", "desc": "a customer\u2019s location can affect their decision to leave the bank."}
-{"id": "646", "label": "Gender", "desc": "it\u2019s interesting to explore whether gender plays a role in a customer leaving the bank."}
-{"id": "647", "label": "Age", "desc": "this is certainly relevant, since older customers are less likely to leave their bank than younger ones."}
-{"id": "648", "label": "Years as Client", "desc": "refers to the number of years that the customer has been a client of the bank. Normally, older clients are more loyal and less likely to leave a bank."}
-{"id": "649", "label": "Account Balance", "desc": "also a very good indicator of customer churn, as people with a higher balance in their accounts are less likely to leave the bank compared to those with lower balances."}
-{"id": "650", "label": "Number of Products", "desc": "refers to the number of products that a customer has purchased through the bank."}
-{"id": "651", "label": "Has Credit Card", "desc": "denotes whether or not a customer has a credit card. This column is also relevant, since people with a credit card are less likely to leave the bank."}
-{"id": "652", "label": "Active Customer", "desc": "active customers are less likely to leave the bank."}
-{"id": "653", "label": "Salary", "desc": "as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries."}
-{"id": "654", "label": "Left Bank", "desc": "whether or not the customer left the bank."}
+{"id": "630", "label": "Law Code", "desc": "Law code of the violation for which the ticket was issued."}
+{"id": "631", "label": "Violation Description", "desc": "Description of the violation for which the ticket was issued."}
+{"id": "632", "label": "Year Issued", "desc": "Calendar year in which the ticket was issued."}
+{"id": "633", "label": "Month Issued", "desc": "Month in which the ticket was issued. 1=January; 12=December."}
+{"id": "634", "label": "Day of Week", "desc": "Day of the week on which the ticket was issued."}
+{"id": "635", "label": "Age", "desc": "Age, in years, of the person to whom the ticket was issued on the date of ticket issuance."}
+{"id": "636", "label": "Gender", "desc": "Gender of person to whom ticket was issued. M = Male ; F = Female; C = Organization; U = Unknown"}
+{"id": "637", "label": "License State", "desc": "Name of the state, district, territory, province or country that issued the driver license presented by the motorist at the time of ticket issuance."}
+{"id": "638", "label": "Agency", "desc": "The name of the law enforcement agency that issued the ticket."}
+{"id": "639", "label": "Court", "desc": "Court where the ticket was answerable."}
+{"id": "640", "label": "Processing System", "desc": "Processing system used by the courts to record and track tickets from issuance to disposition: TSLED = \u201cTraffic Safety Law Enforcement & Disposition Program\u201d used by local courts throughout most of NYS. TVB = used by NYSDMV Traffic Violation Bureaus in NYC, western Suffolk County, Rochester and Buffalo."}

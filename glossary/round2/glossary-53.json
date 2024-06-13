@@ -1,35 +1,11 @@
-{"id": "815", "label": "Violation Date", "desc": "Date of the traffic violation.\u8fdd\u7ae0\u53d1\u751f\u65e5\u671f"}
-{"id": "816", "label": "Violation Time", "desc": "Time of the traffic violation.\u8fdd\u7ae0\u53d1\u751f\u65f6\u95f4"}
-{"id": "817", "label": "Agency", "desc": "Agency issuing the traffic violation. (Example: MCP is Montgomery County Police)\u8fdd\u7ae0\u5904\u7406\u8b66\u5c40"}
-{"id": "818", "label": "Court Code", "desc": "Court code representing the district of assignment of the officer. R15 = 1st district, Rockville B15 = 2nd district, Bethesda SS15 = 3rd district, Silver Spring WG15 = 4th district, Wheaton G15 = 5th district, Germantown M15 = 6th district, Gaithersburg / Montgomery Village HQ15 = Headquarters and Special Operations\u8fdd\u7ae0\u5177\u4f53\u5904\u7406\u6d3e\u51fa\u6240\uff1f"}
-{"id": "819", "label": "Charge Description", "desc": "Text description of the specific charge.\u8fdd\u7ae0\u7684\u5177\u4f53\u63cf\u8ff0"}
-{"id": "820", "label": "Violation Location", "desc": "Location of the violation, usually an address or intersection.\u8fdd\u7ae0\u7684\u4f4d\u7f6e"}
-{"id": "821", "label": "Latitude", "desc": "Latitude location of the traffic violation.\u8fdd\u7ae0\u4f4d\u7f6e\u7684\u7eac\u5ea6"}
-{"id": "822", "label": "Longitude", "desc": "Longitude location of the traffic violation.\u8fdd\u7ae0\u4f4d\u7f6e\u7684\u7ecf\u5ea6"}
-{"id": "823", "label": "Accident Involved", "desc": "If traffic violation involved an accident.\u662f\u5426\u5f15\u53d1\u4e8b\u6545"}
-{"id": "824", "label": "Seat Belt Violation", "desc": "If traffic violation involved a seat belt violation.\u662f\u5426\u6d89\u53ca\u5230\u5b89\u5168\u5e26\u7684\u4f7f\u7528"}
-{"id": "825", "label": "Personal Injury", "desc": "If traffic violation involved Personal Injury.\u662f\u5426\u6709\u4eba\u5458\u53d7\u4f24"}
-{"id": "826", "label": "Property Damage", "desc": "If traffic violation involved Property Damage.\u662f\u75d8\u6709\u8d22\u4ea7\u635f\u5931"}
-{"id": "827", "label": "Fatality", "desc": "If traffic violation involved a fatality.\u662f\u5426\u6709\u4eba\u5458\u6b7b\u4ea1"}
-{"id": "828", "label": "Commercial License", "desc": "If the vehicle committing the traffic violation used Commercial License\u662f\u5426\u4e3a\u516c\u53f8\u724c\u7167"}
-{"id": "829", "label": "Hazardous Materials", "desc": "If the traffic violation involved hazardous materials.\u4e8b\u6545\u4e2d\u662f\u5426\u6d89\u53ca\u5371\u9669\u54c1"}
-{"id": "830", "label": "Commercial Vehicle", "desc": "If the vehicle committing the traffic violation is a commercial vehicle.\u8fdd\u7ae0\u8f66\u8f86\u662f\u5426\u4e3a\u5546\u52a1\u8f66"}
-{"id": "831", "label": "Alcohol Related", "desc": "If the traffic violation included an alcohol related\u662f\u5426\u6d89\u53ca\u9152\u9a7e"}
-{"id": "832", "label": "Work Zone", "desc": "If the traffic violation was in a work zone.\u8fdd\u7ae0\u662f\u5426\u53d1\u751f\u5728\u5de5\u4f5c\u533a"}
-{"id": "833", "label": "Vehicle Registration State", "desc": "State issuing the vehicle registration.\u662f\u5426\u4e3a\u56fd\u5bb6\u724c\u7167\u7684\u516c\u52a1\u8f66"}
-{"id": "834", "label": "Vehicle Type", "desc": "Type of vehicle (Examples: Automobile, Station Wagon, Heavy Duty Truck, etc.)\u8f66\u578b"}
-{"id": "835", "label": "Vehicle Year", "desc": "Year vehicle was made.\u8f66\u8f86\u51fa\u5382\u65e5\u671f"}
-{"id": "836", "label": "Vehicle Manufacturer", "desc": "Manufacturer of the vehicle (Examples: Ford, Chevy, Honda, Toyota, etc.)\u8f66\u8f86\u54c1\u724c"}
-{"id": "837", "label": "Vehicle Model", "desc": "Model of the vehicle.\u8f66\u7684\u989c\u8272"}
-{"id": "838", "label": "Vehicle Color", "desc": "Color of the vehicle.\u8fdd\u7ae0\u7c7b\u578b"}
-{"id": "839", "label": "Violation Type", "desc": "Violation type. (Examples: Warning, Citation, SERO ie SAFETY EQUIPMENT REPAIR ORDERS)\u8fdd\u7ae0\u7c7b\u578b"}
-{"id": "840", "label": "Charge Code", "desc": "Numeric code for the specific charge.\u7f5a\u6b3e\u4ee3\u7801"}
-{"id": "841", "label": "State Law Article", "desc": "Article of State Law. (TA = Transportation Article, MR = Maryland Rules)\u89e6\u72af\u6761\u4f8b\u7684\u7ea7\u522b\uff08\u56fd\u5bb6\u7ea7\u6216\u662f\u5dde\u7ea7\uff09"}
-{"id": "842", "label": "Contributing Factor", "desc": "If the traffic violation was a contributing factor in an accident.\u8fd9\u6b21\u8fdd\u7ae0\u662f\u5426\u662f\u5bfc\u81f4\u4e8b\u6545\u53d1\u751f\u7684\u539f\u56e0"}
-{"id": "843", "label": "Driver Race", "desc": "Race of the driver. (Example: Asian, Black, White, Other, etc.)\u53f8\u673a\u79cd\u65cf"}
-{"id": "844", "label": "Driver Gender", "desc": "Gender of the driver (F = Female, M = Male)\u53f8\u673a\u6027\u522b"}
-{"id": "845", "label": "Driver City", "desc": "City of the driver\u2019s home address.\u53f8\u673a\u5bb6\u5ead\u4f4f\u5740\u7684\u57ce\u5e02"}
-{"id": "846", "label": "Driver State", "desc": "State of the driver\u2019s home address.\u53f8\u673a\u5bb6\u5ead\u4f4f\u5740\u7684\u5dde"}
-{"id": "847", "label": "Driver License State", "desc": "State issuing the Driver\u2019s License.\uff08\u9881\u53d1\u9a7e\u7167\u7684\u5dde\uff09"}
-{"id": "848", "label": "Arrest Type", "desc": "Type of Arrest (A = Marked, B = Unmarked, etc.)\u662f\u5426\u88ab\u902e\u6355"}
-{"id": "849", "label": "Geo-coded Location", "desc": "Geo-coded location information.\u4f4d\u7f6e\u533a\u57df\u7801\uff0c\u7c7b\u4f3c\u4e8e\u4e2d\u56fd\u7684\u90ae\u7f16\u3002"}
+{"id": "804", "label": "Book Cover", "desc": "URLs of book covers. Use this cover to download images yourselves if you need."}
+{"id": "805", "label": "Title", "desc": "Title of a book."}
+{"id": "806", "label": "Author", "desc": "Author of a book."}
+{"id": "807", "label": "Format", "desc": "Physical format of a book (i.e. paperback)"}
+{"id": "808", "label": "Rating", "desc": "Book's rating found on the bookdepository.com(NOTE: Due to difference between scraping and download time of the dataset, this information might be different from one on the website)"}
+{"id": "809", "label": "Price", "desc": "Book's current price found on the bookdepository.com (NOTE: Due to difference between scraping and download time of the dataset, this information might be different from one on the website)"}
+{"id": "810", "label": "Currency", "desc": "Currency of prices found in the dataset."}
+{"id": "811", "label": "Old Price", "desc": "Book's old price (if exists) found on the bookdepository.com (NOTE: Due to difference between scraping and download time of the dataset, this information might be different from one on the website)"}
+{"id": "812", "label": "ISBN", "desc": "ISBN number of a book."}
+{"id": "813", "label": "Category", "desc": "Category of a book found on the bookdepository.com"}
+{"id": "814", "label": "Cover Path", "desc": "Book's cover local path (after scraping)."}

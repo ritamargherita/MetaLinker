@@ -1,14 +1,10 @@
-{"id": "753", "label": "Customer ID", "desc": "Customer ID"}
-{"id": "754", "label": "Age", "desc": "Customer's age in completed years"}
-{"id": "755", "label": "Exp. Years", "desc": "Number of years of professional experience"}
-{"id": "756", "label": "Annual Income", "desc": "Annual income of the customer ($000)"}
-{"id": "757", "label": "ZIP Code", "desc": "Home Address ZIP code."}
-{"id": "758", "label": "Family Size", "desc": "Family size of the customer"}
-{"id": "759", "label": "CC Spend", "desc": "Avg. spending on credit cards per month ($000)"}
-{"id": "760", "label": "Education", "desc": "Education Level. 1: Undergrad; 2: Graduate; 3: Advanced/Professional"}
-{"id": "761", "label": "Mortgage", "desc": "Value of house mortgage if any. ($000)"}
-{"id": "762", "label": "Loan Accepted", "desc": "Did this customer accept the personal loan offered in the last campaign?"}
-{"id": "763", "label": "Securities Acct", "desc": "Does the customer have a securities account with the bank?"}
-{"id": "764", "label": "CD Acct", "desc": "Does the customer have a certificate of deposit (CD) account with the bank?"}
-{"id": "765", "label": "Internet Banking", "desc": "Does the customer use internet banking facilities?"}
-{"id": "766", "label": "Bank CC", "desc": "Does the customer use a credit card issued by this Bank?"}
+{"id": "743", "label": "Publication Year", "desc": "Year that the journal article, book chapter was published."}
+{"id": "744", "label": "Publication Type", "desc": "Indicates whether the publication is a scientific journal article, book, book chapter, correspondence, meeting abstract, news article, proceedings paper, or a review."}
+{"id": "745", "label": "Journal Name", "desc": "Specific journal name relevant to the journal\u2019s contents."}
+{"id": "746", "label": "Publication Title", "desc": "Specific publication title of the article describing specific research done."}
+{"id": "747", "label": "Author", "desc": "Author(s) of the publication"}
+{"id": "748", "label": "Issue Number", "desc": "Issue number of the journal in which the publication appears. Journal issues are subparts of each journal volume. Blank means this field does not apply for this publication."}
+{"id": "749", "label": "Page Numbers", "desc": "The page numbers on which the publication appears within the indicated journal. Blank means this field does not apply for this publication."}
+{"id": "750", "label": "ISSN", "desc": "International Standard Serial Number (ISSN) for the publication. ISSNs are unique eight-digit numbers used to identify a publication, distinguishing between different media formats of the same content; for example, when a periodical is published in two or more different media, a different ISSN is assigned to each media type."}
+{"id": "751", "label": "Peer Reviewed", "desc": "Indicates whether the publication was subject to a peer review, which is a critique of science and discussion presented in an article by experts in the field. This Review was either done (True) or not done (False)."}
+{"id": "752", "label": "Impact Factor", "desc": "Indicates the Impact Factor (IF) for the publication. Blank means the IF is either unknown or the publication has not been rated. An IF is a systematic, objective means to critically evaluate and rank the world's leading journals, with quantifiable, statistical information based on citation data. Generally, the higher the IF, the greater the impact of the specific journal\u2019s reputation. Impact factors do not appear until 3 years after the publication of the article due to the way they are calculated."}

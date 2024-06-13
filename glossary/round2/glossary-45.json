@@ -1,13 +1,18 @@
-{"id": "704", "label": "Date", "desc": "date from September 17, 2014 to November 17, 2021"}
-{"id": "705", "label": "Open", "desc": "the price at the beginning of the trading day"}
-{"id": "706", "label": "High", "desc": "the highest price reached that day"}
-{"id": "707", "label": "Low", "desc": "the lowest price reached that day"}
-{"id": "708", "label": "Close", "desc": "the price at the closing of the trading day"}
-{"id": "709", "label": "Volume", "desc": "how many Bitcoin were traded that day"}
-{"id": "710", "label": "Date", "desc": "date from September, 2014 to November, 2021"}
-{"id": "711", "label": "CPI", "desc": "he inflation index for the US for that month (cpi = consumer price index)"}
-{"id": "712", "label": "Open", "desc": "the index level at the beginning of the trading day"}
-{"id": "713", "label": "High", "desc": "the highest level reached that day"}
-{"id": "714", "label": "Low", "desc": "the lowest level reached that day"}
-{"id": "715", "label": "Close", "desc": "the level at the closing of the trading day"}
-{"id": "716", "label": "Volume", "desc": "how many shares in the companies that make up the index were traded that day"}
+{"id": "686", "label": "Year", "desc": "Year in which the quarterfinals took place"}
+{"id": "687", "label": "Team Code", "desc": "Code of the teams that took part in the corresponding year"}
+{"id": "688", "label": "Team Name", "desc": "Name of the participant teams"}
+{"id": "689", "label": "Final Round", "desc": "Final round achieved by each of the teams"}
+{"id": "690", "label": "Country", "desc": "Country of origin or the league"}
+{"id": "691", "label": "Region", "desc": "Region of the team in the league table"}
+{"id": "692", "label": "Decade", "desc": "Decade of the respective year the quarterfinals took place"}
+{"id": "693", "label": "Superliga", "desc": "Checking if the corresponding teams supported the superliga plan or opposed it"}
+{"id": "694", "label": "City", "desc": "City in which the quarterfinals took place"}
+{"id": "695", "label": "Venue Code", "desc": "Areacode of the corresponding venue"}
+{"id": "696", "label": "Metropolitan City", "desc": "The metropolitan city in which the event took place"}
+{"id": "697", "label": "City Population", "desc": "Population of that particular city"}
+{"id": "698", "label": "City GDP", "desc": "Gdp of that particular city in which it took place"}
+{"id": "699", "label": "City Country", "desc": "Country of that particular city in which the event took place"}
+{"id": "700", "label": "Eurostat Code", "desc": "Eurostat unique code of the corresponding country it took place"}
+{"id": "701", "label": "ECB Code", "desc": "Ecb code of the corresponding country"}
+{"id": "702", "label": "COWC Code", "desc": "Cowc three letter code for each of the countries"}
+{"id": "703", "label": "COWN Value", "desc": "Cown value for each of the countries selected"}

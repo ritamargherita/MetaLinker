@@ -1,13 +1,16 @@
-{"id": "1179", "label": "X Axis", "desc": "x-axis spatial coordinate within the Montesinho park map: 1 to 9"}
-{"id": "1180", "label": "Y Axis", "desc": "y-axis spatial coordinate within the Montesinho park map: 2 to 9"}
-{"id": "1181", "label": "Month", "desc": "month of the year: \"jan\" to \"dec\""}
-{"id": "1182", "label": "Day", "desc": "day of the week: \"mon\" to \"sun\""}
-{"id": "1183", "label": "FFMC", "desc": "FFMC index from the FWI system: 18.7 to 96.20"}
-{"id": "1184", "label": "DMC", "desc": "DMC index from the FWI system: 1.1 to 291.3"}
-{"id": "1185", "label": "DC", "desc": "DC index from the FWI system: 7.9 to 860.6"}
-{"id": "1186", "label": "ISI", "desc": "ISI index from the FWI system: 0.0 to 56.10"}
-{"id": "1187", "label": "Temp (C)", "desc": "temperature in Celsius degrees: 2.2 to 33.30"}
-{"id": "1188", "label": "Humidity (%)", "desc": "relative humidity in %: 15.0 to 100"}
-{"id": "1189", "label": "Wind Speed (km/h)", "desc": "wind speed in km/h: 0.40 to 9.40"}
-{"id": "1190", "label": "Rain (mm/m2)", "desc": "outside rain in mm/m2 : 0.0 to 6.4"}
-{"id": "1191", "label": "Burned Area (ha)", "desc": "the burned area of the forest (in ha): 0.00 to 1090.84"}
+{"id": "1163", "label": "Job", "desc": "job : type of job (categorical: \"admin.\",\"unknown\",\"unemployed\",\"management\",\"housemaid\",\"entrepreneur\", \"student\",\"blue-collar\",\"self-employed\",\"retired\",\"technician\",\"services\")"}
+{"id": "1164", "label": "Marital", "desc": "marital : marital status (categorical: \"married\",\"divorced\",\"single\"; note: \"divorced\" means divorced or widowed)"}
+{"id": "1165", "label": "Education", "desc": "education (categorical: \"unknown\",\"secondary\",\"primary\",\"tertiary\")"}
+{"id": "1166", "label": "Default", "desc": "default: has credit in default? (binary: \"yes\",\"no\")"}
+{"id": "1167", "label": "Balance", "desc": "balance: average yearly balance, in euros (numeric)"}
+{"id": "1168", "label": "Housing", "desc": "housing: has housing loan? (binary: \"yes\",\"no\""}
+{"id": "1169", "label": "Loan", "desc": "loan: has personal loan? (binary: \"yes\",\"no\")"}
+{"id": "1170", "label": "Contact", "desc": "contact: contact communication type (categorical: \"unknown\",\"telephone\",\"cellular\")"}
+{"id": "1171", "label": "Day", "desc": "day: last contact day of the month (numeric)"}
+{"id": "1172", "label": "Month", "desc": "month: last contact month of year (categorical: \"jan\", \"feb\", \"mar\", ..., \"nov\", \"dec\")"}
+{"id": "1173", "label": "Duration", "desc": "duration: last contact duration, in seconds (numeric)"}
+{"id": "1174", "label": "Campaign", "desc": "campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)"}
+{"id": "1175", "label": "Pdays", "desc": "pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)"}
+{"id": "1176", "label": "Previous", "desc": "revious: number of contacts performed before this campaign and for this client (numeric)"}
+{"id": "1177", "label": "Poutcome", "desc": "poutcome: outcome of the previous marketing campaign (categorical: \"unknown\",\"other\",\"failure\",\"success\")"}
+{"id": "1178", "label": "Subscription", "desc": "y - has the client subscribed a term deposit? (binary: \"yes\",\"no\")"}

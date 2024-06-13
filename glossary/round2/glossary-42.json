@@ -1,12 +1,14 @@
-{"id": "655", "label": "Symbol", "desc": "The symbol or the reference number of the company"}
-{"id": "656", "label": "Company", "desc": "Name of the company"}
-{"id": "657", "label": "Trading Name", "desc": "The trading name of the company"}
-{"id": "658", "label": "Sector", "desc": "The sector in which the company operates"}
-{"id": "659", "label": "Date", "desc": "The date of the stock price"}
-{"id": "660", "label": "High", "desc": "The highest price of the stock at that day"}
-{"id": "661", "label": "Low", "desc": "The lowest price of the stock at that day"}
-{"id": "662", "label": "Change", "desc": "The change in price from the last day"}
-{"id": "663", "label": "Change %", "desc": "The percentage of the change"}
-{"id": "664", "label": "Volume", "desc": "The volume of the trades for the day"}
-{"id": "665", "label": "Value", "desc": "The value of the trades for the day"}
-{"id": "666", "label": "Trades", "desc": "The number of trades for the day"}
+{"id": "641", "label": "Record Number", "desc": "corresponds to the record (row) number and has no effect on the output."}
+{"id": "642", "label": "Random Values", "desc": "contains random values and has no effect on customer leaving the bank."}
+{"id": "643", "label": "Surname", "desc": "the surname of a customer has no impact on their decision to leave the bank."}
+{"id": "644", "label": "Credit Score", "desc": "can have an effect on customer churn, since a customer with a higher credit score is less likely to leave the bank."}
+{"id": "645", "label": "Location", "desc": "a customer\u2019s location can affect their decision to leave the bank."}
+{"id": "646", "label": "Gender", "desc": "it\u2019s interesting to explore whether gender plays a role in a customer leaving the bank."}
+{"id": "647", "label": "Age", "desc": "this is certainly relevant, since older customers are less likely to leave their bank than younger ones."}
+{"id": "648", "label": "Years as Client", "desc": "refers to the number of years that the customer has been a client of the bank. Normally, older clients are more loyal and less likely to leave a bank."}
+{"id": "649", "label": "Account Balance", "desc": "also a very good indicator of customer churn, as people with a higher balance in their accounts are less likely to leave the bank compared to those with lower balances."}
+{"id": "650", "label": "Number of Products", "desc": "refers to the number of products that a customer has purchased through the bank."}
+{"id": "651", "label": "Has Credit Card", "desc": "denotes whether or not a customer has a credit card. This column is also relevant, since people with a credit card are less likely to leave the bank."}
+{"id": "652", "label": "Active Customer", "desc": "active customers are less likely to leave the bank."}
+{"id": "653", "label": "Salary", "desc": "as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries."}
+{"id": "654", "label": "Left Bank", "desc": "whether or not the customer left the bank."}

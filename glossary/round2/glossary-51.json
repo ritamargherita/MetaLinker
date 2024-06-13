@@ -1,22 +1,15 @@
-{"id": "782", "label": "CHD/MI", "desc": "Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI)"}
-{"id": "783", "label": "High Blood Pressure", "desc": "Adults who have been told they have high blood pressure by a doctor, nurse, or other health professional"}
-{"id": "784", "label": "High Cholesterol", "desc": "Have you EVER been told by a doctor, nurse or other health professional that your blood cholesterol is high?"}
-{"id": "785", "label": "Cholesterol Check", "desc": "Cholesterol check within past five years"}
-{"id": "786", "label": "BMI", "desc": "Body Mass Index (BMI)"}
-{"id": "787", "label": "Smoker", "desc": "Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]"}
-{"id": "788", "label": "Stroke", "desc": "(Ever told) you had a stroke."}
-{"id": "789", "label": "Diabetes", "desc": "0 is no diabetes, 1 is pre-diabetes, and 2 is diabetes"}
-{"id": "790", "label": "Physical Activity", "desc": "Adults who reported doing physical activity or exercise during the past 30 days other than their regular job"}
-{"id": "791", "label": "Fruit Consumption", "desc": "Consume Fruit 1 or more times per day"}
-{"id": "792", "label": "Veg Consumption", "desc": "Consume Vegetables 1 or more times per day"}
-{"id": "793", "label": "Heavy Drinker", "desc": "Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week)"}
-{"id": "794", "label": "Health Care Coverage", "desc": "o you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare, or Indian Health Service?"}
-{"id": "795", "label": "Unaffordable Care", "desc": "Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?"}
-{"id": "796", "label": "General Health", "desc": "Would you say that in general your health is:"}
-{"id": "797", "label": "Mental Health", "desc": "Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?"}
-{"id": "798", "label": "Physical Health", "desc": "Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good?"}
-{"id": "799", "label": "Walking Difficulty", "desc": "Do you have serious difficulty walking or climbing stairs?"}
-{"id": "800", "label": "Sex", "desc": "Indicate sex of respondent."}
-{"id": "801", "label": "Age", "desc": "Fourteen-level age category"}
-{"id": "802", "label": "Education", "desc": "What is the highest grade or year of school you completed?"}
-{"id": "803", "label": "Household Income", "desc": "Is your annual household income from all sources: (If respondent refuses at any income level, code \"Refused.\")"}
+{"id": "767", "label": "Bearing ID", "desc": "Unique identifier for the bearing"}
+{"id": "768", "label": "Target Class", "desc": "Target class, 1 for good and 0 for defective bearings"}
+{"id": "769", "label": "Experiment ID", "desc": "Unique identifier of the experiment"}
+{"id": "770", "label": "First Bearing ID", "desc": "Unique identifier of the bearing on the first position"}
+{"id": "771", "label": "Second Bearing ID", "desc": "Unique identifier of the bearing on the second position"}
+{"id": "772", "label": "Time (s)", "desc": "Time, measured in seconds"}
+{"id": "773", "label": "X-Accel 1", "desc": "Acceleration along the X-axis for the first bearing. Measured in m/s^2"}
+{"id": "774", "label": "Y-Accel 1", "desc": "Acceleration along the Y-axis for the first bearing. Measured in m/s^2"}
+{"id": "775", "label": "Z-Accel 1", "desc": "Acceleration along the Z-axis for the first bearing. Measured in m/s^2"}
+{"id": "776", "label": "X-Accel 2", "desc": "Acceleration along the X-axis for the second bearing. Measured in m/s^2"}
+{"id": "777", "label": "Y-Accel 2", "desc": "Acceleration along the Y-axis for the second bearing. Measured in m/s^2"}
+{"id": "778", "label": "Z-Accel 2", "desc": "Acceleration along the Z-axis for the second bearing. Measured in m/s^2"}
+{"id": "779", "label": "RPM", "desc": "Rotation speed. Revolutions per minute"}
+{"id": "780", "label": "Speed (Hz)", "desc": "Rotation speed. Speed in Hertz"}
+{"id": "781", "label": "Motor Power (W)", "desc": "The power of the motor at a time. Measured in Watts"}

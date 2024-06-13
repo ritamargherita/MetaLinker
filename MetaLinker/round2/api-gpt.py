@@ -9,18 +9,9 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 
-sys.path.append('../')
+sys.path.append('../../')
 
-"""
-from MetaLinker.queries_instructions_r1 import (
-    assistant_instruction_hit1,
-    query_template_hit1,
-    assistant_instruction_hit5,
-    query_template_hit5
-)
-"""
-
-from MetaLinker.queries_instructions_r2 import (
+from MetaLinker.round2.queries_instructions_r2 import (
     assistant_instruction_hit1,
     query_template_hit1,
     assistant_instruction_hit5,
@@ -58,7 +49,7 @@ def create_assistant(client, assistant_name, assistant_instruction, gpt_model, t
     return assistant
 
 
-def get_file_paths(rag_input_path):
+def get_file_paths(input_path):
 
     """
     get_file_paths
@@ -68,7 +59,7 @@ def get_file_paths(rag_input_path):
     file_paths = []
 
     # Iterate through all files in the folder
-    for root, dirs, files in os.walk(rag_input_path):
+    for root, dirs, files in os.walk(input_path):
         for file_name in files:
             # Get the absolute path of the file
             file_path = os.path.join(root, file_name)
@@ -231,27 +222,24 @@ def extract_property_ids(raw_prop_ids):
     return [prop_id.strip() for prop_id in prop_ids]
 
 
-def append_metadata_output(matches, output_file, data):
+def append_metadata_output(matches, output_file):
 
     """
     append_metadata_output
 
     """
 
-    matched_metadata = []
-
     for match in matches:
         col_id, raw_prop_ids = match
+        print(raw_prop_ids)
+        for prop_id in raw_prop_ids:
+            print(prop_id)
+        prop_id_list = extract_property_ids(raw_prop_ids)
+        print(prop_id_list)
+        result = {"id": col_id, "mappings": [{"id": prop_id, "score": ""} for prop_id in prop_id_list]}
+        output_file.write(json.dumps(result)+ "\n")
 
-        for entry in data:
-            if col_id in entry['id']:
-                prop_id_list = extract_property_ids(raw_prop_ids)
-                result = {"id": col_id, "mappings": [{"id": prop_id, "score": ""} for prop_id in prop_id_list]}
-                output_file.write(json.dumps(result)+ "\n")
-
-                matched_metadata.append(entry)
-
-    return matched_metadata
+    return 
 
 
 def append_usage_stats_output(output_stat_file, run):
@@ -279,7 +267,7 @@ def extract_unmatched_data(matched_metadata_list, data):
 
 
 def main(query_template, assistant_name, assistant_instruction, gpt_model,
-         rag_input_path, vector_store_name, metadata_file, split_size, secondary_split_size,
+         rag_input_path, vector_store_name, metadata_input_path,
          api_key, temperature, output_folder, output_metadata, output_stats):
     
     start_time = time.time()
@@ -289,46 +277,44 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
     vector_store = create_vector_store(client, vector_store_name, rag_input_path)
     updated_assistant = update_assistant(assistant, client, vector_store)
     thread = create_thread(client)
+    metadata_file_paths = get_file_paths(metadata_input_path)
 
     make_output_folder(output_folder)
     remove_output_files_if_exist(output_metadata, output_stats)
 
-    pattern_1 = re.compile(r'''['"](?:colID)['"]: ['"]([^']+?)['"],\s*['"]propID['"]: \[(.*?)\]''', re.DOTALL)
-    pattern_2 = re.compile(r"'([^']+)'\s*:\s*\[([^\]]+)\]")
+    pattern_1 = re.compile(
+        r'''['"]id['"]: ['"]([^']+?)['"],\s*['"]mappings['"]: \[([^\]]+?)\]''', 
+        re.DOTALL
+    )
+    #pattern_2 = re.compile(r"'([^']+)'\s*:\s*\[([^\]]+)\]")
 
     with open(output_stats, 'a') as output_stat_file, open(output_metadata, 'a') as output_file:
-        with open(metadata_file, "r") as file:
-            data = [json.loads(line) for line in file]
+        for metadata_file in metadata_file_paths:
+            with open(metadata_file, 'r') as file:
+                data = [json.loads(line) for line in file]
+                
+                input_metadata = '\n'.join([
+                        '{' + "'id': '{}', 'label': '{}', 'table_id': '{}', 'table_name': '{}', 'table_columns': {}".format(
+                        item['id'], item['label'], item['table_id'], item['table_name'], item['table_columns']
+                        ) + '}' for item in data])
+                
+                query = query_template.format(input_metadata=input_metadata)
+                messages, run = get_response(query, client, updated_assistant, thread)
+                if messages:
+                    message_content_value, run = get_response_value(messages, run)
+                    matches_1 = pattern_1.findall(message_content_value)
 
-            matched_metadata_list = []
+                    if matches_1:
+                        print(matches_1, "\n")
+                        matched_metadata = append_metadata_output(matches_1, output_file)
 
-            unmatched_data = data
+                        #col_id = match[0]
+                        #mappings = [{"id": str(mapping['id']), "score": 1.0} for mapping in eval(match[1])]
+                        #output = {"id": col_id, "mappings": mappings}
+                        #output_file.write(json.dumps(output) + '\n')
 
-            while unmatched_data:
-                for i in range(0, len(unmatched_data), split_size):
-                    split = unmatched_data[i:i + split_size]
-                    input_metadata = make_input_metadata(split)
-
-                    query = query_template.format(input_metadata=input_metadata)
-                    messages, run = get_response(query, client, updated_assistant, thread)
-
-                    if messages:
-                        message_content_value, run = get_response_value(messages, run)
-                        matches_1 = pattern_1.findall(message_content_value)
-                        if matches_1:
-                            matched_metadata = append_metadata_output(matches_1, output_file, unmatched_data)
-                            matched_metadata_list.append(matched_metadata)
-                            append_usage_stats_output(output_stat_file, run)
-                        else:
-                            matches_2 = pattern_2.findall(message_content_value)
-                            if matches_2:
-                                matched_metadata = append_metadata_output(matches_2, output_file, unmatched_data)
-                                matched_metadata_list.append(matched_metadata)
-                                append_usage_stats_output(output_stat_file, run)
-
-                unmatched_data = extract_unmatched_data(matched_metadata_list, unmatched_data)
-                matched_metadata_list = []      
-
+                    append_usage_stats_output(output_stat_file, run)
+            
             end_time = time.time()
             elapsed_time = end_time - start_time
             output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
@@ -345,7 +331,7 @@ if __name__ == "__main__":
     api_key = os.getenv('GPT_API_KEY')
     temperature = float(os.getenv('TEMPERATURE'))
     rag_input_path = os.getenv('RAG_FILE')
-    metadata_file = os.getenv('METADATA_FILE')
+    metadata_input_path = os.getenv('METADATA_FILE')
     output_folder = os.getenv('OUTPUT_FOLDER')
 
     # SET ASSISTANT AND QUERY
@@ -360,10 +346,6 @@ if __name__ == "__main__":
     output_metadata = os.path.join(output_folder, 'output-metadata.json')
     output_stats = os.path.join(output_folder, 'output-stats.json')
 
-    # SET SPLIT SIZE
-    split_size = 25
-    secondary_split_size = 10
-
     main(query_template, assistant_name, assistant_instruction, gpt_model, 
-         rag_input_path, vector_store_name, metadata_file, split_size, secondary_split_size,
+         rag_input_path, vector_store_name, metadata_input_path,
          api_key, temperature, output_folder, output_metadata, output_stats)

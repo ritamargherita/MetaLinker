@@ -1,10 +1,13 @@
-{"id": "1137", "label": "Id", "desc": "Row Id"}
-{"id": "1138", "label": "Product Id", "desc": "Unique identifier for the product"}
-{"id": "1139", "label": "User Id", "desc": "Unqiue identifier for the user"}
-{"id": "1140", "label": "Profile", "desc": "Profile name of the user"}
-{"id": "1141", "label": "Helpful", "desc": "Number of users who found the review helpful"}
-{"id": "1142", "label": "Votes", "desc": "Number of users who indicated whether they found the review helpful or not"}
-{"id": "1143", "label": "Rating", "desc": "Rating between 1 and 5"}
-{"id": "1144", "label": "Timestamp", "desc": "Timestamp for the review"}
-{"id": "1145", "label": "Summary", "desc": "Brief summary of the review"}
-{"id": "1146", "label": "Review", "desc": "Text of the review"}
+{"id": "1124", "label": "Title Code", "desc": "Civil Service Title Code"}
+{"id": "1125", "label": "Title", "desc": "Name/Description of title"}
+{"id": "1126", "label": "Suffix", "desc": "Suffix (number) for sub-level of title"}
+{"id": "1127", "label": "Sub-Level Desc", "desc": "Description of sub-level of title"}
+{"id": "1128", "label": "Weekly Hours", "desc": "Standard weekly hours for the title"}
+{"id": "1129", "label": "Assignment Level", "desc": "Assignment level within title"}
+{"id": "1130", "label": "Job Code", "desc": "Unique job code for entry"}
+{"id": "1131", "label": "Union Code", "desc": "Unique code for union representing title, if applicable"}
+{"id": "1132", "label": "Union Name", "desc": "Name/Description of union representing title, if applicable"}
+{"id": "1133", "label": "Bargaining Unit", "desc": "Acronym or short name for union designated as the bargaining unit for title, if applicable"}
+{"id": "1134", "label": "Min Salary", "desc": "Name/description of union designated as the bargaining unit for title, if applicable"}
+{"id": "1135", "label": "Max Salary", "desc": "Minimum salary range for the title"}
+{"id": "1136", "label": "Union Desc", "desc": "Maximum salary range for the title"}

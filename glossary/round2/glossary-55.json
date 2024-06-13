@@ -1,14 +1,15 @@
-{"id": "865", "label": "L-Ankle Accel X", "desc": "acceleration from the left-ankle sensor (X axis)"}
-{"id": "866", "label": "L-Ankle Accel Y", "desc": "acceleration from the left-ankle sensor (Y axis)"}
-{"id": "867", "label": "L-Ankle Accel Z", "desc": "acceleration from the left-ankle sensor (Z axis)"}
-{"id": "868", "label": "L-Ankle Gyro X", "desc": "gyro from the left-ankle sensor (X axis)"}
-{"id": "869", "label": "L-Ankle Gyro Y", "desc": "gyro from the left-ankle sensor (Y axis)"}
-{"id": "870", "label": "L-Ankle Gyro Z", "desc": "gyro from the left-ankle sensor (Z axis)"}
-{"id": "871", "label": "R-Lower Arm Accel X", "desc": "acceleration from the right-lower-arm sensor (X axis)"}
-{"id": "872", "label": "R-Lower Arm Accel Y", "desc": "acceleration from the right-lower-arm sensor (Y axis)"}
-{"id": "873", "label": "R-Lower Arm Accel Z", "desc": "acceleration from the right-lower-arm sensor (Z axis)"}
-{"id": "874", "label": "R-Lower Arm Gyro X", "desc": "gyro from the right-lower-arm sensor (X axis)"}
-{"id": "875", "label": "R-Lower Arm Gyro Y", "desc": "gyro from the right-lower-arm sensor (Y axis)"}
-{"id": "876", "label": "R-Lower Arm Gyro Z", "desc": "gyro from the right-lower-arm sensor (Z axis)"}
-{"id": "877", "label": "Activity", "desc": "corresponding activity"}
-{"id": "878", "label": "Volunteer", "desc": "volunteer number"}
+{"id": "850", "label": "NYSDOT Region", "desc": "The numeric code that identifies the NYSDOT Region responsible for managing the transportation system for a specific geographic area listed as follows: Region 1 - Capital District Region 2 - Mohawk Valley Region 3 - Central New York Region 4 - Genesee Valley Region 5 - Western New York Region 6 - Central Southern Tier Region 7 - North Country Region 8 - Hudson Valley Region 9 - Southern Tier Region 10 - Long Island Region 11 - New York City"}
+{"id": "851", "label": "Traffic Count Station ID", "desc": "Unique identifier for each Traffic Count Station concatenated from the region county code and the station number."}
+{"id": "852", "label": "Roadway ID", "desc": "Unique identifier that is coordinate based and assigned to the roadway for which the AADT was collected. Allows the segment to be mapped in GIS when referenced along with Begin/End Milepoint"}
+{"id": "853", "label": "Ramp Indicator", "desc": "Signifies by either a yes or no whether or not a ramp is included in the roadway segment"}
+{"id": "854", "label": "Begin Milepoint", "desc": "The starting milepoint of the segment of roadway for which the AADT applies"}
+{"id": "855", "label": "End Milepoint", "desc": "The ending milepoint of the segment of roadway for which the AADT applies"}
+{"id": "856", "label": "Begin Description", "desc": "The verbal description of the start of the segment of roadway for which the AADT applies"}
+{"id": "857", "label": "End Description", "desc": "The verbal description of the end of the segment of roadway for which the AADT applies"}
+{"id": "858", "label": "Municipality", "desc": "Name of the municipality in which the AADT was calculated"}
+{"id": "859", "label": "Route Type", "desc": "Designates what kind of a route or roadway the segment of roadway is INTERNY: Interstate designation commonly known as the Interstate Highway System, a network of controlled-access highways that forms a part of the National Highway System US: US designation of a set of roads typically called U.S. Routes or U.S. Highways which forms an integrated network of roads and highways numbered within a nationwide grid in the United States NY: New York State Highway designation assigned at the State level COUNTY: County Route designations assigned at the county level A blank field designates a \u2018Local\u2019 town, municipality or city roadway"}
+{"id": "860", "label": "Roadway Type", "desc": "Numerical description of the type of roadway for which the AADT was collected"}
+{"id": "861", "label": "Roadway Name", "desc": "Name of the roadway the AADT was calculated for"}
+{"id": "862", "label": "Year", "desc": "Year the Annual Average Daily Traffic value is provided"}
+{"id": "863", "label": "AADT Volume", "desc": "Annual Average Daily Traffic volume value: on any given day the average numbers of vehicles that pass the segment of roadway as described by the Begin/End Descriptions. These figures are based on an actual count taken for that year or statistically validated estimated and forecasted values"}
+{"id": "864", "label": "AADT Type", "desc": "Indicates whether the AADT for a specific year count was actual, forecasted or estimated - Actual - count reading numeric value from an actual traffic counting study - Forecast \u2013 statistical value established for years before an earlier actual count or after the last actual count and is based on earlier data only - Estimate - statistical value established for years between two actual counts and can be derived from both earlier and later data"}

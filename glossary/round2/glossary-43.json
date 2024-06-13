@@ -1,19 +1,12 @@
-{"id": "667", "label": "Run #", "desc": "The run number of the event."}
-{"id": "668", "label": "Event #", "desc": "The event number."}
-{"id": "669", "label": "E1 (GeV)", "desc": "The total energy of the electron 1 (GeV)."}
-{"id": "670", "label": "Px1 (GeV)", "desc": "First component of the momemtum of the electron 1 (GeV)."}
-{"id": "671", "label": "Py1 (GeV)", "desc": "Second component of the momemtum of the electron 1 (GeV)."}
-{"id": "672", "label": "Pz1 (GeV)", "desc": "Third component of the momemtum of the electron 1 (GeV)."}
-{"id": "673", "label": "Pt1 (GeV)", "desc": "The transverse momentum of the electron 1 (GeV)."}
-{"id": "674", "label": "Eta1", "desc": "The pseudorapidity of the electron 1."}
-{"id": "675", "label": "Phi1 (rad)", "desc": "The phi angle of the electron 1 (rad)."}
-{"id": "676", "label": "Q1", "desc": "The charge of the electron 1."}
-{"id": "677", "label": "E2 (GeV)", "desc": "The total energy of the electron 2 (GeV)."}
-{"id": "678", "label": "Px2 (GeV)", "desc": "First component of the momemtum of the electron 2 (GeV)."}
-{"id": "679", "label": "Py2 (GeV)", "desc": "Second component of the momemtum of the electron 2 (GeV)."}
-{"id": "680", "label": "Pz2 (GeV)", "desc": "Third component of the momemtum of the electron 2 (GeV)."}
-{"id": "681", "label": "Pt2 (GeV)", "desc": "The transverse momentum of the electron 2 (GeV)."}
-{"id": "682", "label": "Eta2", "desc": "The pseudorapidity of the electron 2."}
-{"id": "683", "label": "Phi2 (rad)", "desc": "The phi angle of the electron 2 (rad)."}
-{"id": "684", "label": "Q2", "desc": "The charge of the electron 2."}
-{"id": "685", "label": "M12 (GeV)", "desc": "The invariant mass of two electrons (GeV)."}
+{"id": "655", "label": "Symbol", "desc": "The symbol or the reference number of the company"}
+{"id": "656", "label": "Company", "desc": "Name of the company"}
+{"id": "657", "label": "Trading Name", "desc": "The trading name of the company"}
+{"id": "658", "label": "Sector", "desc": "The sector in which the company operates"}
+{"id": "659", "label": "Date", "desc": "The date of the stock price"}
+{"id": "660", "label": "High", "desc": "The highest price of the stock at that day"}
+{"id": "661", "label": "Low", "desc": "The lowest price of the stock at that day"}
+{"id": "662", "label": "Change", "desc": "The change in price from the last day"}
+{"id": "663", "label": "Change %", "desc": "The percentage of the change"}
+{"id": "664", "label": "Volume", "desc": "The volume of the trades for the day"}
+{"id": "665", "label": "Value", "desc": "The value of the trades for the day"}
+{"id": "666", "label": "Trades", "desc": "The number of trades for the day"}

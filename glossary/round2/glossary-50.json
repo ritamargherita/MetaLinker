@@ -1,15 +1,14 @@
-{"id": "767", "label": "Bearing ID", "desc": "Unique identifier for the bearing"}
-{"id": "768", "label": "Target Class", "desc": "Target class, 1 for good and 0 for defective bearings"}
-{"id": "769", "label": "Experiment ID", "desc": "Unique identifier of the experiment"}
-{"id": "770", "label": "First Bearing ID", "desc": "Unique identifier of the bearing on the first position"}
-{"id": "771", "label": "Second Bearing ID", "desc": "Unique identifier of the bearing on the second position"}
-{"id": "772", "label": "Time (s)", "desc": "Time, measured in seconds"}
-{"id": "773", "label": "X-Accel 1", "desc": "Acceleration along the X-axis for the first bearing. Measured in m/s^2"}
-{"id": "774", "label": "Y-Accel 1", "desc": "Acceleration along the Y-axis for the first bearing. Measured in m/s^2"}
-{"id": "775", "label": "Z-Accel 1", "desc": "Acceleration along the Z-axis for the first bearing. Measured in m/s^2"}
-{"id": "776", "label": "X-Accel 2", "desc": "Acceleration along the X-axis for the second bearing. Measured in m/s^2"}
-{"id": "777", "label": "Y-Accel 2", "desc": "Acceleration along the Y-axis for the second bearing. Measured in m/s^2"}
-{"id": "778", "label": "Z-Accel 2", "desc": "Acceleration along the Z-axis for the second bearing. Measured in m/s^2"}
-{"id": "779", "label": "RPM", "desc": "Rotation speed. Revolutions per minute"}
-{"id": "780", "label": "Speed (Hz)", "desc": "Rotation speed. Speed in Hertz"}
-{"id": "781", "label": "Motor Power (W)", "desc": "The power of the motor at a time. Measured in Watts"}
+{"id": "753", "label": "Customer ID", "desc": "Customer ID"}
+{"id": "754", "label": "Age", "desc": "Customer's age in completed years"}
+{"id": "755", "label": "Exp. Years", "desc": "Number of years of professional experience"}
+{"id": "756", "label": "Annual Income", "desc": "Annual income of the customer ($000)"}
+{"id": "757", "label": "ZIP Code", "desc": "Home Address ZIP code."}
+{"id": "758", "label": "Family Size", "desc": "Family size of the customer"}
+{"id": "759", "label": "CC Spend", "desc": "Avg. spending on credit cards per month ($000)"}
+{"id": "760", "label": "Education", "desc": "Education Level. 1: Undergrad; 2: Graduate; 3: Advanced/Professional"}
+{"id": "761", "label": "Mortgage", "desc": "Value of house mortgage if any. ($000)"}
+{"id": "762", "label": "Loan Accepted", "desc": "Did this customer accept the personal loan offered in the last campaign?"}
+{"id": "763", "label": "Securities Acct", "desc": "Does the customer have a securities account with the bank?"}
+{"id": "764", "label": "CD Acct", "desc": "Does the customer have a certificate of deposit (CD) account with the bank?"}
+{"id": "765", "label": "Internet Banking", "desc": "Does the customer use internet banking facilities?"}
+{"id": "766", "label": "Bank CC", "desc": "Does the customer use a credit card issued by this Bank?"}

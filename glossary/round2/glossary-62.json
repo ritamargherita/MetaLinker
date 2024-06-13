@@ -1,36 +1,10 @@
-{"id": "972", "label": "ID", "desc": "incident identifier."}
-{"id": "973", "label": "Process Transition", "desc": "eight levels controlling the incident management process transitions from opening until closing the case."}
-{"id": "974", "label": "Status", "desc": "boolean attribute that shows whether the record is active or closed/canceled."}
-{"id": "975", "label": "Group Chg Count", "desc": "number of times the incident has the group or the support analysts changed."}
-{"id": "976", "label": "Rejection Count", "desc": "number of times the incident resolution was rejected by the caller."}
-{"id": "977", "label": "Update Count", "desc": "number of incident updates until that moment."}
-{"id": "978", "label": "SLA Exceeded", "desc": "boolean attribute that shows whether the incident exceeded the target SLA."}
-{"id": "979", "label": "Affected User", "desc": "identifier of the user affected."}
-{"id": "980", "label": "Reported By", "desc": "identifier of the user who reported the incident."}
-{"id": "981", "label": "Opened Date", "desc": "incident user opening date and time"}
-{"id": "982", "label": "Opened By", "desc": "identifier of the user who registered the incident."}
-{"id": "983", "label": "Created Date", "desc": "incident system creation date and time."}
-{"id": "984", "label": "Updated By", "desc": "identifier of the user who updated the incident and generated the current log record."}
-{"id": "985", "label": "Update Date", "desc": "incident system update date and time."}
-{"id": "986", "label": "Reported Via", "desc": "categorical attribute that shows by what means the incident was reported."}
-{"id": "987", "label": "Location ID", "desc": "identifier of the location of the place affected."}
-{"id": "988", "label": "Service Category", "desc": "first-level description of the affected service."}
-{"id": "989", "label": "Service Subcategory", "desc": "second-level description of the affected service (related to the first level description, i.e., to category)."}
-{"id": "990", "label": "Service Availability", "desc": "description of the user perception about service availability."}
-{"id": "991", "label": "Affected Item", "desc": "(confirmation item) identifier used to report the affected item (not mandatory)."}
-{"id": "992", "label": "Impact Description", "desc": "description of the impact caused by the incident."}
-{"id": "993", "label": "Urgency Level", "desc": "description of the urgency informed by the user for the incident resolution."}
-{"id": "994", "label": "Priority", "desc": "calculated by the system based on 'impact' and 'urgency'."}
-{"id": "995", "label": "Support Group", "desc": "identifier of the support group in charge of the incident."}
-{"id": "996", "label": "Assigned To", "desc": "identifier of the user in charge of the incident."}
-{"id": "997", "label": "KB Used", "desc": "boolean attribute that shows whether a knowledge base document was used to resolve the incident."}
-{"id": "998", "label": "Priority Verified", "desc": "boolean attribute that shows whether the priority field has been double-checked."}
-{"id": "999", "label": "Notifications", "desc": "categorical attribute that shows whether notifications were generated for the incident."}
-{"id": "1000", "label": "Problem ID", "desc": "identifier of the problem associated with the incident."}
-{"id": "1001", "label": "Change Request", "desc": "(request for change) identifier of the change request associated with the incident."}
-{"id": "1002", "label": "Vendor ID", "desc": "identifier of the vendor in charge of the incident."}
-{"id": "1003", "label": "RFC Responsible", "desc": "identifier of the RFC responsible by the incident."}
-{"id": "1004", "label": "Resolution ID", "desc": "identifier of the resolution of the incident."}
-{"id": "1005", "label": "Resolved By", "desc": "identifier of the user who resolved the incident."}
-{"id": "1006", "label": "Resolved Date", "desc": "incident user resolution date and time (dependent variable)."}
-{"id": "1007", "label": "Closed Date", "desc": "incident user close date and time (dependent variable)."}
+{"id": "962", "label": "Date", "desc": "the date in which the coin had that price and volume"}
+{"id": "963", "label": "Low", "desc": "the lowwst price of that day in USD dollars"}
+{"id": "964", "label": "High", "desc": "the highest price of that day in USD dollars"}
+{"id": "965", "label": "Open", "desc": "the price when that day started in the markets in USD dollars"}
+{"id": "966", "label": "Close", "desc": "the price when that day closed in the markets in USD dollars"}
+{"id": "967", "label": "Volume", "desc": "the quantity of that coin that was traded in that day"}
+{"id": "968", "label": "Volume USD", "desc": "the quantity of that coin that was traded in that day in USD dollars"}
+{"id": "969", "label": "Symbol", "desc": "the symbol of the cryptocurrency"}
+{"id": "970", "label": "Logo", "desc": "the image url containing the cryptocurrency logo"}
+{"id": "971", "label": "Name", "desc": "the full name of the cryptocurrency"}

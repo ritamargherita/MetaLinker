@@ -1,11 +1,12 @@
-{"id": "1095", "label": "ID", "desc": "Unique identifier of news items"}
-{"id": "1096", "label": "Official Title", "desc": "Title of the news item according to the official media sources"}
-{"id": "1097", "label": "Official Headline", "desc": "Headline of the news item according to the official media sources"}
-{"id": "1098", "label": "News Outlet", "desc": "Original news outlet that published the news item"}
-{"id": "1099", "label": "Query Topic", "desc": "Query topic used to obtain the items in the official media sources"}
-{"id": "1100", "label": "Publication Date", "desc": "Date and time of the news items' publication"}
-{"id": "1101", "label": "Facebook Popularity", "desc": "Final value of the news items' popularity according to the social media source Facebook"}
-{"id": "1102", "label": "Google+ Popularity", "desc": "Final value of the news items' popularity according to the social media source Google+"}
-{"id": "1103", "label": "LinkedIn Popularity", "desc": "Final value of the news items' popularity according to the social media source LinkedIn"}
-{"id": "1104", "label": "Title Sentiment", "desc": "Sentiment score of the title, Higher the score, better is the impact or +ve sentiment and vice-versa. (Target Variable 1)"}
-{"id": "1105", "label": "Headline Sentiment", "desc": "Sentiment score of the text in the news items' headline. Higher the score, better is the impact or +ve sentiment. (Target Variable 2)"}
+{"id": "1083", "label": "Spell Name", "desc": "Name of the spell"}
+{"id": "1084", "label": "Classes", "desc": "Which classes can learn this spell"}
+{"id": "1085", "label": "Spell Level", "desc": "The level of the spell (this is separate from the player's level), 0 is a cantrip"}
+{"id": "1086", "label": "Magic Type", "desc": "What type of magic the spell is"}
+{"id": "1087", "label": "Casting Time", "desc": "How long it takes the character to cast this spell"}
+{"id": "1088", "label": "Range", "desc": "How far the character can be from the target of the spell"}
+{"id": "1089", "label": "Duration", "desc": "How long the spell lasts"}
+{"id": "1090", "label": "Verbal", "desc": "Boolean - spell requires a verbal incantation"}
+{"id": "1091", "label": "Somatic", "desc": "Boolean - spell requires a precise hand motion"}
+{"id": "1092", "label": "Material", "desc": "Boolean - spell requires a physical object which is consumed"}
+{"id": "1093", "label": "Consumed", "desc": "What type of material is consumed when casting the spell"}
+{"id": "1094", "label": "Effect", "desc": "The effect casting spell creates"}

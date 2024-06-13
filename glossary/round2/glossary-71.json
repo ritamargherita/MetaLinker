@@ -1,13 +1,18 @@
-{"id": "1124", "label": "Title Code", "desc": "Civil Service Title Code"}
-{"id": "1125", "label": "Title", "desc": "Name/Description of title"}
-{"id": "1126", "label": "Suffix", "desc": "Suffix (number) for sub-level of title"}
-{"id": "1127", "label": "Sub-Level Desc", "desc": "Description of sub-level of title"}
-{"id": "1128", "label": "Weekly Hours", "desc": "Standard weekly hours for the title"}
-{"id": "1129", "label": "Assignment Level", "desc": "Assignment level within title"}
-{"id": "1130", "label": "Job Code", "desc": "Unique job code for entry"}
-{"id": "1131", "label": "Union Code", "desc": "Unique code for union representing title, if applicable"}
-{"id": "1132", "label": "Union Name", "desc": "Name/Description of union representing title, if applicable"}
-{"id": "1133", "label": "Bargaining Unit", "desc": "Acronym or short name for union designated as the bargaining unit for title, if applicable"}
-{"id": "1134", "label": "Min Salary", "desc": "Name/description of union designated as the bargaining unit for title, if applicable"}
-{"id": "1135", "label": "Max Salary", "desc": "Minimum salary range for the title"}
-{"id": "1136", "label": "Union Desc", "desc": "Maximum salary range for the title"}
+{"id": "1106", "label": "Date", "desc": "Date of observation of the row's data in YYYY-MM-DD format"}
+{"id": "1107", "label": "Country", "desc": "Country in which the the row's data was observed"}
+{"id": "1108", "label": "Cumulative Cases", "desc": "Cumulative number of confirmed cases as of the row's date, for the row's country"}
+{"id": "1109", "label": "Daily Cases", "desc": "Daily new number of confirmed cases on the row's date, for the row's country"}
+{"id": "1110", "label": "Active Cases", "desc": "Number of active cases (i.e., confirmed cases that still didn't recover nor die) on the row's date, for the row's country"}
+{"id": "1111", "label": "Cumulative Deaths", "desc": "Cumulative number of confirmed deaths as of the row's date, for the row's country"}
+{"id": "1112", "label": "Daily Deaths", "desc": "Daily new number of confirmed deaths on the row's date, for the row's country"}
+{"id": "1113", "label": "Continent", "desc": "Continent of the observed country"}
+{"id": "1114", "label": "Total Cases", "desc": "Total number of confirmed cases in the observed country"}
+{"id": "1115", "label": "Total Deaths", "desc": "Total number of confirmed deaths in the observed country"}
+{"id": "1116", "label": "Total Recoveries", "desc": "Total number of confirmed recoveries in the observed country"}
+{"id": "1117", "label": "Active Cases", "desc": "Number of active cases in the observed country"}
+{"id": "1118", "label": "Serious Cases", "desc": "Estimated number of cases in serious or critical conditions in the observed country"}
+{"id": "1119", "label": "Cases per M", "desc": "Number of total cases per 1 million population in the observed country"}
+{"id": "1120", "label": "Deaths per M", "desc": "Number of total deaths per 1 million population in the observed country"}
+{"id": "1121", "label": "Total Tests", "desc": "Number of total tests done in the observed country"}
+{"id": "1122", "label": "Tests per M", "desc": "Number of total test done per 1 million population in the observed country"}
+{"id": "1123", "label": "Population", "desc": "Population count in the observed country"}

@@ -1,12 +1,20 @@
-{"id": "928", "label": "Rank", "desc": "Rank of the billionaires in world"}
-{"id": "929", "label": "Name", "desc": "Name of the billionaires"}
-{"id": "930", "label": "Age", "desc": "Age of the billionaires"}
-{"id": "931", "label": "Income Source", "desc": "Income source of the billionaires"}
-{"id": "932", "label": "Industry", "desc": "In which industry billionaires works"}
-{"id": "933", "label": "Gender", "desc": "Gender of the billionaires"}
-{"id": "934", "label": "Continent", "desc": "Continent of the business"}
-{"id": "935", "label": "Country", "desc": "Country of the business"}
-{"id": "936", "label": "Headquarter", "desc": "Headquarter of the business"}
-{"id": "937", "label": "State", "desc": "State of the business"}
-{"id": "938", "label": "Net Worth ($B)", "desc": "Net worth of individual in $ billions"}
-{"id": "939", "label": "Position", "desc": "What is the position of individual in their business"}
+{"id": "908", "label": "Team Code", "desc": "Code of team"}
+{"id": "909", "label": "Player Tag", "desc": "Tag of player"}
+{"id": "910", "label": "Opponent Code", "desc": "Code of opposing team in match"}
+{"id": "911", "label": "Position", "desc": "Position played by player in match"}
+{"id": "912", "label": "Champion", "desc": "Champion played by player in match"}
+{"id": "913", "label": "Kills", "desc": "Number of kills by player in match"}
+{"id": "914", "label": "Deaths", "desc": "Number of deaths by player in match"}
+{"id": "915", "label": "Assists", "desc": "Number of assists by player in match"}
+{"id": "916", "label": "Creep Score", "desc": "Number of minions and monsters killed by player in match"}
+{"id": "917", "label": "Damage %", "desc": "Gold earned by player in match"}
+{"id": "918", "label": "Kill %", "desc": "Percentage of total damage done by team to other champions done by player."}
+{"id": "919", "label": "Wards Placed", "desc": "Percentage of team kills that player was part of."}
+{"id": "920", "label": "Wards Killed", "desc": "Number of wards placed by player in match."}
+{"id": "921", "label": "Ward Score", "desc": "Number of wards killed by player in match."}
+{"id": "922", "label": "Dragon Kills", "desc": "Sum of wards placed and wards killed by player in match."}
+{"id": "923", "label": "Opp Dragon Kills", "desc": "Number of dragons team killed in match."}
+{"id": "924", "label": "Baron Kills", "desc": "Number of dragons opposing team killed in match."}
+{"id": "925", "label": "Opp Baron Kills", "desc": "Number of Barons killed in match."}
+{"id": "926", "label": "Match Result", "desc": "Number of Barons opposing team killed in match."}
+{"id": "927", "label": "Result", "desc": "Win or Lose (W/L)"}

@@ -1,11 +1,11 @@
-{"id": "nys-traffic-tickets-issued-four-year-window##Violation Charged Code", "mappings": [{"id": "819", "score": ""}, {"id": "840", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Violation Description", "mappings": [{"id": "819", "score": ""}, {"id": "840", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Violation Year", "mappings": [{"id": "835", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Violation Month", "mappings": [{"id": "835", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Violation Day of Week", "mappings": [{"id": "140", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Age at Violation", "mappings": [{"id": "138", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Gender", "mappings": [{"id": "139", "score": ""}, {"id": "140", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##State of License", "mappings": [{"id": "847", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Police Agency", "mappings": [{"id": "148", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Court", "mappings": [{"id": "818", "score": ""}]}
-{"id": "nys-traffic-tickets-issued-four-year-window##Source", "mappings": [{"id": "145", "score": ""}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Violation Charged Code", "mappings": [{"id": "640", "score": 1.0}, {"id": "630", "score": 1.0}, {"id": "841", "score": 1.0}, {"id": "639", "score": 1.0}, {"id": "833", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Violation Description", "mappings": [{"id": "631", "score": 1.0}, {"id": "819", "score": 1.0}, {"id": "825", "score": 1.0}, {"id": "816", "score": 1.0}, {"id": "822", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Violation Year", "mappings": [{"id": "632", "score": 1.0}, {"id": "841", "score": 1.0}, {"id": "640", "score": 1.0}, {"id": "819", "score": 1.0}, {"id": "635", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Violation Month", "mappings": [{"id": "633", "score": 1.0}, {"id": "823", "score": 1.0}, {"id": "819", "score": 1.0}, {"id": "818", "score": 1.0}, {"id": "832", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Violation Day of Week", "mappings": [{"id": "634", "score": 1.0}, {"id": "842", "score": 1.0}, {"id": "833", "score": 1.0}, {"id": "818", "score": 1.0}, {"id": "831", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Age at Violation", "mappings": [{"id": "635", "score": 1.0}, {"id": "843", "score": 1.0}, {"id": "833", "score": 1.0}, {"id": "816", "score": 1.0}, {"id": "820", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Gender", "mappings": [{"id": "636", "score": 1.0}, {"id": "844", "score": 1.0}, {"id": "819", "score": 1.0}, {"id": "816", "score": 1.0}, {"id": "820", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##State of License", "mappings": [{"id": "637", "score": 1.0}, {"id": "840", "score": 1.0}, {"id": "833", "score": 1.0}, {"id": "828", "score": 1.0}, {"id": "834", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Police Agency", "mappings": [{"id": "638", "score": 1.0}, {"id": "848", "score": 1.0}, {"id": "841", "score": 1.0}, {"id": "827", "score": 1.0}, {"id": "849", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Court", "mappings": [{"id": "639", "score": 1.0}, {"id": "826", "score": 1.0}, {"id": "841", "score": 1.0}, {"id": "849", "score": 1.0}, {"id": "824", "score": 1.0}]}
+{"id": "nys-traffic-tickets-issued-four-year-window##Source", "mappings": [{"id": "640", "score": 1.0}, {"id": "641", "score": 1.0}, {"id": "630", "score": 1.0}, {"id": "639", "score": 1.0}, {"id": "825", "score": 1.0}]}

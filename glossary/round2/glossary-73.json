@@ -1,16 +1,10 @@
-{"id": "1147", "label": "Apples", "desc": "Apples composted per bone meal"}
-{"id": "1148", "label": "Cacti", "desc": "Cacti composted per bone meal"}
-{"id": "1149", "label": "Carrots", "desc": "Carrots composted per bone meal"}
-{"id": "1150", "label": "Cookies", "desc": "Cookies composted per bone meal"}
-{"id": "1151", "label": "Melons", "desc": "Melons composted per bone meal"}
-{"id": "1152", "label": "Melon Seeds", "desc": "Melon seeds composted per bone meal"}
-{"id": "1153", "label": "Oak Leaves", "desc": "Oak leaves composted per bone meal"}
-{"id": "1154", "label": "Oak Saplings", "desc": "Oak saplings composted per bone meal"}
-{"id": "1155", "label": "Potatoes", "desc": "Potatoes composted per bone meal"}
-{"id": "1156", "label": "Pumpkins", "desc": "Pumpkins composted per bone meal"}
-{"id": "1157", "label": "Pumpkin Seeds", "desc": "Pumpkin seeds composted per bone meal"}
-{"id": "1158", "label": "Beetroots", "desc": "Beetroots composted per bone meal"}
-{"id": "1159", "label": "Beetroot Seeds", "desc": "Beetroot seeds composted per bone meal"}
-{"id": "1160", "label": "Sugar Canes", "desc": "Sugar canes composted per bone meal"}
-{"id": "1161", "label": "Wheat", "desc": "Wheat composted per bone meal"}
-{"id": "1162", "label": "Wheat Seeds", "desc": "Wheat seeds composted per bone meal"}
+{"id": "1137", "label": "Id", "desc": "Row Id"}
+{"id": "1138", "label": "Product Id", "desc": "Unique identifier for the product"}
+{"id": "1139", "label": "User Id", "desc": "Unqiue identifier for the user"}
+{"id": "1140", "label": "Profile", "desc": "Profile name of the user"}
+{"id": "1141", "label": "Helpful", "desc": "Number of users who found the review helpful"}
+{"id": "1142", "label": "Votes", "desc": "Number of users who indicated whether they found the review helpful or not"}
+{"id": "1143", "label": "Rating", "desc": "Rating between 1 and 5"}
+{"id": "1144", "label": "Timestamp", "desc": "Timestamp for the review"}
+{"id": "1145", "label": "Summary", "desc": "Brief summary of the review"}
+{"id": "1146", "label": "Review", "desc": "Text of the review"}

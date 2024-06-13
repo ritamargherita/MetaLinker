@@ -1,13 +1,16 @@
-{"id": "895", "label": "Survival Months", "desc": "number of months patient survived (has survived, if patient is still alive)"}
-{"id": "896", "label": "Alive Status", "desc": "binary variable. 0=dead at end of survival period, 1 means still alive"}
-{"id": "897", "label": "Age at Heart Attack", "desc": "age in years when heart attack occurred"}
-{"id": "898", "label": "Pericardial Effusion", "desc": "binary. Pericardial effusion is fluid around the heart. 0=no fluid, 1=fluid"}
-{"id": "899", "label": "Contractility Measure", "desc": "a measure of contracility around the heart lower numbers are increasingly abnormal"}
-{"id": "900", "label": "E-point Septal Separation", "desc": "E-point septal separation, another measure of contractility. Larger numbers are increasingly abnormal."}
-{"id": "901", "label": "Left Ventricular Dimension", "desc": "left ventricular end-diastolic dimension. This is a measure of the size of the heart at end-diastole. Large hearts tend to be sick hearts."}
-{"id": "902", "label": "Segment Motion", "desc": "a measure of how the segments of the left ventricle are moving"}
-{"id": "903", "label": "Wall Motion Index", "desc": "equals wall-motion-score divided by number of segments seen. Usually 12-13 segments are seen in an echocardiogram. Use this variable INSTEAD of the wall motion score."}
-{"id": "904", "label": "Derived Var", "desc": "a derivate var which can be ignored"}
-{"id": "905", "label": "Patient Name", "desc": "the name of the patient (I have replaced them with \"name\")"}
-{"id": "906", "label": "Ignore", "desc": "meaningless, ignore it"}
-{"id": "907", "label": "1-Year Survival", "desc": "Derived from the first two attributes. 0 means patient was either dead after 1 year or had been followed for less than 1 year. 1 means patient was alive at 1 year."}
+{"id": "879", "label": "ID", "desc": "non identifiable randomly generated character id."}
+{"id": "880", "label": "Full Name", "desc": "full name of this character."}
+{"id": "881", "label": "Alias", "desc": "another way to call the character."}
+{"id": "882", "label": "Gender", "desc": "gender of the this character."}
+{"id": "883", "label": "Hair Color", "desc": "hair color of this character."}
+{"id": "884", "label": "Love Rank", "desc": "love rank based in users preference."}
+{"id": "885", "label": "Hate Rank", "desc": "hate rank based in users preference."}
+{"id": "886", "label": "Eye Color", "desc": "eye color of the character."}
+{"id": "887", "label": "Birthday", "desc": "date of his birthday."}
+{"id": "888", "label": "Blood Type", "desc": "blood type of the character."}
+{"id": "889", "label": "Tags", "desc": "comma separated list of tags for this character."}
+{"id": "890", "label": "Loves", "desc": "how many users love this character."}
+{"id": "891", "label": "Hates", "desc": "how many users hate this character."}
+{"id": "892", "label": "Description", "desc": "short text with description if this character."}
+{"id": "893", "label": "Anime Planet URL", "desc": "url to the main page of character in Anime Planet."}
+{"id": "894", "label": "User Preference", "desc": "True if the user loves the character, False if he hates it."}

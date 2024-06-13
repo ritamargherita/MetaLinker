@@ -1,18 +1,19 @@
-{"id": "686", "label": "Year", "desc": "Year in which the quarterfinals took place"}
-{"id": "687", "label": "Team Code", "desc": "Code of the teams that took part in the corresponding year"}
-{"id": "688", "label": "Team Name", "desc": "Name of the participant teams"}
-{"id": "689", "label": "Final Round", "desc": "Final round achieved by each of the teams"}
-{"id": "690", "label": "Country", "desc": "Country of origin or the league"}
-{"id": "691", "label": "Region", "desc": "Region of the team in the league table"}
-{"id": "692", "label": "Decade", "desc": "Decade of the respective year the quarterfinals took place"}
-{"id": "693", "label": "Superliga", "desc": "Checking if the corresponding teams supported the superliga plan or opposed it"}
-{"id": "694", "label": "City", "desc": "City in which the quarterfinals took place"}
-{"id": "695", "label": "Venue Code", "desc": "Areacode of the corresponding venue"}
-{"id": "696", "label": "Metropolitan City", "desc": "The metropolitan city in which the event took place"}
-{"id": "697", "label": "City Population", "desc": "Population of that particular city"}
-{"id": "698", "label": "City GDP", "desc": "Gdp of that particular city in which it took place"}
-{"id": "699", "label": "City Country", "desc": "Country of that particular city in which the event took place"}
-{"id": "700", "label": "Eurostat Code", "desc": "Eurostat unique code of the corresponding country it took place"}
-{"id": "701", "label": "ECB Code", "desc": "Ecb code of the corresponding country"}
-{"id": "702", "label": "COWC Code", "desc": "Cowc three letter code for each of the countries"}
-{"id": "703", "label": "COWN Value", "desc": "Cown value for each of the countries selected"}
+{"id": "667", "label": "Run #", "desc": "The run number of the event."}
+{"id": "668", "label": "Event #", "desc": "The event number."}
+{"id": "669", "label": "E1 (GeV)", "desc": "The total energy of the electron 1 (GeV)."}
+{"id": "670", "label": "Px1 (GeV)", "desc": "First component of the momemtum of the electron 1 (GeV)."}
+{"id": "671", "label": "Py1 (GeV)", "desc": "Second component of the momemtum of the electron 1 (GeV)."}
+{"id": "672", "label": "Pz1 (GeV)", "desc": "Third component of the momemtum of the electron 1 (GeV)."}
+{"id": "673", "label": "Pt1 (GeV)", "desc": "The transverse momentum of the electron 1 (GeV)."}
+{"id": "674", "label": "Eta1", "desc": "The pseudorapidity of the electron 1."}
+{"id": "675", "label": "Phi1 (rad)", "desc": "The phi angle of the electron 1 (rad)."}
+{"id": "676", "label": "Q1", "desc": "The charge of the electron 1."}
+{"id": "677", "label": "E2 (GeV)", "desc": "The total energy of the electron 2 (GeV)."}
+{"id": "678", "label": "Px2 (GeV)", "desc": "First component of the momemtum of the electron 2 (GeV)."}
+{"id": "679", "label": "Py2 (GeV)", "desc": "Second component of the momemtum of the electron 2 (GeV)."}
+{"id": "680", "label": "Pz2 (GeV)", "desc": "Third component of the momemtum of the electron 2 (GeV)."}
+{"id": "681", "label": "Pt2 (GeV)", "desc": "The transverse momentum of the electron 2 (GeV)."}
+{"id": "682", "label": "Eta2", "desc": "The pseudorapidity of the electron 2."}
+{"id": "683", "label": "Phi2 (rad)", "desc": "The phi angle of the electron 2 (rad)."}
+{"id": "684", "label": "Q2", "desc": "The charge of the electron 2."}
+{"id": "685", "label": "M12 (GeV)", "desc": "The invariant mass of two electrons (GeV)."}

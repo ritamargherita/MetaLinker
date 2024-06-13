@@ -1,17 +1,12 @@
-{"id": "1066", "label": "Player", "desc": "Name of the player"}
-{"id": "1067", "label": "Phase", "desc": "Competition phase or a matchday"}
-{"id": "1068", "label": "Date", "desc": "The date when the game was played"}
-{"id": "1069", "label": "Home Team", "desc": "The host team (number in brackets represents position of that team on the table at that moment)"}
-{"id": "1070", "label": "Away Team", "desc": "The visitor team (number in brackets represents position of that team on the table at that moment)"}
-{"id": "1071", "label": "Result", "desc": "The result of the match"}
-{"id": "1072", "label": "Position", "desc": "On which position player played"}
-{"id": "1073", "label": "Goals", "desc": "The number of goals scored by the player"}
-{"id": "1074", "label": "Assists", "desc": "The number of assists made by the player"}
-{"id": "1075", "label": "Own Goals", "desc": "The number of OWN goals scored by the player"}
-{"id": "1076", "label": "Yellow Card", "desc": "Whether the player received a yellow card or not"}
-{"id": "1077", "label": "2nd Yellow", "desc": "Whether the player received a SECOND yellow card or not"}
-{"id": "1078", "label": "Red Card", "desc": "Whether the player received a DIRECT red card or not"}
-{"id": "1079", "label": "Min In", "desc": "Minute of the game when the player entered the field."}
-{"id": "1080", "label": "Min Out", "desc": "Minute of the game when the player was substituted and replaced by another player."}
-{"id": "1081", "label": "Minutes Played", "desc": "Minutes played in the match"}
-{"id": "1082", "label": "Competition", "desc": "Full name or abbreviation of the competition"}
+{"id": "1054", "label": "Episode Title", "desc": "The title of each episode"}
+{"id": "1055", "label": "Writer", "desc": "The writer of each episode"}
+{"id": "1056", "label": "Character", "desc": "The character from the show"}
+{"id": "1057", "label": "Lines", "desc": "Character's lines"}
+{"id": "1058", "label": "Story Writer", "desc": "The story writer of each episode"}
+{"id": "1059", "label": "Air Date", "desc": "The Original air date of each episode"}
+{"id": "1060", "label": "Transcript", "desc": "The links to transcript of each episode"}
+{"id": "1061", "label": "Summary", "desc": "The links to story summary of each episode"}
+{"id": "1062", "label": "Song Title", "desc": "The name of each song"}
+{"id": "1063", "label": "Song Length", "desc": "The length of each song"}
+{"id": "1064", "label": "Air Date", "desc": "The original air date of each episode"}
+{"id": "1065", "label": "Summary", "desc": "The story summary of each episode"}

@@ -1,20 +1,13 @@
-{"id": "908", "label": "Team Code", "desc": "Code of team"}
-{"id": "909", "label": "Player Tag", "desc": "Tag of player"}
-{"id": "910", "label": "Opponent Code", "desc": "Code of opposing team in match"}
-{"id": "911", "label": "Position", "desc": "Position played by player in match"}
-{"id": "912", "label": "Champion", "desc": "Champion played by player in match"}
-{"id": "913", "label": "Kills", "desc": "Number of kills by player in match"}
-{"id": "914", "label": "Deaths", "desc": "Number of deaths by player in match"}
-{"id": "915", "label": "Assists", "desc": "Number of assists by player in match"}
-{"id": "916", "label": "Creep Score", "desc": "Number of minions and monsters killed by player in match"}
-{"id": "917", "label": "Damage %", "desc": "Gold earned by player in match"}
-{"id": "918", "label": "Kill %", "desc": "Percentage of total damage done by team to other champions done by player."}
-{"id": "919", "label": "Wards Placed", "desc": "Percentage of team kills that player was part of."}
-{"id": "920", "label": "Wards Killed", "desc": "Number of wards placed by player in match."}
-{"id": "921", "label": "Ward Score", "desc": "Number of wards killed by player in match."}
-{"id": "922", "label": "Dragon Kills", "desc": "Sum of wards placed and wards killed by player in match."}
-{"id": "923", "label": "Opp Dragon Kills", "desc": "Number of dragons team killed in match."}
-{"id": "924", "label": "Baron Kills", "desc": "Number of dragons opposing team killed in match."}
-{"id": "925", "label": "Opp Baron Kills", "desc": "Number of Barons killed in match."}
-{"id": "926", "label": "Match Result", "desc": "Number of Barons opposing team killed in match."}
-{"id": "927", "label": "Result", "desc": "Win or Lose (W/L)"}
+{"id": "895", "label": "Survival Months", "desc": "number of months patient survived (has survived, if patient is still alive)"}
+{"id": "896", "label": "Alive Status", "desc": "binary variable. 0=dead at end of survival period, 1 means still alive"}
+{"id": "897", "label": "Age at Heart Attack", "desc": "age in years when heart attack occurred"}
+{"id": "898", "label": "Pericardial Effusion", "desc": "binary. Pericardial effusion is fluid around the heart. 0=no fluid, 1=fluid"}
+{"id": "899", "label": "Contractility Measure", "desc": "a measure of contracility around the heart lower numbers are increasingly abnormal"}
+{"id": "900", "label": "E-point Septal Separation", "desc": "E-point septal separation, another measure of contractility. Larger numbers are increasingly abnormal."}
+{"id": "901", "label": "Left Ventricular Dimension", "desc": "left ventricular end-diastolic dimension. This is a measure of the size of the heart at end-diastole. Large hearts tend to be sick hearts."}
+{"id": "902", "label": "Segment Motion", "desc": "a measure of how the segments of the left ventricle are moving"}
+{"id": "903", "label": "Wall Motion Index", "desc": "equals wall-motion-score divided by number of segments seen. Usually 12-13 segments are seen in an echocardiogram. Use this variable INSTEAD of the wall motion score."}
+{"id": "904", "label": "Derived Var", "desc": "a derivate var which can be ignored"}
+{"id": "905", "label": "Patient Name", "desc": "the name of the patient (I have replaced them with \"name\")"}
+{"id": "906", "label": "Ignore", "desc": "meaningless, ignore it"}
+{"id": "907", "label": "1-Year Survival", "desc": "Derived from the first two attributes. 0 means patient was either dead after 1 year or had been followed for less than 1 year. 1 means patient was alive at 1 year."}
