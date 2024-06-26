@@ -1,0 +1,11 @@
+{"id": "Violation Charged Code", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "853", "score": ""}, {"id": "851", "score": ""}]}
+{"id": "Violation Description", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "857", "score": ""}, {"id": "851", "score": ""}]}
+{"id": "Violation Year", "mappings": [{"id": "862", "score": ""}, {"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "851", "score": ""}]}
+{"id": "Violation Month", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}]}
+{"id": "Violation Day of Week", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}]}
+{"id": "Age at Violation", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "851", "score": ""}, {"id": "860", "score": ""}]}
+{"id": "Gender", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}]}
+{"id": "State of License", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "856", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}]}
+{"id": "Police Agency", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "817", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}]}
+{"id": "Court", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "817", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}]}
+{"id": "Source", "mappings": [{"id": "864", "score": ""}, {"id": "859", "score": ""}, {"id": "851", "score": ""}, {"id": "858", "score": ""}, {"id": "815", "score": ""}]}
