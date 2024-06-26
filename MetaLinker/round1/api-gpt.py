@@ -11,7 +11,7 @@ from openai import OpenAI
 
 sys.path.append('../../')
 
-from MetaLinker.queries_instructions_r1 import (
+from MetaLinker.round1.queries_instructions_r1 import (
     assistant_instruction_hit1,
     query_template_hit1,
     assistant_instruction_hit5,
@@ -340,8 +340,8 @@ if __name__ == "__main__":
     output_folder = os.getenv('OUTPUT_FOLDER')
 
     # SET ASSISTANT AND QUERY
-    query_template = query_template_hit5
-    assistant_instruction = assistant_instruction_hit5
+    query_template = query_template_hit1
+    assistant_instruction = assistant_instruction_hit1
 
     # SET NAMES
     assistant_name = 'sem-tab'
