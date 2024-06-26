@@ -12,8 +12,6 @@ from openai import OpenAI
 sys.path.append('../../')
 
 from MetaLinker.round2.queries_instructions_r2 import (
-    assistant_instruction_hit1,
-    query_template_hit1,
     assistant_instruction_hit5,
     query_template_hit5
 )
@@ -202,11 +200,12 @@ def make_input_metadata(split):
     make_input_metadata
     
     """
-
+    
     input_metadata = '\n'.join([
-        '{' + "'id': '{}', 'label': '{}', 'table_id': '{}', 'table_name': '{}', 'table_columns': {}".format(
-        item['id'], item['label'], item['table_id'], item['table_name'], item['table_columns']
-        ) + '}' for item in split])
+    '{{"table_name": "{}", "id": "{}", "label": "{}"}}'.format(
+        item['table_name'], col['id'], col['label']
+    ) for item in split for col in item['columns']
+    ])
     
     return input_metadata
 
@@ -279,7 +278,8 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
     remove_output_files_if_exist(output_metadata, output_stats)
 
     pattern_1 = re.compile(
-        r'''['"]id['"]: ['"]([^']+?)['"],\s*['"]mappings['"]: \[([^\]]+?)\]''', 
+        #r'''['"]id['"]: ['"]([^']+?)['"],\s*['"]mappings['"]: \[([^\]]+?)\]''', 
+        r'''["']id["']: ["']([^"']+)["'],\s*["']mappings["']: \[([^\]]+?)\]''',
         re.DOTALL
     )
     #pattern_2 = re.compile(r"'([^']+)'\s*:\s*\[([^\]]+)\]")
@@ -287,12 +287,9 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
     with open(output_stats, 'a') as output_stat_file, open(output_metadata, 'a') as output_file:
         for metadata_file in metadata_file_paths:
             with open(metadata_file, 'r') as file:
+                print(metadata_file)
                 data = [json.loads(line) for line in file]
-                
-                input_metadata = '\n'.join([
-                        '{' + "'id': '{}', 'label': '{}', 'table_id': '{}', 'table_name': '{}', 'table_columns': {}".format(
-                        item['id'], item['label'], item['table_id'], item['table_name'], item['table_columns']
-                        ) + '}' for item in data])
+                input_metadata = make_input_metadata(data)
                 
                 query = query_template.format(input_metadata=input_metadata)
                 messages, run = get_response(query, client, updated_assistant, thread)
@@ -305,10 +302,12 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
                         append_metadata_output(matches_1, output_file)
 
                     append_usage_stats_output(output_stat_file, run)
+                
+                time.sleep(5)
             
-            end_time = time.time()
-            elapsed_time = end_time - start_time
-            output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        output_stat_file.write(f"\nElapsed time: {elapsed_time:.2f} seconds\n")
 
     return
 

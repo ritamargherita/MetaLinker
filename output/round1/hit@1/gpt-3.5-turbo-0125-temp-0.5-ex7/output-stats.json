@@ -1,0 +1,9 @@
+Usage: Usage(completion_tokens=1045, prompt_tokens=10026, total_tokens=11071)
+Usage: Usage(completion_tokens=1022, prompt_tokens=8230, total_tokens=9252)
+Usage: Usage(completion_tokens=1024, prompt_tokens=11544, total_tokens=12568)
+Usage: Usage(completion_tokens=1029, prompt_tokens=14698, total_tokens=15727)
+Usage: Usage(completion_tokens=669, prompt_tokens=15006, total_tokens=15675)
+Usage: Usage(completion_tokens=1042, prompt_tokens=13686, total_tokens=14728)
+Usage: Usage(completion_tokens=116, prompt_tokens=14330, total_tokens=14446)
+
+Elapsed time: 132.99 seconds
