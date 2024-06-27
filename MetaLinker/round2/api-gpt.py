@@ -282,7 +282,10 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
         r'''["']id["']: ["']([^"']+)["'],\s*["']mappings["']: \[([^\]]+?)\]''',
         re.DOTALL
     )
-    #pattern_2 = re.compile(r"'([^']+)'\s*:\s*\[([^\]]+)\]")
+    pattern_2 = re.compile(
+        r"'id': ([^,]+), 'mappings': (\[[^\]]+\])",
+        re.DOTALL
+    )
 
     with open(output_stats, 'a') as output_stat_file, open(output_metadata, 'a') as output_file:
         for metadata_file in metadata_file_paths:
@@ -301,7 +304,14 @@ def main(query_template, assistant_name, assistant_instruction, gpt_model,
                     if matches_1:
                         append_metadata_output(matches_1, output_file)
 
+                    else:
+                        matches_2 = pattern_2.findall(message_content_value)
+
+                        if matches_2:
+                           append_metadata_output(matches_2, output_file) 
+
                     append_usage_stats_output(output_stat_file, run)
+
                 
                 time.sleep(5)
             
